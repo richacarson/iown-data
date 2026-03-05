@@ -1,0 +1,30 @@
+name: IOWN Market Data Fetch
+
+on:
+  schedule:
+    - cron: '5 21 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch market data
+        env:
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          FMP_KEY: ${{ secrets.FMP_KEY }}
+        run: node fetch-data.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "IOWN Data Bot"
+          git config user.email "bot@iown.dev"
+          git add latest.txt
+          git diff --cached --quiet || git commit -m "Market data $(date -u +%Y-%m-%d)"
+          git push
