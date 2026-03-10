@@ -6,8 +6,8 @@ Dow: 47,706.50 | -0.07%
 Nasdaq: 22,697.10 | +0.01%
 Russell 2000: 2,548.08 | -0.22%
 VIX: 24.93 | -2.24%
-Gold: $5,207.00 | +2.02%
-Bitcoin: $70,277 | +2.70%
+Gold: $5,242.10 | +2.71%
+Bitcoin: $69,777 | +1.97%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
