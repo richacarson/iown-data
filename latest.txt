@@ -3,11 +3,11 @@ IOWN MARKET DATA — Wednesday, March 11, 2026
 ## BROAD MARKET
 S&P 500: 6,774.76 | -0.10%
 Dow: 47,417.26 | -0.61%
-Nasdaq: 22,712.72 | +0.07%
+Nasdaq: 22,716.13 | +0.08%
 Russell 2000: 2,542.90 | -0.20%
-VIX: 24.32 | -2.45%
-Gold: $5,186.80 | -1.05%
-Bitcoin: $70,465 | +0.72%
+VIX: 24.23 | -2.81%
+Gold: $5,179.10 | -1.20%
+Bitcoin: $70,777 | +1.17%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
