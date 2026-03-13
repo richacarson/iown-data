@@ -129,15 +129,22 @@ async function main() {
   const today = new Date();
   const todayStr = today.toISOString().split('T')[0];
   const canaryStr = canaryTime.toISOString().split('T')[0];
-  if (canaryStr !== todayStr) {
+  // After midnight UTC (evening US time), Finnhub data is from the previous UTC date
+  // so compare against yesterday's date if we're in the overnight window
+  let expectedDate = todayStr;
+  if (today.getUTCHours() < 6) {
+    const yesterday = new Date(today.getTime() - 86400000);
+    expectedDate = yesterday.toISOString().split('T')[0];
+  }
+  if (canaryStr !== todayStr && canaryStr !== expectedDate) {
     // Allow Friday data on weekends, but block stale weekday data
     const dayOfWeek = today.getUTCDay(); // 0=Sun, 6=Sat
     if (dayOfWeek >= 1 && dayOfWeek <= 5) {
-      console.error(`STALE DATA: Finnhub returning ${canaryStr} but today is ${todayStr}. Aborting.`);
+      console.error(`STALE DATA: Finnhub returning ${canaryStr} but expected ${expectedDate}. Aborting.`);
       process.exit(1);
     }
   }
-  console.log(`Finnhub canary: AAPL=$${canary.c}, timestamp=${canaryStr}, today=${todayStr} ✓`);
+  console.log(`Finnhub canary: AAPL=$${canary.c}, timestamp=${canaryStr}, expected=${expectedDate} ✓`);
 
   const R = {};
 
