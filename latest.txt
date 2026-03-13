@@ -6,8 +6,8 @@ Dow: 46,558.46 | -0.26%
 Nasdaq: 22,105.36 | -0.93%
 Russell 2000: 2,480.05 | -0.36%
 VIX: 27.19 | -0.37%
-Gold: $5,021.40 | -2.04%
-Bitcoin: $71,347 | +1.16%
+Gold: $5,061.70 | -1.25%
+Bitcoin: $71,201 | +0.95%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -74,15 +74,15 @@ ETHA | $15.89 | +0.26 | +1.66% | $16.73 | $15.79
 
 ## MARKET NEWS
 [02:25 PM] CNBC: Mortgage rates surge to highest since September, hitting spring housing market
+[01:18 PM] Reuters: Iran war deprives US farmers of affordable fertilizer as spring planting looms - Reuters
 [12:58 PM] CNBC: Eaton finalizes a smart acquisition to advance its AI data center ambitions
 [12:03 PM] Reuters: California hit by much higher oil prices as Iran war stresses refiners - Reuters
 [11:55 AM] CNBC: Nvidia may soon unveil a brand-new AI chip. A closer look at the $20 billion bet to make it happen
 [11:32 AM] Reuters: Lured by profits, some shipowners brave mines and missiles to sneak oil past Iran - Reuters
 [11:25 AM] CNBC: Jim Cramer sees this steady portfolio stock climbing to new highs. Here's why
+[11:24 AM] Reuters: Israel targets Iranian checkpoints using tip-offs from informants, source says - Reuters
 [11:03 AM] Reuters: Exclusive: Iran lets two gas tankers sail to India through Hormuz, sources say - Reuters
 [10:09 AM] Reuters: Trump says Putin may be helping Iran a bit - Reuters
-[09:30 AM] MarketWatch: Americans were feeling better about the economy and then war with Iran broke out
-[09:13 AM] CNBC: Some six-figure earners are still 'on thin ice' in the K-shaped economy: 'A lot of factors' could 'leave you exposed'
 
 ## HOLDINGS NEWS
 NVDA: Yahoo — Is USA Rare Earth Stock a Millionaire Maker?
@@ -107,6 +107,6 @@ COIN: Yahoo — Crypto Currents: CFTC affirms crypto oversight alignment with SE
 SYK: Yahoo — A Cyberattack Just Put Stryker’s $25 Billion Growth Story to the Test
 
 ## FETCH INFO
-Fetched: 3/13/2026, 3:48:35 PM CT
+Fetched: 3/13/2026, 4:52:10 PM CT
 Holdings: 51/51
 Canary: AAPL $250.12 (2026-03-13)
