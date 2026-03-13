@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IOWN Market Commentary</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -147,6 +151,53 @@
     font-family: var(--serif); font-style: italic; font-size: 0.95rem;
     color: var(--muted); line-height: 1.45; margin-bottom: 1.5rem;
     border-bottom: 1px solid var(--rule); padding-bottom: 1.2rem;
+  }
+
+  /* Performance Summary Strip (top of commentary) */
+  .perf-summary {
+    display: flex; gap: 0; margin-bottom: 2rem;
+    border: 1px solid var(--rule); border-radius: 6px; overflow: hidden;
+  }
+  .perf-summary-card {
+    flex: 1; padding: 0.9rem 1rem; position: relative;
+  }
+  .perf-summary-card + .perf-summary-card { border-left: 1px solid var(--rule); }
+  .perf-summary-card .strat-bar {
+    position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+  }
+  .perf-summary-card .strat-bar.div { background: var(--div-color); }
+  .perf-summary-card .strat-bar.grw { background: var(--grw-color); }
+  .perf-summary-card .ps-label {
+    font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 0.25rem;
+  }
+  .perf-summary-card .ps-value {
+    font-family: var(--serif); font-size: 1.5rem; font-weight: 700; line-height: 1.1;
+  }
+  .perf-summary-card .ps-value.up { color: var(--up); }
+  .perf-summary-card .ps-value.dn { color: var(--dn); }
+  .perf-summary-card .ps-bench {
+    font-size: 0.68rem; color: var(--muted); margin-top: 0.2rem;
+  }
+  .perf-summary-card .ps-ytd {
+    font-size: 0.65rem; margin-top: 0.35rem; padding-top: 0.35rem;
+    border-top: 1px solid #EDEDEA;
+  }
+  .perf-summary-card .ps-ytd-label {
+    font-size: 0.5rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .perf-summary-card .ps-ytd-val {
+    font-weight: 600; font-size: 0.72rem;
+  }
+  .perf-summary-card .ps-ytd-val.up { color: var(--up); }
+  .perf-summary-card .ps-ytd-val.dn { color: var(--dn); }
+  .perf-summary-card .ps-ytd-bench {
+    font-size: 0.6rem; color: var(--muted);
+  }
+  @media (max-width: 640px) {
+    .perf-summary { flex-direction: column; }
+    .perf-summary-card + .perf-summary-card { border-left: none; border-top: 1px solid var(--rule); }
   }
   .commentary-html .section-head {
     font-family: var(--sans); font-size: 0.7rem; font-weight: 600;
