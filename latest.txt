@@ -6,8 +6,8 @@ Dow: 46,677.86 | -1.56%
 Nasdaq: 22,311.98 | -1.78%
 Russell 2000: 2,488.99 | -2.12%
 VIX: 27.29 | +12.63%
-Gold: $5,125.80 | -1.03%
-Bitcoin: $70,337 | +0.18%
+Gold: $5,122.10 | -0.07%
+Bitcoin: $71,692 | +1.64%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -71,3 +71,20 @@ TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
 IBIT | $39.95 | -0.12 | -0.30% | $40.08 | $39.31
 ETHA | $15.63 | -0.06 | -0.38% | $15.84 | $15.39
+
+## MARKET NEWS
+[06:23 PM] CNBC: Jim Cramer: Don't let Iran war-induced market volatility scare you out of stocks
+[05:09 PM] Reuters: Trump demands Fed cut rates. His Iran war has investors betting otherwise - Reuters
+[04:51 PM] Reuters: US carrying out rescue effort after military aircraft crash in Iraq - Reuters
+[04:20 PM] Reuters: Drone attack wounds at least six French soldiers at base in Iraq’s Makhmour, Erbil governor says - Reuters
+[03:54 PM] Reuters: Ships must coordinate with Iran's navy to pass through Strait of Hormuz, foreign ministry says - Reuters
+[03:35 PM] Reuters: Iran's Shi'ite allies step up strikes despite weakened hand - Reuters
+[02:57 PM] CNBC: WNBA players say they’re 'feeling movement' as league, union push toward landmark CBA
+[02:50 PM] Reuters: Netanyahu threatens Iran new leader, says government collapse uncertain - Reuters
+[01:46 PM] Reuters: US and allies clash with Russia and China at UN over Iran nuclear program - Reuters
+[01:42 PM] CNBC: This company bought back stock in last month's software rout. It was a good move
+
+## FETCH INFO
+Fetched: 3/12/2026, 8:18:04 PM CT
+Holdings: 51/51
+Canary: AAPL $255.76 (2026-03-12)
