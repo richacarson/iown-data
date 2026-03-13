@@ -14,13 +14,13 @@
   {
     "date": "2026-03-05",
     "headline": "War Premium Returns",
-    "subhead": "S&P −0.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
+    "subhead": "S&P \u22120.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
     "direction": "down"
   },
   {
     "date": "2026-03-06",
     "headline": "Payrolls Collapse",
-    "subhead": "NFP −92,000. Oil breaks $90. VIX +25% to 29.66. S&P −1.36% for its worst week since October.",
+    "subhead": "NFP \u221292,000. Oil breaks $90. VIX +25% to 29.66. S&P \u22121.36% for its worst week since October.",
     "direction": "down"
   },
   {
@@ -32,21 +32,21 @@
   {
     "date": "2026-03-10",
     "headline": "Holding Pattern",
-    "subhead": "S&P −0.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
+    "subhead": "S&P \u22120.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
     "direction": "down"
   },
   {
     "date": "2026-03-11",
     "headline": "Calm Before the Storm",
-    "subhead": "CPI in line at 2.4% — but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK −3.0%.",
-    "direction": "down"
+    "subhead": "CPI in line at 2.4% \u2014 but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK \u22123.0%.",
+    "direction": "down",
+    "content": "2026-03-11.html"
   },
   {
     "date": "2026-03-12",
     "headline": "Credit Cracks Widen",
-    "subhead": "Private credit stress spreads. Oil resumes climb. S&P −1.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
+    "subhead": "Private credit stress spreads. Oil resumes climb. S&P \u22121.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
     "direction": "down",
-    "content": "2026-03-12.html",
     "content": "2026-03-12.html"
   }
 ]
