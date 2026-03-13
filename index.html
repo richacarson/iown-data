@@ -10,351 +10,396 @@
   :root {
     --ink: #1A1A1A;
     --bg: #FAF9F7;
-    --cream: #F5F3EF;
-    --accent-up: #5A7A3A;
-    --accent-dn: #8B3A3A;
+    --cream: #F3F1EC;
+    --card: #FFFFFF;
+    --up: #5A7A3A;
+    --dn: #8B3A3A;
+    --div-color: #8C6239;
+    --grw-color: #5A7A3A;
+    --dig-color: #C47A2A;
     --rule: #D4D0C8;
     --muted: #8A8A84;
     --serif: 'Cormorant Garamond', Georgia, serif;
     --sans: 'DM Sans', -apple-system, sans-serif;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
 
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--sans);
-    -webkit-font-smoothing: antialiased;
+  /* ═══ LOGIN ═══ */
+  .login-overlay {
+    position: fixed; inset: 0; background: var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 9999; transition: opacity 0.4s;
+  }
+  .login-overlay.hidden { opacity: 0; pointer-events: none; }
+  .login-box { text-align: center; color: var(--bg); width: 340px; padding: 0 1.5rem; }
+  .login-box .eyebrow {
+    font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase;
+    color: #666; margin-bottom: 0.6rem;
+  }
+  .login-box h1 { font-family: var(--serif); font-weight: 400; font-size: 2rem; margin-bottom: 0.4rem; }
+  .login-box .sub {
+    font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #555; margin-bottom: 2.5rem;
+  }
+  .login-box .rule { width: 40px; height: 2px; background: var(--up); margin: 0 auto 2.5rem; }
+  .login-input {
+    width: 100%; background: transparent; border: 1px solid #333;
+    color: var(--bg); font-family: var(--sans); font-size: 0.85rem;
+    padding: 0.75rem 1rem; border-radius: 4px; text-align: center;
+    letter-spacing: 0.15em; outline: none; transition: border-color 0.2s;
+  }
+  .login-input::placeholder { color: #555; letter-spacing: 0.15em; }
+  .login-input:focus { border-color: #666; }
+  .login-input.error { border-color: var(--dn); animation: shake 0.4s; }
+  .login-hint { font-size: 0.65rem; color: #444; margin-top: 0.8rem; min-height: 1rem; }
+  .login-hint.error { color: var(--dn); }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
   }
 
-  /* ── Masthead ── */
-  .masthead {
-    background: var(--ink);
-    color: var(--bg);
-    text-align: center;
-    padding: 2.5rem 1rem 2rem;
+  /* ═══ APP SHELL ═══ */
+  .app { display: none; }
+  .app.active { display: flex; min-height: 100vh; }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    width: 280px; flex-shrink: 0; background: var(--ink); color: var(--bg);
+    display: flex; flex-direction: column; position: fixed; top: 0; bottom: 0;
+    overflow: hidden; z-index: 100;
   }
-  .masthead-eyebrow {
-    font-family: var(--sans);
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: #999;
+  .sidebar-header { padding: 1.5rem 1.2rem 1rem; border-bottom: 1px solid #2a2a2a; }
+  .sidebar-header .eyebrow {
+    font-size: 0.55rem; letter-spacing: 0.25em; text-transform: uppercase;
+    color: #666; margin-bottom: 0.3rem;
+  }
+  .sidebar-header h2 { font-family: var(--serif); font-weight: 400; font-size: 1.35rem; }
+  .sidebar-list { flex: 1; overflow-y: auto; padding: 0.5rem 0; }
+  .sidebar-list::-webkit-scrollbar { width: 4px; }
+  .sidebar-list::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+  .sb-entry {
+    display: flex; align-items: center; gap: 0.7rem;
+    padding: 0.7rem 1.2rem; cursor: pointer; transition: background 0.12s;
+    border-left: 3px solid transparent;
+  }
+  .sb-entry:hover { background: #222; }
+  .sb-entry.active { background: #1f1f1f; border-left-color: var(--up); }
+  .sb-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .sb-dot.up { background: var(--up); }
+  .sb-dot.dn { background: var(--dn); }
+  .sb-text { min-width: 0; }
+  .sb-date { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #777; }
+  .sb-headline {
+    font-family: var(--serif); font-size: 0.95rem; font-weight: 600;
+    line-height: 1.25; margin-top: 0.15rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .sidebar-footer {
+    padding: 0.8rem 1.2rem; border-top: 1px solid #2a2a2a;
+    font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #555; text-align: center;
+  }
+
+  /* ── Main Content ── */
+  .main { flex: 1; margin-left: 280px; min-height: 100vh; display: flex; flex-direction: column; }
+
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--card); border-bottom: 1px solid var(--rule);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.8rem 2rem; gap: 1rem;
+  }
+  .topbar-left { display: flex; align-items: center; gap: 0.8rem; min-width: 0; }
+  .topbar-dir { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .topbar-info { min-width: 0; }
+  .topbar-date { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
+  .topbar-headline {
+    font-family: var(--serif); font-size: 1.15rem; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .topbar-actions { display: flex; gap: 0.5rem; flex-shrink: 0; }
+  .btn {
+    font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.06em;
+    text-transform: uppercase; border: 1px solid var(--rule); background: transparent;
+    color: var(--muted); padding: 0.45rem 0.9rem; border-radius: 3px;
+    cursor: pointer; transition: all 0.15s; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 0.4rem;
+  }
+  .btn:hover { border-color: var(--ink); color: var(--ink); }
+  .btn-primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .btn-primary:hover { background: #333; }
+  .btn-nav { padding: 0.45rem 0.6rem; }
+  .btn:disabled { opacity: 0.3; cursor: default; }
+
+  .content-wrap { flex: 1; max-width: 800px; width: 100%; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
+  /* ── Commentary HTML Content Styles ── */
+  .commentary-html { line-height: 1.7; }
+  .commentary-html .headline-display {
+    font-family: var(--serif); font-weight: 700; font-size: 2.8rem; line-height: 1.05;
     margin-bottom: 0.5rem;
   }
-  .masthead h1 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: 2.4rem;
-    letter-spacing: -0.01em;
-    line-height: 1.15;
+  .commentary-html .headline-display.up { color: var(--up); }
+  .commentary-html .headline-display.dn { color: var(--dn); }
+  .commentary-html .subhead-display {
+    font-family: var(--serif); font-style: italic; font-size: 0.95rem;
+    color: var(--muted); line-height: 1.45; margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule); padding-bottom: 1.2rem;
   }
-  .masthead-sub {
-    font-family: var(--sans);
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #777;
-    margin-top: 0.6rem;
+  .commentary-html .section-head {
+    font-family: var(--sans); font-size: 0.7rem; font-weight: 600;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink);
+    border-bottom: 1.5px solid var(--ink); padding-bottom: 0.4rem;
+    margin: 2.2rem 0 1rem;
   }
-  .masthead-rule {
-    width: 60px;
-    height: 2px;
-    background: var(--accent-up);
-    margin: 1rem auto 0;
+  .commentary-html .section-head:first-child { margin-top: 0; }
+  .commentary-html p { font-size: 0.92rem; margin-bottom: 1rem; }
+  .commentary-html .lead { font-weight: 500; }
+  .commentary-html .pullquote {
+    font-family: var(--serif); font-style: italic; font-weight: 600;
+    font-size: 0.95rem; color: #3D4A2E;
+    border-left: 3px solid var(--up); padding: 0.6rem 0 0.6rem 1rem;
+    margin: 1.5rem 0;
   }
+  .commentary-html .movers-label {
+    font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; margin: 1rem 0 0.5rem;
+  }
+  .commentary-html .movers-label.winners { color: var(--up); }
+  .commentary-html .movers-label.decliners { color: var(--dn); }
+  .commentary-html .mover {
+    display: flex; align-items: baseline; gap: 0.6rem;
+    padding: 0.5rem 0; border-bottom: 1px solid #EDEDEA; flex-wrap: wrap;
+  }
+  .mover-ticker { font-weight: 600; font-size: 0.85rem; width: 50px; flex-shrink: 0; }
+  .mover-pct { font-weight: 600; font-size: 0.85rem; width: 60px; flex-shrink: 0; }
+  .mover-pct.up { color: var(--up); }
+  .mover-pct.dn { color: var(--dn); }
+  .mover-strategy {
+    font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase;
+    margin-left: auto; flex-shrink: 0;
+  }
+  .mover-strategy.div { color: var(--div-color); }
+  .mover-strategy.grw { color: var(--grw-color); }
+  .mover-strategy.dig { color: var(--dig-color); }
+  .mover-catalyst {
+    font-size: 0.8rem; color: var(--muted); width: 100%; margin-top: 0.1rem;
+  }
+  .perf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin: 1rem 0; }
+  .perf-card { border-left: 3px solid var(--rule); padding: 0.6rem 0 0.6rem 0.8rem; }
+  .perf-card .label { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .perf-card .value { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
+  .perf-card .bench { font-size: 0.75rem; color: var(--muted); margin-top: 0.15rem; }
+  .perf-card.div-card { border-left-color: var(--div-color); }
+  .perf-card.grw-card { border-left-color: var(--grw-color); }
+  .ytd-strip {
+    background: #3D4A2E; color: #E8E8E4; padding: 0.6rem 0.8rem;
+    border-radius: 4px; margin-top: 0.8rem;
+  }
+  .ytd-strip .label {
+    font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 0.3rem;
+  }
+  .ytd-strip .data { font-size: 0.78rem; line-height: 1.5; }
+  .loading, .empty-content { text-align: center; padding: 4rem 0; color: var(--muted); font-size: 0.85rem; }
+  .pdf-fallback {
+    text-align: center; padding: 2rem; background: var(--cream);
+    border-radius: 6px; margin: 2rem 0;
+  }
+  .pdf-fallback p { color: var(--muted); font-size: 0.85rem; margin-bottom: 1rem; }
 
-  /* ── Container ── */
-  .container {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  /* ── Mobile ── */
+  .mobile-toggle {
+    display: none; position: fixed; top: 0.6rem; left: 0.6rem; z-index: 200;
+    width: 40px; height: 40px; background: var(--ink); border: none;
+    border-radius: 4px; cursor: pointer; color: var(--bg);
+    font-size: 1.2rem; align-items: center; justify-content: center;
   }
-
-  /* ── Archive List ── */
-  .archive-header {
-    text-align: center;
-    padding: 2rem 0 1rem;
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  .entry {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.2rem;
-    padding: 1.4rem 0;
-    border-bottom: 1px solid var(--rule);
-    cursor: pointer;
-    transition: background 0.15s;
-    text-decoration: none;
-    color: inherit;
-  }
-  .entry:hover {
-    background: var(--cream);
-    margin: 0 -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 4px;
-  }
-  .entry:first-child {
-    border-top: 1px solid var(--rule);
-  }
-
-  .entry-date {
-    flex-shrink: 0;
-    width: 52px;
-    text-align: center;
-  }
-  .entry-date .month {
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    line-height: 1;
-  }
-  .entry-date .day {
-    font-family: var(--serif);
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.1;
-  }
-  .entry-date .dow {
-    font-size: 0.55rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  .entry-dir {
-    flex-shrink: 0;
-    width: 8px;
-    margin-top: 0.55rem;
-  }
-  .entry-dir .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-  .dot-up { background: var(--accent-up); }
-  .dot-dn { background: var(--accent-dn); }
-
-  .entry-body {
-    flex: 1;
-    min-width: 0;
-  }
-  .entry-headline {
-    font-family: var(--serif);
-    font-size: 1.35rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0.3rem;
-  }
-  .entry-subhead {
-    font-size: 0.82rem;
-    color: var(--muted);
-    line-height: 1.45;
-  }
-
-  .entry-dl {
-    flex-shrink: 0;
-    align-self: center;
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    border: 1px solid var(--rule);
-    padding: 0.35rem 0.7rem;
-    border-radius: 3px;
-    transition: all 0.15s;
-    white-space: nowrap;
-  }
-  .entry:hover .entry-dl {
-    border-color: var(--ink);
-    color: var(--ink);
-  }
-
-  /* ── PDF Viewer ── */
-  .viewer {
-    display: none;
-    margin: 2rem 0;
-  }
-  .viewer.active {
-    display: block;
-  }
-  .viewer-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.8rem 0;
-    border-bottom: 1px solid var(--rule);
-    margin-bottom: 1rem;
-  }
-  .viewer-title {
-    font-family: var(--serif);
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  .viewer-close {
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    cursor: pointer;
-    border: 1px solid var(--rule);
-    padding: 0.3rem 0.6rem;
-    border-radius: 3px;
-    background: none;
-    font-family: var(--sans);
-    transition: all 0.15s;
-  }
-  .viewer-close:hover {
-    border-color: var(--ink);
-    color: var(--ink);
-  }
-  .viewer iframe {
-    width: 100%;
-    height: 80vh;
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-  }
-
-  /* ── Footer ── */
-  .footer {
-    text-align: center;
-    padding: 2.5rem 0;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--muted);
-    border-top: 1px solid var(--rule);
-    margin-top: 2rem;
-  }
-
-  /* ── Empty State ── */
-  .empty {
-    text-align: center;
-    padding: 4rem 0;
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-
-  @media (max-width: 640px) {
-    .masthead h1 { font-size: 1.8rem; }
-    .entry { gap: 0.8rem; }
-    .entry-headline { font-size: 1.1rem; }
-    .entry-dl { display: none; }
-    .entry-date .day { font-size: 1.6rem; }
+  @media (max-width: 768px) {
+    .mobile-toggle { display: flex; }
+    .sidebar { transform: translateX(-100%); transition: transform 0.25s; }
+    .sidebar.open { transform: translateX(0); }
+    .main { margin-left: 0; }
+    .topbar { padding: 0.8rem 1rem 0.8rem 3.2rem; }
+    .content-wrap { padding: 1.5rem 1rem 3rem; }
+    .perf-grid { grid-template-columns: 1fr; }
+    .headline-display { font-size: 2rem !important; }
   }
 </style>
 </head>
 <body>
 
-<div class="masthead">
-  <div class="masthead-eyebrow">Intentional Ownership · Investment Committee</div>
-  <h1>Market Commentary</h1>
-  <div class="masthead-sub">Post-Close Daily Analysis</div>
-  <div class="masthead-rule"></div>
+<!-- LOGIN -->
+<div class="login-overlay" id="loginOverlay">
+  <div class="login-box">
+    <div class="eyebrow">Intentional Ownership</div>
+    <h1>Market Commentary</h1>
+    <div class="sub">Investment Committee</div>
+    <div class="rule"></div>
+    <input type="password" class="login-input" id="passInput"
+      placeholder="Enter passcode" autocomplete="off"
+      onkeydown="if(event.key==='Enter') checkPass()">
+    <div class="login-hint" id="loginHint">Press enter to continue</div>
+  </div>
 </div>
 
-<div class="container">
-  <div class="archive-header">Archive · <span id="count">—</span> Commentaries</div>
+<!-- APP -->
+<button class="mobile-toggle" id="mobileToggle" onclick="toggleSidebar()">&#9776;</button>
 
-  <div class="viewer" id="viewer">
-    <div class="viewer-bar">
-      <span class="viewer-title" id="viewer-title"></span>
-      <button class="viewer-close" onclick="closeViewer()">✕ Close</button>
+<div class="app" id="app">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="eyebrow">IOWN &middot; Post-Close</div>
+      <h2>Commentary</h2>
     </div>
-    <iframe id="viewer-frame" src="about:blank"></iframe>
-  </div>
+    <div class="sidebar-list" id="sidebarList"></div>
+    <div class="sidebar-footer">Confidential &middot; Paradiem RIA</div>
+  </nav>
 
-  <div id="entries"></div>
-
-  <div class="footer">
-    Confidential · Intentional Ownership (IOWN) · RIA · Paradiem
+  <div class="main">
+    <div class="topbar" id="topbar">
+      <div class="topbar-left">
+        <div class="topbar-dir" id="topbarDot"></div>
+        <div class="topbar-info">
+          <div class="topbar-date" id="topbarDate"></div>
+          <div class="topbar-headline" id="topbarHeadline"></div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn btn-nav" id="btnPrev" onclick="navPrev()" title="Older">&laquo;</button>
+        <button class="btn btn-nav" id="btnNext" onclick="navNext()" title="Newer">&raquo;</button>
+        <a class="btn btn-primary" id="btnPdf" href="#" target="_blank">&darr; PDF</a>
+      </div>
+    </div>
+    <div class="content-wrap">
+      <div id="contentArea"><div class="loading">Loading commentary&hellip;</div></div>
+    </div>
   </div>
 </div>
 
 <script>
+const PASSCODE = 'ResearchSows';
 const MANIFEST = 'commentary-manifest.json';
-const PDF_DIR  = 'commentaries';
+const CONTENT_DIR = 'commentaries';
 
-const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const DAYS   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DAYNAMES = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const MON_S = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-function formatDate(iso) {
-  const d = new Date(iso + 'T12:00:00');
-  return {
-    month: MONTHS[d.getMonth()],
-    day: d.getDate(),
-    dow: DAYS[d.getDay()]
-  };
-}
+let entries = [];
+let currentIdx = 0;
 
-function pdfName(iso) {
-  return `${PDF_DIR}/IOWN_Market_Commentary_${iso}.pdf`;
-}
-
-function openViewer(iso, headline) {
-  const v = document.getElementById('viewer');
-  const f = document.getElementById('viewer-frame');
-  const t = document.getElementById('viewer-title');
-  t.textContent = headline + ' — ' + iso;
-  f.src = pdfName(iso);
-  v.classList.add('active');
-  v.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-function closeViewer() {
-  const v = document.getElementById('viewer');
-  const f = document.getElementById('viewer-frame');
-  v.classList.remove('active');
-  f.src = 'about:blank';
-}
-
-async function init() {
-  try {
-    const res = await fetch(MANIFEST);
-    const data = await res.json();
-    const sorted = data.sort((a, b) => b.date.localeCompare(a.date));
-
-    document.getElementById('count').textContent = sorted.length;
-    const el = document.getElementById('entries');
-
-    if (!sorted.length) {
-      el.innerHTML = '<div class="empty">No commentaries yet.</div>';
-      return;
-    }
-
-    el.innerHTML = sorted.map(e => {
-      const d = formatDate(e.date);
-      const dirClass = e.direction === 'up' ? 'dot-up' : 'dot-dn';
-      return `
-        <a class="entry" onclick="openViewer('${e.date}', '${e.headline.replace(/'/g, "\\'")}'); return false;" href="${pdfName(e.date)}">
-          <div class="entry-date">
-            <div class="month">${d.month}</div>
-            <div class="day">${d.day}</div>
-            <div class="dow">${d.dow}</div>
-          </div>
-          <div class="entry-dir"><div class="dot ${dirClass}"></div></div>
-          <div class="entry-body">
-            <div class="entry-headline">${e.headline}</div>
-            <div class="entry-subhead">${e.subhead}</div>
-          </div>
-          <div class="entry-dl">↓ PDF</div>
-        </a>`;
-    }).join('');
-  } catch (err) {
-    document.getElementById('entries').innerHTML =
-      '<div class="empty">Unable to load commentaries.</div>';
-    console.error(err);
+function checkPass() {
+  const input = document.getElementById('passInput');
+  const hint = document.getElementById('loginHint');
+  if (input.value === PASSCODE) {
+    sessionStorage.setItem('iown_auth', '1');
+    document.getElementById('loginOverlay').classList.add('hidden');
+    document.getElementById('app').classList.add('active');
+    setTimeout(() => document.getElementById('loginOverlay').style.display = 'none', 500);
+    loadApp();
+  } else {
+    input.classList.add('error');
+    hint.textContent = 'Incorrect passcode';
+    hint.classList.add('error');
+    setTimeout(() => input.classList.remove('error'), 400);
+    input.value = '';
   }
 }
 
-init();
+function checkAuth() {
+  if (sessionStorage.getItem('iown_auth') === '1') {
+    document.getElementById('loginOverlay').style.display = 'none';
+    document.getElementById('app').classList.add('active');
+    loadApp();
+  } else {
+    document.getElementById('passInput').focus();
+  }
+}
+
+async function loadApp() {
+  try {
+    const res = await fetch(MANIFEST);
+    entries = (await res.json()).sort((a, b) => b.date.localeCompare(a.date));
+    buildSidebar();
+    if (entries.length) loadEntry(0);
+    else document.getElementById('contentArea').innerHTML = '<div class="empty-content">No commentaries available.</div>';
+  } catch (e) {
+    document.getElementById('contentArea').innerHTML = '<div class="empty-content">Unable to load manifest.</div>';
+  }
+}
+
+function buildSidebar() {
+  document.getElementById('sidebarList').innerHTML = entries.map((e, i) => {
+    const d = new Date(e.date + 'T12:00:00');
+    return '<div class="sb-entry' + (i===0?' active':'') + '" onclick="loadEntry(' + i + ')">' +
+      '<div class="sb-dot ' + (e.direction==='up'?'up':'dn') + '"></div>' +
+      '<div class="sb-text">' +
+        '<div class="sb-date">' + MON_S[d.getMonth()] + ' ' + d.getDate() + '</div>' +
+        '<div class="sb-headline">' + e.headline + '</div>' +
+      '</div></div>';
+  }).join('');
+}
+
+async function loadEntry(idx) {
+  currentIdx = idx;
+  const e = entries[idx];
+  const d = new Date(e.date + 'T12:00:00');
+
+  document.querySelectorAll('.sb-entry').forEach((el, i) => el.classList.toggle('active', i === idx));
+
+  var fullDate = DAYNAMES[d.getDay()] + ', ' + MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+  document.getElementById('topbarDate').textContent = fullDate;
+  document.getElementById('topbarHeadline').textContent = e.headline;
+  document.getElementById('topbarDot').style.background = e.direction === 'up' ? 'var(--up)' : 'var(--dn)';
+
+  var pdfUrl = CONTENT_DIR + '/IOWN_Market_Commentary_' + e.date + '.pdf';
+  document.getElementById('btnPdf').href = pdfUrl;
+  document.getElementById('btnPrev').disabled = idx >= entries.length - 1;
+  document.getElementById('btnNext').disabled = idx <= 0;
+
+  var area = document.getElementById('contentArea');
+  area.innerHTML = '<div class="loading">Loading&hellip;</div>';
+
+  // Try loading HTML content file
+  if (e.content) {
+    try {
+      var htmlRes = await fetch(CONTENT_DIR + '/' + e.content);
+      if (htmlRes.ok) {
+        area.innerHTML = '<div class="commentary-html">' + await htmlRes.text() + '</div>';
+        closeSidebar();
+        window.scrollTo(0, 0);
+        return;
+      }
+    } catch (err) {}
+  }
+
+  // Fallback: show headline + subhead + PDF download
+  area.innerHTML = '<div class="commentary-html">' +
+    '<div class="headline-display ' + (e.direction==='up'?'up':'dn') + '">' + e.headline + '</div>' +
+    '<div class="subhead-display">' + e.subhead + '</div>' +
+    '<div class="pdf-fallback">' +
+      '<p>HTML version coming soon for this date.</p>' +
+      '<a class="btn btn-primary" href="' + pdfUrl + '" target="_blank" style="font-size:0.8rem;padding:0.6rem 1.2rem;">&darr; Download PDF &mdash; ' + e.date + '</a>' +
+    '</div></div>';
+  closeSidebar();
+  window.scrollTo(0, 0);
+}
+
+function navPrev() { if (currentIdx < entries.length - 1) loadEntry(currentIdx + 1); }
+function navNext() { if (currentIdx > 0) loadEntry(currentIdx - 1); }
+function toggleSidebar() { document.getElementById('sidebar').classList.toggle('open'); }
+function closeSidebar() { document.getElementById('sidebar').classList.remove('open'); }
+
+document.addEventListener('keydown', function(e) {
+  if (document.getElementById('loginOverlay').style.display !== 'none') return;
+  if (e.key === 'ArrowLeft') navPrev();
+  if (e.key === 'ArrowRight') navNext();
+});
+
+checkAuth();
 </script>
 </body>
 </html>
