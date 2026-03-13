@@ -76,7 +76,6 @@ async function main() {
     { sym: '%5EIXIC', name: 'Nasdaq' },
     { sym: '%5ERUT', name: 'Russell 2000' },
     { sym: '%5EVIX', name: 'VIX' },
-    { sym: 'CLUSD', name: 'WTI Crude', pre: '$' },
     { sym: 'GCUSD', name: 'Gold', pre: '$' },
     { sym: 'BTCUSD', name: 'Bitcoin', pre: '$' },
   ];
@@ -100,9 +99,15 @@ async function main() {
     }
   }
 
-  // Sectors
+  // Sectors — try stable API first, fall back to v3
   try {
-    const sec = await fetchJSON(`${FMP_BASE}/sector-performance?apikey=${FMP_KEY}`);
+    let sec;
+    try {
+      sec = await fetchJSON(`${FMP_BASE}/sector-performance?apikey=${FMP_KEY}`);
+    } catch (e) {
+      // Fallback to v3 API
+      sec = await fetchJSON(`https://financialmodelingprep.com/api/v3/sector-performance?apikey=${FMP_KEY}`);
+    }
     if (Array.isArray(sec) && sec.length) {
       lines.push('', '## SECTOR PERFORMANCE');
       const sorted = sec.sort((a, b) => {
@@ -123,28 +128,19 @@ async function main() {
   lines.push('');
 
   // ── Finnhub: Holdings ────────────────────────────────
-  // Canary check: verify Finnhub is returning today's data
+  // Canary check: verify Finnhub is returning the current trading day's data
   const canary = await fetchJSON(`${FH_BASE}/quote?symbol=AAPL&token=${FH_KEY}`);
   const canaryTime = new Date(canary.t * 1000);
-  const today = new Date();
-  const todayStr = today.toISOString().split('T')[0];
-  const canaryStr = canaryTime.toISOString().split('T')[0];
-  // After midnight UTC (evening US time), Finnhub data is from the previous UTC date
-  // so compare against yesterday's date if we're in the overnight window
-  let expectedDate = todayStr;
-  if (today.getUTCHours() < 6) {
-    const yesterday = new Date(today.getTime() - 86400000);
-    expectedDate = yesterday.toISOString().split('T')[0];
+  const canaryDateET = canaryTime.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+  const todayET = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+  const dayOfWeekET = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })).getDay();
+  // On weekdays, canary should match today's ET date
+  // On weekends (Sat=6, Sun=0), Friday data is fine
+  if (canaryDateET !== todayET && dayOfWeekET >= 1 && dayOfWeekET <= 5) {
+    console.error(`STALE DATA: Finnhub returning ${canaryDateET} but trading day is ${todayET}. Aborting.`);
+    process.exit(1);
   }
-  if (canaryStr !== todayStr && canaryStr !== expectedDate) {
-    // Allow Friday data on weekends, but block stale weekday data
-    const dayOfWeek = today.getUTCDay(); // 0=Sun, 6=Sat
-    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
-      console.error(`STALE DATA: Finnhub returning ${canaryStr} but expected ${expectedDate}. Aborting.`);
-      process.exit(1);
-    }
-  }
-  console.log(`Finnhub canary: AAPL=$${canary.c}, timestamp=${canaryStr}, expected=${expectedDate} ✓`);
+  console.log(`Finnhub canary: AAPL=$${canary.c}, data date=${canaryDateET}, trading day=${todayET} ✓`);
 
   const R = {};
 
@@ -185,7 +181,7 @@ async function main() {
 
   // ── FMP: Economic Calendar (today's releases) ──────
   try {
-    const todayISO = new Date().toISOString().split('T')[0];
+    const todayISO = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
     const econ = await fetchJSON(`${FMP_BASE}/economic-calendar?from=${todayISO}&to=${todayISO}&apikey=${FMP_KEY}`);
     if (Array.isArray(econ) && econ.length) {
       lines.push('## ECONOMIC CALENDAR (TODAY)');
@@ -228,7 +224,7 @@ async function main() {
 
   // ── Finnhub: Holdings News (company-specific) ─────
   try {
-    const todayISO = new Date().toISOString().split('T')[0];
+    const todayISO = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
     const holdingsNews = [];
     // Fetch news for each holding (rate-limited)
     for (let i = 0; i < ALL.length; i++) {
@@ -276,7 +272,7 @@ async function main() {
   lines.push(`## FETCH INFO`);
   lines.push(`Fetched: ${fetchTime} CT`);
   lines.push(`Holdings: ${Object.keys(R).length}/${ALL.length}`);
-  lines.push(`Canary: AAPL $${canary.c} (${canaryStr})`);
+  lines.push(`Canary: AAPL $${canary.c} (${canaryDateET})`);
 
   const output = lines.join('\n');
   fs.writeFileSync('latest.txt', output);
