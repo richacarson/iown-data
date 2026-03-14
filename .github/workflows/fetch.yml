@@ -1,10 +1,9 @@
 name: IOWN Market Data Fetch
 
 on:
-  schedule:
-    # 3:20 PM CDT = 20:20 UTC (during daylight saving time, Mar-Nov)
-    # Change to '20 21 * * 1-5' after DST ends in November
-    - cron: '20 20 * * 1-5'
+  push:
+    paths:
+      - 'trigger.txt'
   workflow_dispatch: # allows manual trigger from GitHub UI
 
 jobs:
