@@ -16,21 +16,10 @@ if (!FH_KEY || !FMP_KEY) {
   process.exit(1);
 }
 
-// Guard: Block fetch if US market hasn't closed yet
-// Market closes 4:00 PM ET = 20:00 UTC (EDT) or 21:00 UTC (EST)
-// Allow: 20:10 UTC through 05:59 UTC next day (covers post-close through overnight)
-// Block: 06:00 UTC through 20:09 UTC (market hours and pre-market)
+// Manual trigger — no market-hours guard
+// Canary check (AAPL date) below ensures data freshness
 const now = new Date();
-const utcHour = now.getUTCHours();
-const utcMin = now.getUTCMinutes();
-const utcTime = utcHour * 60 + utcMin;
-const afterClose = utcTime >= 20 * 60 + 10; // 20:10 UTC or later
-const overnightUTC = utcTime < 6 * 60;       // Before 06:00 UTC (= before 1 AM CT)
-if (!afterClose && !overnightUTC) {
-  console.error(`BLOCKED: Market may still be open (UTC ${utcHour}:${String(utcMin).padStart(2,'0')}). Run after 4:10 PM ET / 3:10 PM CT.`);
-  process.exit(1);
-}
-console.log(`Market closed. Fetching at UTC ${utcHour}:${String(utcMin).padStart(2,'0')}`);
+console.log(`Fetching at UTC ${now.getUTCHours()}:${String(now.getUTCMinutes()).padStart(2,'0')}`);
 
 const DIV = ['ABT','A','ADI','ATO','ADP','BKH','CAT','CHD','CL','FAST','GD','GPC','LRCX','LMT','MATX','NEE','ORI','PCAR','QCOM','DGX','SSNC','STLD','SYK','TEL','VLO'];
 const GRW = ['AMD','AEM','ATAT','CVX','CWAN','CNX','COIN','EIX','FINV','FTNT','GFI','SUPV','HRMY','HUT','KEYS','MARA','NVDA','NXPI','OKE','PDD','HOOD','SYF','TSM','TOL'];
