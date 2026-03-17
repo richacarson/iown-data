@@ -1,66 +1,73 @@
 [
-  {
-    "date": "2026-03-16",
-    "headline": "Hormuz Hopes",
-    "subhead": "S&P +1.02% to 6,700. Tanker crossings ease oil fears. Nvidia GTC lifts semis. VIX drops 13.5%. Bitcoin tops $74K.",
-    "direction": "up",
-    "content": "2026-03-16.html"
-  },
-  {
-    "date": "2026-03-03",
-    "headline": "Markets at War",
-    "subhead": "Day 4 of US-Israel-Iran conflict. S&P whipsaws. Oil surges. VIX spikes.",
-    "direction": "down"
-  },
-  {
-    "date": "2026-03-04",
-    "headline": "The Market Exhaled",
-    "subhead": "S&P +0.77%. Crypto rallies. ISM services surge. Oil flattens. VIX falls 10%.",
-    "direction": "up"
-  },
-  {
-    "date": "2026-03-05",
-    "headline": "War Premium Returns",
-    "subhead": "S&P \u22120.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
-    "direction": "down"
-  },
-  {
-    "date": "2026-03-06",
-    "headline": "Payrolls Collapse",
-    "subhead": "NFP \u221292,000. Oil breaks $90. VIX +25% to 29.66. S&P \u22121.36% for its worst week since October.",
-    "direction": "down"
-  },
-  {
-    "date": "2026-03-09",
-    "headline": "Reversal of Fortune",
-    "subhead": "Oil touches $119 overnight, then retreats. Trump signals war nearing completion. S&P erases 1.5% loss to close +0.81%.",
-    "direction": "up"
-  },
-  {
-    "date": "2026-03-10",
-    "headline": "Holding Pattern",
-    "subhead": "S&P \u22120.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
-    "direction": "down"
-  },
-  {
-    "date": "2026-03-11",
-    "headline": "Calm Before the Storm",
-    "subhead": "CPI in line at 2.4% \u2014 but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK \u22123.0%.",
-    "direction": "down",
-    "content": "2026-03-11.html"
-  },
-  {
-    "date": "2026-03-12",
-    "headline": "Credit Cracks Widen",
-    "subhead": "Private credit stress spreads. Oil resumes climb. S&P \u22121.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
-    "direction": "down",
-    "content": "2026-03-12.html"
-  },
-  {
-    "date": "2026-03-13",
-    "headline": "Three Weeks Red",
-    "subhead": "S&P \u22120.61% to new 2026 low. Third straight losing week. Brent above $103. Q4 GDP revised down. GTC Monday. FOMC Wednesday.",
-    "direction": "down",
-    "content": "2026-03-13.html"
-  }
+    {
+        "date": "2026-03-16",
+        "headline": "Hormuz Hopes",
+        "subhead": "S&P +1.02% to 6,700. Tanker crossings ease oil fears. Nvidia GTC lifts semis. VIX drops 13.5%. Bitcoin tops $74K.",
+        "direction": "up",
+        "content": "2026-03-16.html"
+    },
+    {
+        "date": "2026-03-03",
+        "headline": "Markets at War",
+        "subhead": "Day 4 of US-Israel-Iran conflict. S&P whipsaws. Oil surges. VIX spikes.",
+        "direction": "down"
+    },
+    {
+        "date": "2026-03-04",
+        "headline": "The Market Exhaled",
+        "subhead": "S&P +0.77%. Crypto rallies. ISM services surge. Oil flattens. VIX falls 10%.",
+        "direction": "up"
+    },
+    {
+        "date": "2026-03-05",
+        "headline": "War Premium Returns",
+        "subhead": "S&P \u22120.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
+        "direction": "down"
+    },
+    {
+        "date": "2026-03-06",
+        "headline": "Payrolls Collapse",
+        "subhead": "NFP \u221292,000. Oil breaks $90. VIX +25% to 29.66. S&P \u22121.36% for its worst week since October.",
+        "direction": "down"
+    },
+    {
+        "date": "2026-03-09",
+        "headline": "Reversal of Fortune",
+        "subhead": "Oil touches $119 overnight, then retreats. Trump signals war nearing completion. S&P erases 1.5% loss to close +0.81%.",
+        "direction": "up"
+    },
+    {
+        "date": "2026-03-10",
+        "headline": "Holding Pattern",
+        "subhead": "S&P \u22120.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
+        "direction": "down"
+    },
+    {
+        "date": "2026-03-11",
+        "headline": "Calm Before the Storm",
+        "subhead": "CPI in line at 2.4% \u2014 but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK \u22123.0%.",
+        "direction": "down",
+        "content": "2026-03-11.html"
+    },
+    {
+        "date": "2026-03-12",
+        "headline": "Credit Cracks Widen",
+        "subhead": "Private credit stress spreads. Oil resumes climb. S&P \u22121.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
+        "direction": "down",
+        "content": "2026-03-12.html"
+    },
+    {
+        "date": "2026-03-13",
+        "headline": "Three Weeks Red",
+        "subhead": "S&P \u22120.61% to new 2026 low. Third straight losing week. Brent above $103. Q4 GDP revised down. GTC Monday. FOMC Wednesday.",
+        "direction": "down",
+        "content": "2026-03-13.html"
+    },
+    {
+        "date": "2026-03-17",
+        "headline": "Quiet Bounce",
+        "subhead": "S&P +0.27% as equities stabilize. Oil disruptions persist\u2014Brent above $100, diesel crosses $5. VIX eases to 22.38.",
+        "direction": "up",
+        "content": "2026-03-17.html"
+    }
 ]
