@@ -372,7 +372,7 @@ function checkAuth() {
 
 async function loadApp() {
   try {
-    const res = await fetch(MANIFEST);
+    const res = await fetch(MANIFEST + '?v=' + Date.now());
     entries = (await res.json()).sort((a, b) => b.date.localeCompare(a.date));
     buildSidebar();
     if (entries.length) loadEntry(0);
@@ -417,7 +417,7 @@ async function loadEntry(idx) {
   // Try loading HTML content file
   if (e.content) {
     try {
-      var htmlRes = await fetch(CONTENT_DIR + '/' + e.content);
+      var htmlRes = await fetch(CONTENT_DIR + '/' + e.content + '?v=' + Date.now());
       if (htmlRes.ok) {
         area.innerHTML = '<div class="commentary-html">' + await htmlRes.text() + '</div>';
         closeSidebar();
