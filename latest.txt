@@ -1,101 +1,112 @@
-IOWN MARKET DATA — Tuesday, April 7, 2026
+IOWN MARKET DATA — Wednesday, April 8, 2026
 
 ## BROAD MARKET
-S&P 500: 6,617.92 | +0.09%
-Dow: 46,584.46 | -0.18%
-Nasdaq: 22,018.26 | +0.10%
-Russell 2000: 2,544.94 | +0.17%
-VIX: 25.78 | +6.66%
-Gold: $4,733.30 | +1.04%
-Bitcoin: $69,344 | +0.71%
+S&P 500: 6,783.48 | +2.52%
+Dow: 47,909.91 | +2.85%
+Nasdaq: 22,635.00 | +2.80%
+Russell 2000: 2,620.46 | +2.97%
+VIX: 21.04 | -18.39%
+Gold: $4,748.30 | +1.36%
+Bitcoin: $71,370 | -0.75%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-ABT | $101.83 | -0.47 | -0.46% | $102.86 | $101.45
-A | $113.88 | -0.96 | -0.84% | $114.55 | $112.90
-ADI | $327.41 | +0.05 | +0.02% | $327.51 | $321.00
-ATO | $188.70 | +0.89 | +0.47% | $190.05 | $187.57
-ADP | $203.61 | -0.73 | -0.36% | $205.44 | $202.83
-BKH | $72.99 | +1.73 | +2.43% | $74.20 | $71.10
-CAT | $724.44 | +3.20 | +0.44% | $725.73 | $708.93
-CHD | N/A | N/A | N/A | N/A | N/A
-CL | N/A | N/A | N/A | N/A | N/A
-FAST | N/A | N/A | N/A | N/A | N/A
-GD | N/A | N/A | N/A | N/A | N/A
-GPC | N/A | N/A | N/A | N/A | N/A
-LRCX | N/A | N/A | N/A | N/A | N/A
-LMT | N/A | N/A | N/A | N/A | N/A
-MATX | N/A | N/A | N/A | N/A | N/A
-NEE | N/A | N/A | N/A | N/A | N/A
-ORI | N/A | N/A | N/A | N/A | N/A
-PCAR | N/A | N/A | N/A | N/A | N/A
-QCOM | N/A | N/A | N/A | N/A | N/A
-DGX | N/A | N/A | N/A | N/A | N/A
-SSNC | N/A | N/A | N/A | N/A | N/A
-STLD | N/A | N/A | N/A | N/A | N/A
-SYK | N/A | N/A | N/A | N/A | N/A
-TEL | N/A | N/A | N/A | N/A | N/A
-VLO | N/A | N/A | N/A | N/A | N/A
+ABT | $103.56 | +1.73 | +1.70% | $103.83 | $101.31
+A | $116.92 | +3.04 | +2.67% | $118.25 | $115.98
+ADI | $346.21 | +18.80 | +5.74% | $349.00 | $341.98
+ATO | $189.66 | +0.96 | +0.51% | $190.03 | $186.02
+ADP | $200.78 | -2.83 | -1.39% | $206.54 | $199.38
+BKH | $73.82 | +0.83 | +1.14% | $73.99 | $72.50
+CAT | $771.58 | +47.14 | +6.51% | $774.40 | $753.10
+CHD | $94.20 | +1.65 | +1.78% | $94.31 | $92.47
+CL | $85.55 | +2.42 | +2.91% | $85.61 | $83.70
+FAST | $48.18 | +2.54 | +5.57% | $48.21 | $46.41
+GD | $350.02 | +1.59 | +0.46% | $350.34 | $343.00
+GPC | $107.41 | +3.57 | +3.44% | $107.72 | $105.84
+LRCX | $246.49 | +22.14 | +9.87% | $249.19 | $241.49
+LMT | $628.50 | +0.80 | +0.13% | $630.67 | $605.50
+MATX | $172.49 | +4.38 | +2.61% | $176.93 | $170.06
+NEE | $94.17 | +0.50 | +0.53% | $94.33 | $92.02
+ORI | $41.34 | +0.85 | +2.10% | $41.49 | $40.45
+PCAR | $124.19 | +5.99 | +5.07% | $124.43 | $120.30
+QCOM | $127.51 | +3.44 | +2.77% | $128.85 | $125.62
+DGX | $198.81 | +2.00 | +1.02% | $198.89 | $194.02
+SSNC | $70.35 | +1.48 | +2.15% | $71.08 | $69.48
+STLD | $187.56 | +10.37 | +5.85% | $187.84 | $183.65
+SYK | $340.01 | +7.94 | +2.39% | $341.29 | $336.29
+TEL | $223.03 | +12.05 | +5.71% | $225.18 | $220.74
+VLO | $239.64 | -11.85 | -4.71% | $241.65 | $231.89
 
 ## GROWTH PORTFOLIO
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-AMD | N/A | N/A | N/A | N/A | N/A
-AEM | N/A | N/A | N/A | N/A | N/A
-ATAT | N/A | N/A | N/A | N/A | N/A
-CVX | N/A | N/A | N/A | N/A | N/A
-CWAN | N/A | N/A | N/A | N/A | N/A
-CNX | N/A | N/A | N/A | N/A | N/A
-COIN | N/A | N/A | N/A | N/A | N/A
-EIX | N/A | N/A | N/A | N/A | N/A
-FINV | N/A | N/A | N/A | N/A | N/A
-FTNT | N/A | N/A | N/A | N/A | N/A
-GFI | N/A | N/A | N/A | N/A | N/A
-SUPV | N/A | N/A | N/A | N/A | N/A
-HRMY | N/A | N/A | N/A | N/A | N/A
-HUT | N/A | N/A | N/A | N/A | N/A
-KEYS | N/A | N/A | N/A | N/A | N/A
-MARA | N/A | N/A | N/A | N/A | N/A
-NVDA | N/A | N/A | N/A | N/A | N/A
-NXPI | N/A | N/A | N/A | N/A | N/A
-OKE | N/A | N/A | N/A | N/A | N/A
-PDD | N/A | N/A | N/A | N/A | N/A
-HOOD | N/A | N/A | N/A | N/A | N/A
-SYF | N/A | N/A | N/A | N/A | N/A
-TSM | N/A | N/A | N/A | N/A | N/A
-TOL | N/A | N/A | N/A | N/A | N/A
+AMD | $231.82 | +10.29 | +4.64% | $234.00 | $227.09
+AEM | $215.59 | +5.97 | +2.85% | $221.99 | $213.23
+ATAT | $37.54 | +2.00 | +5.63% | $38.39 | $37.06
+CVX | $192.89 | -8.65 | -4.29% | $193.17 | $188.60
+CWAN | $24.02 | +0.10 | +0.42% | $24.08 | $24.00
+CNX | $38.58 | -1.16 | -2.92% | $39.24 | $37.50
+COIN | $175.09 | -0.09 | -0.05% | $189.56 | $172.96
+EIX | $74.35 | +1.74 | +2.40% | $74.39 | $72.45
+FINV | $5.17 | +0.22 | +4.44% | $5.23 | $5.05
+FTNT | $83.51 | -0.21 | -0.25% | $86.14 | $82.28
+GFI | $48.67 | +2.55 | +5.53% | $52.97 | $48.09
+SUPV | $9.85 | +0.68 | +7.42% | $10.00 | $9.53
+HRMY | $28.47 | +0.85 | +3.08% | $28.84 | $27.86
+HUT | $61.43 | +8.77 | +16.65% | $63.66 | $56.98
+KEYS | $318.33 | +17.72 | +5.89% | $321.51 | $311.69
+MARA | $9.50 | +0.54 | +6.03% | $9.77 | $9.18
+NVDA | $182.08 | +3.98 | +2.23% | $185.26 | $180.30
+NXPI | $204.27 | +9.15 | +4.69% | $208.67 | $201.48
+OKE | $86.77 | -3.86 | -4.26% | $86.97 | $84.10
+PDD | $103.75 | +4.21 | +4.23% | $104.80 | $102.51
+HOOD | $71.83 | +2.18 | +3.13% | $77.87 | $71.31
+SYF | $71.97 | +3.12 | +4.53% | $72.81 | $71.35
+TSM | $365.90 | +20.58 | +5.96% | $374.30 | $359.24
+TOL | $139.16 | +6.07 | +4.56% | $142.47 | $138.17
 
 ## DIGITAL ASSET ETFs
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-IBIT | N/A | N/A | N/A | N/A | N/A
-ETHA | N/A | N/A | N/A | N/A | N/A
+IBIT | $40.42 | +1.32 | +3.38% | $41.15 | $40.04
+ETHA | $16.72 | +0.77 | +4.83% | $17.12 | $16.50
 
 ## MARKET NEWS
-[03:10 PM] CNBC: Levi Strauss beats expectations on the top and bottom lines, raises guidance
-[02:31 PM] Reuters: 'A whole civilization will die tonight,' Trump says as Iran defies looming deadline - Reuters
-[02:21 PM] Reuters: Pope Leo calls Trump's threat against Iran 'truly unacceptable' - Reuters
-[02:08 PM] Reuters: Wall Street off session lows as Trump's Iran deadline looms - Reuters
-[02:03 PM] Reuters: French nationals leave Iran after three and a half years amid softer France tone on war - Reuters
-[02:03 PM] CNBC: The strategy P&G calls its 'lifeblood' and why it's key to the stock's turnaround
-[01:44 PM] Reuters: French Foreign Minister Barrot hopes Trump does not go ahead with threat against Iran - Reuters
-[01:36 PM] Reuters: Gold ticks up ahead of Trump's Iran deadline - Reuters
-[01:35 PM] CNBC: Conflicting reports on the foldable iPhone show the value of our Apple mantra
-[01:27 PM] Reuters: Iranian hackers' targeting of US critical infrastructure has escalated since start of war, US says - Reuters
+[03:24 PM] Reuters: Israeli strikes pummel Lebanon, killing 250 in deadliest day of war - Reuters
+[03:00 PM] Reuters: 'Talks were almost dead': Pakistan's last-ditch effort to secure Iran war truce - Reuters
+[02:50 PM] CNBC: Pirro's Powell probe faces a difficult road to appeal, former prosecutors say
+[02:43 PM] Reuters: Explainer: US-Iran ceasefire: what we know - Reuters
+[02:36 PM] Reuters: Vance to lead US delegation to Iran talks on Saturday - Reuters
+[02:25 PM] Reuters: The 'madman theory' of US-Iran negotiations: Ross Kerber - Reuters
+[02:02 PM] Reuters: US military says it's ready to resume Iran fighting if diplomacy fails - Reuters
+[01:39 PM] Reuters: Wall Street rallies on US-Iran ceasefire - Reuters
+[01:34 PM] Reuters: White House rebukes NATO over Iran before Trump meets alliance chief - Reuters
+[01:33 PM] CNBC: Meta unveils a new AI model that it hopes will justify its massive spending plans
 
 ## HOLDINGS NEWS
-ABT: Yahoo — Evercore ISI and BTIG Lower Abbott (ABT) Price Targets, Maintain Positive Ratings
-CAT: Yahoo — Is It Too Late To Consider Caterpillar (CAT) After Its 161% One Year Surge?
-ADI: Yahoo — Does ADI’s CEO Stock Sale Contrast With Analysts’ Brighter View of Its Earnings Power?
-ABT: Yahoo — Digital Health Monitoring Devices Market Report 2026-2030: Featuring Profiles of Philips Healthcare, Medtronic, GE Healt
-ADP: Yahoo — Upgraded Guidance And Dividend Hike Could Be A Game Changer For Automatic Data Processing (ADP)
-ADI: Yahoo — Assessing Analog Devices (ADI) Valuation As Analyst Optimism Builds Around Earnings Outlook
-CAT: Yahoo — Zacks Industry Outlook Highlights Caterpillar, Komatsu and Astec Industries
-ADP: SeekingAlpha — I Shared 42 Sell Ratings In 2019. Here Is How They Have Performed Long-Term.
-ATO: Yahoo — Atos Positioned as a Leader in the ISG Provider Lens™ for Intelligent Automation Services, Europe
+NVDA: Yahoo — 3 Top Agentic AI Stocks Investors Should Be Loading Up on Now
+NVDA: Yahoo — Sector Update: Tech Stocks Climb Late Afternoon
+NEE: Yahoo — Why A Modest Move To $24 For CRK Could Still Matter
+HOOD: Yahoo — Cathie Wood buys trending tech stocks ahead of U.S.-Iran ceasefire
+CVX: ChartMill — Exploring the top movers within the S&P500 index during today's session.
+COIN: Yahoo — Morgan Stanley Debuts New Bitcoin Investment Vehicle
+HOOD: ChartMill — Which S&P500 stocks are the most active on Wednesday?
+CVX: Yahoo — Equity Markets Jump Intraday, Oil Sinks Following US-Iran Ceasefire
+QCOM: Yahoo — ARM Stock Up 32% YTD: Should You Wait for a Better Entry Point?
+CAT: Yahoo — Can the Next Infrastructure Wave & Acquisitons Drive ASTE's Growth?
+CAT: Yahoo — ASTE Surges 77% in a Year: Buy, Hold or Sell the Stock?
+AMD: Yahoo — Why Direxion Daily Semiconductor Bull 3X ETF Jumped 18% Today
+EIX: Yahoo — Edison International Honors 30 Students With 2026 Edison Scholars Awards
+LRCX: Yahoo — BofA hikes 2026 chips forecast to $1.3 trillion, names Nvidia, Broadcom, Marvell, AMD as top drivers
+LRCX: Yahoo — US Equity Indexes Surge, Crude Oil Plummets as Iran Ceasefire Deal Eases Geopolitical Risk
+OKE: ChartMill — What's going on in today's session: S&P500 movers
+GD: SeekingAlpha — U.S. Defense Stock Underperformance: What The Market Is Telling Us
+LMT: Yahoo — Lockheed Martin Gains As $2.9 Billion AIM-260 Funding Proposed For 2027
+ADP: Yahoo — Winners And Losers Of Q4: ADP (NASDAQ:ADP) Vs The Rest Of The Data & Business Process Services Stocks
+GD: Yahoo — How Defense Tech Investors Are Using SHLD to Capture 21st Century Warfare Spending
 
 ## FETCH INFO
-Fetched: 4/7/2026, 3:35:19 PM CT
-Holdings: 7/51
-Canary: AAPL $253.5 (2026-04-07)
+Fetched: 4/8/2026, 3:54:08 PM CT
+Holdings: 51/51
+Canary: AAPL $258.9 (2026-04-08)
