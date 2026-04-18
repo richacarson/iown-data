@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-04-17",
+    "headline": "The Strait, Open",
+    "subhead": "S&P +1.19% to a fresh all-time high. Iran reopens the Strait of Hormuz. WTI down roughly 11%. Third consecutive up week.",
+    "direction": "up",
+    "content": "2026-04-17.html"
+  },
+  {
     "date": "2026-04-16",
     "headline": "Quiet New Highs",
     "subhead": "S&P +0.23% to 7,039, another record close. Nasdaq gains 12th straight day, longest streak since 2009. AMD +7.80%.",
@@ -9,7 +16,7 @@
   {
     "date": "2026-04-15",
     "headline": "Seven Thousand",
-    "subhead": "S&P 500 +0.79% to 7,022 — first record close since January 28. Nasdaq +1.59%, 11th straight gain. Morgan Stanley posts record quarter.",
+    "subhead": "S&P 500 +0.79% to 7,022 \u2014 first record close since January 28. Nasdaq +1.59%, 11th straight gain. Morgan Stanley posts record quarter.",
     "direction": "up",
     "content": "2026-04-15.html"
   },
@@ -23,7 +30,7 @@
   {
     "date": "2026-04-13",
     "headline": "Iran Calls. Market Answers.",
-    "subhead": "S&P +1.01% to 6,885. Trump says Iran wants a deal — blockade begins, market shrugs the open and closes near highs. Software led; FAST fell on in-line earnings.",
+    "subhead": "S&P +1.01% to 6,885. Trump says Iran wants a deal \u2014 blockade begins, market shrugs the open and closes near highs. Software led; FAST fell on in-line earnings.",
     "direction": "up",
     "content": "2026-04-13.html"
   },
@@ -51,7 +58,7 @@
   {
     "date": "2026-04-07",
     "headline": "Deadline Drift",
-    "subhead": "S&P +0.08% as Pakistan extension request trims 1.2% intraday loss. Trump’s 8 PM Iran deadline dominates. WTI near $113. Gold +1.0% to $4,732.",
+    "subhead": "S&P +0.08% as Pakistan extension request trims 1.2% intraday loss. Trump\u2019s 8 PM Iran deadline dominates. WTI near $113. Gold +1.0% to $4,732.",
     "direction": "up",
     "content": "2026-04-07.html"
   },
@@ -65,14 +72,14 @@
   {
     "date": "2026-04-02",
     "headline": "The Claw Back",
-    "subhead": "S&P erased a 1.5% gap-down to close +0.09%. WTI surged past $110. Iran–Oman Hormuz protocol lifted equities off lows. 100% pharma tariffs announced at the bell.",
+    "subhead": "S&P erased a 1.5% gap-down to close +0.09%. WTI surged past $110. Iran\u2013Oman Hormuz protocol lifted equities off lows. 100% pharma tariffs announced at the bell.",
     "direction": "up",
     "content": "2026-04-02.html"
   },
   {
     "date": "2026-04-01",
     "headline": "Hormuz Hope",
-    "subhead": "S&P +0.71% for second straight gain. Brent briefly below $100. ISM Manufacturing 52.7. Trump says Iran asked for ceasefire — Iran denies it.",
+    "subhead": "S&P +0.71% for second straight gain. Brent briefly below $100. ISM Manufacturing 52.7. Trump says Iran asked for ceasefire \u2014 Iran denies it.",
     "direction": "up",
     "content": "2026-04-01.html"
   },
@@ -93,14 +100,14 @@
   {
     "date": "2026-03-27",
     "headline": "Correction Confirmed",
-    "subhead": "S&P −1.57% to seven-month low. Fifth straight weekly decline. Dow and Nasdaq 100 enter correction. Brent settles at $112.57.",
+    "subhead": "S&P \u22121.57% to seven-month low. Fifth straight weekly decline. Dow and Nasdaq 100 enter correction. Brent settles at $112.57.",
     "direction": "down",
     "content": "2026-03-27.html"
   },
   {
     "date": "2026-03-26",
     "headline": "No Deal",
-    "subhead": "S&P −1.76% to lowest since September. Brent $108. Nasdaq enters correction. Trump walks back ceasefire signal.",
+    "subhead": "S&P \u22121.76% to lowest since September. Brent $108. Nasdaq enters correction. Trump walks back ceasefire signal.",
     "direction": "down",
     "content": "2026-03-26.html"
   },
@@ -161,13 +168,13 @@
   {
     "date": "2026-03-05",
     "headline": "War Premium Returns",
-    "subhead": "S&P −0.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
+    "subhead": "S&P \u22120.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
     "direction": "down"
   },
   {
     "date": "2026-03-06",
     "headline": "Payrolls Collapse",
-    "subhead": "NFP −92,000. Oil breaks $90. VIX +25% to 29.66. S&P −1.36% for its worst week since October.",
+    "subhead": "NFP \u221292,000. Oil breaks $90. VIX +25% to 29.66. S&P \u22121.36% for its worst week since October.",
     "direction": "down"
   },
   {
@@ -179,41 +186,41 @@
   {
     "date": "2026-03-10",
     "headline": "Holding Pattern",
-    "subhead": "S&P −0.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
+    "subhead": "S&P \u22120.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
     "direction": "down"
   },
   {
     "date": "2026-03-11",
     "headline": "Calm Before the Storm",
-    "subhead": "CPI in line at 2.4% — but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK −3.0%.",
+    "subhead": "CPI in line at 2.4% \u2014 but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK \u22123.0%.",
     "direction": "down",
     "content": "2026-03-11.html"
   },
   {
     "date": "2026-03-12",
     "headline": "Credit Cracks Widen",
-    "subhead": "Private credit stress spreads. Oil resumes climb. S&P −1.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
+    "subhead": "Private credit stress spreads. Oil resumes climb. S&P \u22121.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
     "direction": "down",
     "content": "2026-03-12.html"
   },
   {
     "date": "2026-03-13",
     "headline": "Three Weeks Red",
-    "subhead": "S&P −0.61% to new 2026 low. Third straight losing week. Brent above $103. Q4 GDP revised down. GTC Monday. FOMC Wednesday.",
+    "subhead": "S&P \u22120.61% to new 2026 low. Third straight losing week. Brent above $103. Q4 GDP revised down. GTC Monday. FOMC Wednesday.",
     "direction": "down",
     "content": "2026-03-13.html"
   },
   {
     "date": "2026-03-17",
     "headline": "Quiet Bounce",
-    "subhead": "S&P +0.27% as equities stabilize. Oil disruptions persist—Brent above $100, diesel crosses $5. VIX eases to 22.38.",
+    "subhead": "S&P +0.27% as equities stabilize. Oil disruptions persist\u2014Brent above $100, diesel crosses $5. VIX eases to 22.38.",
     "direction": "up",
     "content": "2026-03-17.html"
   },
   {
     "date": "2026-03-23",
     "headline": "The Reversal",
-    "subhead": "S&P +1.16% as Trump suspends Iran strikes for five days. Brent whipsaws from $114 to $100. Gold −3.7% in worst week since 1983.",
+    "subhead": "S&P +1.16% as Trump suspends Iran strikes for five days. Brent whipsaws from $114 to $100. Gold \u22123.7% in worst week since 1983.",
     "direction": "up",
     "content": "2026-03-23.html"
   }
