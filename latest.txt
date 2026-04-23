@@ -3,17 +3,16 @@ IOWN MARKET DATA — Thursday, April 23, 2026
 ## BROAD MARKET
 S&P 500: 7,108.04 | -0.42%
 Dow: 49,310.31 | -0.36%
-Nasdaq: 24,437.08 | -0.89%
+Nasdaq: 24,438.50 | -0.89%
 Russell 2000: 2,775.10 | -0.37%
-VIX: 18.98 | +0.32%
-Gold: $4,716.20 | -0.77%
-Bitcoin: $77,888 | -0.39%
+VIX: 19.31 | +2.06%
+Gold: $4,713.50 | -0.83%
+Bitcoin: $78,176 | -0.02%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
 ABT | $92.48 | +0.78 | +0.85% | $92.49 | $90.72
-A | $114.42 | -6.05 | -5.02% | $116.79 | $111.98
 ADI | $403.88 | +22.46 | +5.89% | $408.37 | $395.80
 ATO | $187.81 | +5.32 | +2.92% | $188.54 | $182.47
 ADP | $198.53 | -3.16 | -1.57% | $200.90 | $195.11
@@ -21,13 +20,14 @@ BKH | $74.67 | +2.14 | +2.95% | $74.80 | $72.68
 CAT | $835.24 | +26.37 | +3.26% | $845.27 | $815.46
 CHD | $94.58 | +1.68 | +1.81% | $94.71 | $92.90
 CL | $83.72 | +1.37 | +1.66% | $84.13 | $82.41
+CTRA | $33.65 | +0.72 | +2.19% | $33.91 | $33.13
 FAST | $45.45 | +0.64 | +1.43% | $45.70 | $44.97
 GD | $318.71 | -2.03 | -0.63% | $322.94 | $315.54
 GPC | $109.79 | -1.95 | -1.75% | $112.33 | $109.17
-LRCX | $258.74 | -6.81 | -2.56% | $272.82 | $253.28
+LRCX | $258.56 | -6.99 | -2.63% | $272.82 | $253.28
 LMT | $529.79 | -25.64 | -4.62% | $538.81 | $522.26
-MATX | $170.36 | -0.42 | -0.25% | $173.93 | $170.06
 NEE | $96.25 | +6.25 | +6.94% | $96.70 | $92.32
+NTR | $72.19 | +0.64 | +0.89% | $72.37 | $71.36
 ORI | $39.90 | -2.17 | -5.16% | $42.13 | $39.72
 PCAR | $126.97 | +1.70 | +1.36% | $128.71 | $126.11
 QCOM | $133.95 | -2.12 | -1.56% | $136.99 | $132.05
@@ -48,23 +48,24 @@ CVX | $187.60 | +1.28 | +0.69% | $188.42 | $185.50
 CWAN | $24.18 | +0.01 | +0.04% | $24.20 | $24.15
 CNX | $38.52 | -0.03 | -0.08% | $38.69 | $38.00
 COIN | $197.93 | -8.31 | -4.03% | $205.78 | $193.91
+CRDO | $185.54 | -3.95 | -2.08% | $193.23 | $179.11
 EIX | $70.34 | +0.96 | +1.38% | $71.00 | $69.95
-FINV | $4.72 | -0.02 | -0.42% | $4.80 | $4.70
+FCX | $61.48 | -8.88 | -12.62% | $65.20 | $61.00
 FTNT | $82.76 | -4.33 | -4.97% | $85.35 | $81.81
-GFI | $43.96 | -1.53 | -3.36% | $44.82 | $43.14
 SUPV | $8.96 | -0.58 | -6.08% | $9.57 | $8.92
 HRMY | $32.08 | +0.11 | +0.34% | $32.57 | $31.66
 HUT | $78.77 | -1.97 | -2.44% | $83.18 | $77.77
 KEYS | $346.53 | +7.56 | +2.23% | $348.43 | $338.91
 MARA | $11.80 | -0.04 | -0.34% | $12.22 | $11.57
-NVDA | $199.67 | -2.83 | -1.40% | $203.83 | $197.22
+MRVL | $165.56 | +8.24 | +5.24% | $167.86 | $157.77
+NVDA | $199.64 | -2.86 | -1.41% | $203.83 | $197.22
 NXPI | $241.16 | +15.41 | +6.83% | $244.72 | $231.00
 OKE | $87.21 | +1.15 | +1.34% | $87.33 | $85.83
-PDD | $97.77 | -2.28 | -2.28% | $99.25 | $96.67
 HOOD | $83.54 | -4.89 | -5.53% | $87.61 | $81.75
 SYF | $76.62 | -2.07 | -2.63% | $78.88 | $75.65
 TSM | $382.66 | -4.78 | -1.23% | $388.76 | $375.81
 TOL | $149.25 | +1.23 | +0.83% | $149.96 | $146.38
+VST | $156.85 | +1.06 | +0.68% | $158.87 | $154.50
 
 ## DIGITAL ASSET ETFs
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -73,40 +74,40 @@ IBIT | $44.05 | -0.70 | -1.56% | $44.61 | $43.62
 ETHA | $17.49 | -0.64 | -3.53% | $17.70 | $17.24
 
 ## MARKET NEWS
+[04:29 PM] CNBC: Trump says Israel-Lebanon ceasefire extended by three weeks
+[04:28 PM] Reuters: Stocks close lower on fading hopes for quick Iran deal, mixed quarterly earnings - Reuters
+[03:46 PM] CNBC: What the Trump administration's move to reclassify marijuana means for investors
+[03:42 PM] CNBC: NYC Mayor Mamdani knocked Ken Griffin in pied-a-terre tax promo. His firm calls the move 'shameful'
+[03:24 PM] Reuters: Trump says US will not use nuclear weapon in Iran war - Reuters
 [02:40 PM] CNBC: Regeneron inks drug pricing deal with Trump, will offer new hearing-loss therapy for free
-[01:51 PM] Reuters: Stocks weaken on dimming hopes for Iran deal, mixed quarterly earnings - Reuters
 [12:53 PM] Reuters: Pope condemns killing of protesters in Iran, reaffirms stance against war - Reuters
+[12:49 PM] Reuters: Iran fast-boat swarms add to Hormuz threats for shipping - Reuters
 [12:41 PM] Reuters: Iran's Mehr says air defences heard 'engaging hostile targets' in Tehran - Reuters
 [12:32 PM] CNBC: New grads are finding jobs faster despite a competitive job market, says report
-[11:25 AM] CNBC: Cramer wants to 'buy more' of this household name if the stock price goes a bit lower
-[09:45 AM] Reuters: Son of former Shah of Iran appeals to Western countries for support - Reuters
-[09:21 AM] Reuters: Iran war impact seeps ever deeper into global economy - Reuters
-[08:55 AM] Reuters: US business activity recovers in April, war with Iran is boosting prices, S&P Global survey shows - Reuters
-[08:10 AM] Reuters: Iran takes seized ships to port, countries check on seafarers' safety - Reuters
 
 ## HOLDINGS NEWS
-AMD: Yahoo — Meta plans to cut about 8K jobs amid ramped-up AI spending
-NVDA: Yahoo — 3 iShares India ETFs to Buy Before 2026 as Growth Powers Past the US
+MRVL: Yahoo — 5-star analyst revamps Marvell stock price target
+NVDA: Yahoo — Intel Earnings Were Strong Enough to Put the DotCom Bust in the Stock’s Rearview Mirror
+AMD: Yahoo — Dow Jones Futures: Stocks Fall On Iran, ServiceNow, Tesla; Intel Soars Late
+NVDA: Yahoo — Why Tesla Stock Sank Today
+AMD: ChartMill — Top gainers and losers in the S&P500 index during Thursday's after-hours session.
+EIX: Yahoo — M. Susan Hardwick Joins Edison International, Southern California Edison Boards of Directors
+KEYS: ChartMill — Thursday's after hours session: top gainers and losers
+CL: Yahoo — Rothschild Upgrades Colgate-Palmolive (CL) to Buy from Neutral
+EIX: Yahoo — Southern California Edison Declares Dividends
+ADI: Yahoo — Bank of America Raises Analog Devices (ADI) PT to $425 on Strong Margins and Pricing Power
+CAT: Yahoo — Morgan Stanley Ups Caterpillar (CAT) Target to $430, Flags Macro Risks to Earnings
+OKE: Yahoo — ONEOK Declares Quarterly Dividend
+MRVL: Yahoo — Stifel and Oppenheimer Raise Marvell (MRVL) Targets on Bullish AI Outlook
+LMT: Yahoo — Lockheed Martin vs. RTX: Defense Spending Is Surging — Here’s Who Wins
+STLD: Yahoo — Wells Fargo Raises Steel Dynamics (STLD) Price Target to $207, Stays Bullish on Steel
+NEE: Yahoo — Sector Update: Energy Stocks Rise Thursday
+HOOD: Yahoo — Robinhood Fund Opens OpenAI, Revolut, Stripe to Retail as Singapore Approves Expansion
+HOOD: Yahoo — Sector Update: Financial Stocks Decline Late Afternoon
+ADI: Yahoo — How Stodgy Texas Instruments Became a Hot AI Chip Stock
 LRCX: Yahoo — Chip stocks just added $3 trillion in market value — but are the most overextended in decades: Chart of the Day
-CAT: Yahoo — 3 Reasons to Avoid CAT and 1 Stock to Buy Instead
-LRCX: Yahoo — ‘DRAM Will Double or Triple From Here’ as AI Demand Outpaces Supply Chain Capacity
-LMT: Yahoo — Lockheed Shares Sink After Profit and Revenue Fall Short of Forecasts
-HOOD: Yahoo — Robinhood Drops 6% as Wall Street Splits on HOOD With Earnings Days Away
-NEE: Yahoo — Inside GE Vernova’s 90% Surge
-LMT: Yahoo — Equities Fall Intraday Amid Tech Sell-Off; Oil Rises
-GD: Yahoo — General Dynamics Virginia Cyber Deal Adds New Angle To Growth Story
-CAT: Yahoo — Stock Market Today: Dow Slips; Freeport, Oceaneering Dive As Chip Stock Breakout Cools (Live Coverage)
-NEE: Yahoo — NextEra Energy on Track to Close at Record High. It’s in the Electricity Sweet Spot.
-ADI: Yahoo — On Semi and Analog Devices Stocks Head for Record Highs. Thank Texas Instruments.
-CVX: Yahoo — Deepening Growth Pipeline Sustains Warren Buffett’s Confidence In Chevron (CVX)
-TEL: Yahoo — Should Amphenol Stock Be in Your Portfolio Pre-Q1 Earnings?
-GD: Yahoo — How Boeing Is Pivoting From Crisis To Efficiency
-NXPI: ChartMill — What's going on in today's session: S&P500 movers
-EIX: Yahoo — Will Edison International (EIX) Beat Estimates Again in Its Next Earnings Report?
-FAST: Finnhub — Transcript : Fastenal Company - Shareholder/Analyst Call
-ATO: Yahoo — Rogers Communications Q1 Earnings Beat Estimates, Revenues Rise Y/Y
 
 ## FETCH INFO
-Fetched: 4/23/2026, 3:08:19 PM CT
-Holdings: 51/51
+Fetched: 4/23/2026, 5:17:32 PM CT
+Holdings: 52/52
 Canary: AAPL $273.43 (2026-04-23)
