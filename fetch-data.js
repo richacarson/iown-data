@@ -1,6 +1,6 @@
 /**
  * IOWN Market Data Fetcher — GitHub Actions version (v2)
- * Finnhub: 51 holdings quotes + company news + market news
+ * Finnhub: 52 holdings quotes + company news + market news
  * FMP: Indices, VIX, Gold, Oil, BTC, Sectors + Economic Calendar
  * Output: latest.txt (same format as "Copy for Commentary")
  * Safeguards: market-hours block, AAPL canary check, fetch timestamp
@@ -21,8 +21,8 @@ if (!FH_KEY || !FMP_KEY) {
 const now = new Date();
 console.log(`Fetching at UTC ${now.getUTCHours()}:${String(now.getUTCMinutes()).padStart(2,'0')}`);
 
-const DIV = ['ABT','A','ADI','ATO','ADP','BKH','CAT','CHD','CL','FAST','GD','GPC','LRCX','LMT','MATX','NEE','ORI','PCAR','QCOM','DGX','SSNC','STLD','SYK','TEL','VLO'];
-const GRW = ['AMD','AEM','ATAT','CVX','CWAN','CNX','COIN','EIX','FINV','FTNT','GFI','SUPV','HRMY','HUT','KEYS','MARA','NVDA','NXPI','OKE','PDD','HOOD','SYF','TSM','TOL'];
+const DIV = ['ABT','ADI','ATO','ADP','BKH','CAT','CHD','CL','CTRA','FAST','GD','GPC','LRCX','LMT','NEE','NTR','ORI','PCAR','QCOM','DGX','SSNC','STLD','SYK','TEL','VLO'];
+const GRW = ['AMD','AEM','ATAT','CVX','CWAN','CNX','COIN','CRDO','EIX','FCX','FTNT','SUPV','HRMY','HUT','KEYS','MARA','MRVL','NVDA','NXPI','OKE','HOOD','SYF','TSM','TOL','VST'];
 const DIG = ['IBIT','ETHA'];
 const ALL = [...DIV, ...GRW, ...DIG];
 

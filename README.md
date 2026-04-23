@@ -1,6 +1,6 @@
 # IOWN Market Data Auto-Fetcher
 
-Runs every weekday at 3:05 PM CST via GitHub Actions. Fetches all 51 IOWN holdings from Finnhub + macro data from FMP. Output saved to `latest.txt`.
+Runs every weekday at 3:05 PM CST via GitHub Actions. Fetches all 52 IOWN holdings from Finnhub + macro data from FMP. Output saved to `latest.txt`.
 
 ## Setup
 
@@ -17,7 +17,7 @@ Runs every weekday at 3:05 PM CST via GitHub Actions. Fetches all 51 IOWN holdin
 
 - GitHub Action runs at 3:05 PM CST (21:05 UTC) on weekdays
 - Fetches macro data from FMP (8 calls: indices, VIX, gold, oil, BTC, sectors)
-- Fetches 51 holdings from Finnhub (51 calls with 70ms rate limiting)
+- Fetches 52 holdings from Finnhub (52 calls with 70ms rate limiting)
 - Writes `latest.txt` and commits to repo
 - Claude reads `https://richacarson.github.io/iown-data/latest.txt` when you say "go"
 
