@@ -1,113 +1,113 @@
-IOWN MARKET DATA — Monday, May 18, 2026
+IOWN MARKET DATA — Tuesday, May 19, 2026
 
 ## BROAD MARKET
-S&P 500: 7,403.10 | -0.07%
-Dow: 49,686.11 | +0.32%
-Nasdaq: 26,090.64 | -0.51%
-Russell 2000: 2,775.10 | -0.65%
-VIX: 17.70 | -3.96%
-Gold: $4,564.40 | +0.05%
-Bitcoin: $76,928 | -0.63%
+S&P 500: 7,354.96 | -0.65%
+Dow: 49,363.89 | -0.65%
+Nasdaq: 25,874.18 | -0.83%
+Russell 2000: 2,747.07 | -1.01%
+VIX: 18.07 | +1.40%
+Gold: $4,486.90 | -1.56%
+Bitcoin: $76,808 | -0.19%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-ABT | $87.91 | +3.44 | +4.07% | $87.92 | $84.40
-ADI | $418.67 | +1.18 | +0.28% | $428.68 | $414.07
-ATO | $178.95 | +2.47 | +1.40% | $179.81 | $176.99
-ADP | $222.94 | +8.46 | +3.94% | $223.31 | $215.13
-BKH | $73.88 | +1.04 | +1.43% | $74.86 | $73.45
-CAT | $864.26 | -24.05 | -2.71% | $893.32 | $850.83
-CHD | $96.73 | +2.69 | +2.85% | $96.97 | $94.19
-CL | $89.81 | +1.68 | +1.91% | $90.72 | $88.36
-DVN | $49.68 | +0.19 | +0.38% | $50.14 | $48.32
-FAST | $44.00 | +0.74 | +1.71% | $44.25 | $43.35
-GD | $342.75 | +8.25 | +2.47% | $343.05 | $334.01
-GPC | $93.14 | +0.28 | +0.30% | $94.25 | $92.11
-LRCX | $277.96 | -6.76 | -2.37% | $294.56 | $273.08
-LMT | $528.31 | +12.30 | +2.38% | $528.39 | $512.76
-NEE | $89.04 | -4.32 | -4.63% | $91.60 | $86.63
-NTR | $71.62 | +0.06 | +0.08% | $72.19 | $70.60
-ORI | $40.05 | +0.73 | +1.86% | $40.21 | $39.41
-PCAR | $111.68 | +1.36 | +1.23% | $111.84 | $109.50
-QCOM | $203.64 | +2.15 | +1.07% | $210.80 | $193.58
-DGX | $189.71 | +3.10 | +1.66% | $191.16 | $187.25
-SSNC | $67.22 | +2.64 | +4.09% | $67.69 | $64.66
-STLD | $228.58 | -0.76 | -0.33% | $230.09 | $225.91
-SYK | $312.68 | +5.92 | +1.93% | $314.82 | $305.00
-TEL | $200.51 | -4.60 | -2.24% | $205.63 | $197.90
-VLO | $258.50 | +7.76 | +3.09% | $260.31 | $246.49
+ABT | $88.82 | +0.91 | +1.04% | $89.34 | $87.41
+ADI | $414.31 | -4.27 | -1.02% | $423.42 | $407.19
+ATO | $178.10 | -0.42 | -0.24% | $180.56 | $177.67
+ADP | $220.44 | -2.50 | -1.12% | $227.43 | $220.32
+BKH | $73.30 | -0.68 | -0.92% | $74.11 | $73.20
+CAT | $860.15 | -3.79 | -0.44% | $869.86 | $845.55
+CHD | $95.81 | -0.97 | -1.00% | $97.74 | $95.53
+CL | $90.00 | +0.08 | +0.09% | $90.85 | $89.21
+DVN | $49.69 | +0.01 | +0.02% | $50.37 | $49.06
+FAST | $43.57 | -0.43 | -0.98% | $44.00 | $43.18
+GD | $340.15 | -2.96 | -0.86% | $343.22 | $339.12
+GPC | $92.47 | -0.70 | -0.75% | $93.28 | $91.00
+LRCX | $273.38 | -4.58 | -1.65% | $278.73 | $263.71
+LMT | $526.63 | -1.68 | -0.32% | $530.26 | $523.48
+NEE | $90.06 | +1.02 | +1.15% | $90.27 | $87.36
+NTR | $71.59 | -0.03 | -0.04% | $72.23 | $70.28
+ORI | $39.58 | -0.47 | -1.17% | $40.22 | $39.41
+PCAR | $109.38 | -2.30 | -2.06% | $111.20 | $108.73
+QCOM | $195.61 | -8.03 | -3.94% | $201.50 | $191.02
+DGX | $189.99 | +0.15 | +0.08% | $191.18 | $187.06
+SSNC | $66.25 | -0.97 | -1.44% | $68.51 | $65.88
+STLD | $223.37 | -5.21 | -2.28% | $224.56 | $219.03
+SYK | $317.90 | +4.68 | +1.49% | $318.73 | $310.23
+TEL | $196.07 | -4.44 | -2.21% | $199.02 | $193.75
+VLO | $262.44 | +3.92 | +1.52% | $262.89 | $254.60
 
 ## GROWTH PORTFOLIO
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-AMD | $420.99 | -3.11 | -0.73% | $438.80 | $410.71
-AEM | $178.98 | -1.35 | -0.75% | $183.94 | $177.65
-ATAT | $36.85 | -1.40 | -3.66% | $38.20 | $36.77
-CVX | $196.12 | +5.02 | +2.63% | $196.20 | $189.03
-CWAN | $24.40 | +0.05 | +0.21% | $24.41 | $24.34
-CNX | $36.56 | +0.47 | +1.30% | $36.85 | $36.01
-COIN | $189.38 | -6.05 | -3.10% | $194.20 | $184.15
-CRDO | $156.27 | -15.90 | -9.24% | $172.25 | $150.41
-EIX | $68.27 | -0.89 | -1.29% | $70.08 | $65.02
-FCX | $60.54 | -2.47 | -3.92% | $63.46 | $59.71
-FTNT | $126.50 | +3.72 | +3.03% | $126.61 | $120.87
-SUPV | $7.84 | +0.34 | +4.53% | $7.88 | $7.40
-HRMY | $29.83 | -0.26 | -0.86% | $30.48 | $29.67
-HUT | $96.20 | -6.27 | -6.12% | $101.00 | $92.50
-KEYS | $340.48 | -8.53 | -2.44% | $354.99 | $336.76
-MARA | $12.18 | -0.27 | -2.13% | $12.26 | $11.62
-MRVL | $169.15 | -7.74 | -4.38% | $182.71 | $165.10
-NVDA | $221.99 | -3.33 | -1.48% | $230.00 | $218.37
-NXPI | $291.80 | +0.30 | +0.10% | $298.86 | $287.36
-OKE | $93.66 | +1.33 | +1.45% | $93.67 | $91.25
-HOOD | $77.13 | -0.01 | -0.02% | $79.92 | $75.47
-SYF | $71.08 | -0.30 | -0.43% | $71.73 | $70.72
-TSM | $395.95 | -8.40 | -2.08% | $406.88 | $391.05
-TOL | $127.06 | +0.84 | +0.67% | $129.55 | $126.01
-VST | $136.46 | -3.22 | -2.31% | $139.54 | $133.86
+AMD | $414.05 | -6.94 | -1.65% | $428.75 | $393.36
+AEM | $173.43 | -5.78 | -3.23% | $177.17 | $172.44
+ATAT | $36.43 | -0.55 | -1.49% | $37.23 | $36.39
+CVX | $197.25 | +1.13 | +0.58% | $198.87 | $193.47
+CWAN | $24.37 | -0.03 | -0.12% | $24.42 | $24.36
+CNX | $37.37 | +0.81 | +2.22% | $37.58 | $36.42
+COIN | $193.45 | +4.01 | +2.12% | $195.53 | $185.53
+CRDO | $168.99 | +12.72 | +8.14% | $171.64 | $148.94
+EIX | $70.53 | +2.09 | +3.05% | $70.73 | $67.74
+FCX | $58.67 | -1.83 | -3.02% | $59.93 | $58.30
+FTNT | $127.64 | +1.14 | +0.90% | $128.20 | $123.76
+SUPV | $7.35 | -0.49 | -6.25% | $7.79 | $7.33
+HRMY | $30.44 | +0.61 | +2.04% | $30.48 | $29.70
+HUT | $93.31 | -2.89 | -3.00% | $96.00 | $86.82
+KEYS | $344.11 | +3.63 | +1.07% | $345.44 | $326.48
+MARA | $12.44 | +0.26 | +2.13% | $12.59 | $11.53
+MRVL | $176.27 | +7.34 | +4.34% | $181.64 | $162.85
+NVDA | $220.50 | -1.82 | -0.82% | $224.48 | $217.91
+NXPI | $294.28 | +2.60 | +0.89% | $298.63 | $285.68
+OKE | $95.21 | +1.45 | +1.55% | $95.65 | $93.41
+HOOD | $74.16 | -2.99 | -3.88% | $76.37 | $73.18
+SYF | $69.43 | -1.62 | -2.28% | $71.09 | $69.26
+TSM | $392.61 | -3.34 | -0.84% | $398.88 | $385.06
+TOL | $123.81 | -3.16 | -2.49% | $126.14 | $123.14
+VST | $134.78 | -1.97 | -1.44% | $136.70 | $132.66
 
 ## DIGITAL ASSET ETFs
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-IBIT | $43.52 | -1.30 | -2.91% | $43.76 | $43.02
-ETHA | $16.00 | -0.76 | -4.50% | $16.17 | $15.67
+IBIT | $43.48 | -0.06 | -0.13% | $43.63 | $43.08
+ETHA | $15.93 | -0.07 | -0.44% | $16.04 | $15.79
 
 ## MARKET NEWS
-[02:13 PM] Reuters: Trump says holding off on Iran attack planned for Tuesday - Reuters
-[01:57 PM] CNBC: We're raising price targets on 2 cyber stocks after their hard-fought recovery
-[01:41 PM] CNBC: 32-year-old left her dream job in the NFL to make a career pivot—how she knew it was 'time to take a risk'
-[01:36 PM] Reuters: Pakistan sends new Iranian peace proposal to US - Reuters
-[01:07 PM] Reuters: Trump administration ends civil, criminal cases against Adani after $10 billion investment promise - Reuters
-[12:56 PM] CNBC: It's not too late to buy Nvidia. Here are the reasons we say 'own it, don't trade it'
-[12:48 PM] Reuters: No deal, no exit: How US-Iran standoff risks fresh conflict - Reuters
-[12:32 PM] CNBC: We're calling up a Bullpen stock, buying small to give us room to build
-[12:27 PM] Reuters: US Treasury extends sanction waiver on Russian seaborne oil to aid vulnerable countries - Reuters
-[10:44 AM] Reuters: Romanians stabbed journalist in London at behest of Iran, UK court told - Reuters
+[02:20 PM] Reuters: Trump approval drops to 35% as Republican support softens, Reuters/Ipsos poll finds - Reuters
+[02:07 PM] Reuters: G7 finance ministers agree need for action on economic imbalances - Reuters
+[01:38 PM] CNBC: New data boosts our confidence in Lilly's obesity pill. Plus, Google's new AI features
+[01:20 PM] Reuters: Trump says US may strike Iran again but that Tehran wants deal - Reuters
+[01:10 PM] Reuters: Vance says 'a lot of progress' made in Iran talks - Reuters
+[11:40 AM] CNBC: Here's why Broadcom is a winner from Blackstone's new AI venture with Google
+[11:40 AM] CNBC: Trump endorses Ken Paxton over John Cornyn in Texas Senate race
+[11:29 AM] Reuters: European shares end slightly higher as investors weigh Iran peace proposal - Reuters
+[10:52 AM] Reuters: Ukrainian mid-range strikes deal double blow to Russia's war effort - Reuters
+[10:41 AM] CNBC: We're booking profits in a once-hated stock that's gone parabolic
 
 ## HOLDINGS NEWS
-NVDA: Yahoo — Why ServiceNow Rallied Today, Even As Tech Stocks Fell
-NVDA: Yahoo — Nvidia Earnings Wednesday: These ETFs Have the Most Riding on One Stock
-NEE: Yahoo — Equities Mixed Intraday, Oil Rises as Traders Track Middle East Developments
-NEE: Yahoo — NextEra to buy Dominion for $67 billion, betting on AI power demand
-ABT: Yahoo — Boston Scientific Bets on Growth Through Strategic M&A Deals
-LMT: Yahoo — Can Intuitive Machines' Record Backlog Drive Its Next Phase of Growth?
-LRCX: Yahoo — Semicap stocks: Morgan Stanley raises WFE outlook and shifts ratings
-TOL: Yahoo — Toll Brothers Announces Model Home Grand Opening at Toll Brothers at South Main Community in Milpitas, California
-AMD: Yahoo — Leopold Aschenbrenner's 'Situational Awareness' Files 13F Quarterly Investment Disclosure
-AMD: Yahoo — Intel Stock Got 2 Price Target Increases. It’s Headed for Fifth Straight Loss.
-CL: Yahoo — The Best 3 Consumer Staples Stocks to Buy and Hold for Decades
-HOOD: Yahoo — 3 Beaten-Down Stocks That Could Take Off if Interest Rates Come Down This Year
-CAT: Yahoo — Forget Hyperscalers, These Stocks Are The New AI Plays
-CAT: Yahoo — Price Prediction and Forecast: Can CAT Shares Hit $1000 By 2027?
-EIX: Yahoo — Over 10,000 Community Members Seek Direct Relief for Eaton Fire Recovery through SCE
-VLO: Yahoo — Earnings Estimates Rising for Valero Energy (VLO): Will It Gain?
-CL: Yahoo — Will Innovation in Tide and Pampers Revive PG's Volume Growth?
-MRVL: Yahoo — AMD Just Delivered Fantastic News to Marvell Stock Investors
-LRCX: Yahoo — Applied Materials' Margin Reaches Historic High: Is it Sustainable?
-SYK: Yahoo — PAHC or SYK: Which Is the Better Value Stock Right Now?
+NVDA: Yahoo — Sector Update: Tech Stocks Mixed Late Afternoon
+COIN: Yahoo — IBIT Down 6.4% While FDIG Soars 18.5% in 2026 and Bitcoin Itself Explains Almost Nothing About the Gap
+NVDA: Yahoo — Is CoreWeave a Safe Stock to Buy Right Now?
+KEYS: Yahoo — What To Expect From Keysight’s (KEYS) Q1 Earnings
+VLO: Yahoo — Stock Market Today: Nasdaq In The Red Amid Trump-Iran Threat; Energy Stock In Buy Zone
+LMT: Yahoo — Lockheed Martin wins another massive military deal
+QCOM: Yahoo — Arm Holdings Has Doubled in 2026. Is It Outperforming Other Chip-IP Stocks Like Synopsys, Cadence, and Qualcomm?
+LMT: Yahoo — Aluminum Prices Have Surged Nearly 90% Since the Iran War Began, and Kiplinger Says Your Portfolio Should Respond
+AMD: Yahoo — Why Intel (INTC) Shares Are Plunging Today
+HOOD: Yahoo — 2 Growth Stocks Down 33% and 22% That Could Be Long-Term Winners
+NEE: Yahoo — Dominion Failed to Capitalize on the AI Boom. NextEra Can Fix That.
+NEE: Yahoo — NextEra and Dominion Energy Merge to Create the Largest Utility Giant
+AMD: ChartMill — Most active S&P500 stocks in Tuesday's session
+QCOM: Yahoo — U.S Stocks fall as soaring yields crush tech rally and chip stocks lead brutal slide
+KEYS: Yahoo — Stock Market Today: Stocks Trim Losses As Trump Says Warsh Can 'Do What He Wants'; Keysight Slides
+VST: Yahoo — Forget Vistra. One Quarter of Orders at GE Vernova Exceeded All of Last Year. That Is the AI Power Trade Worth Owning
+CVX: Yahoo — Chevron at $196, ExxonMobil at $160: Buy, Sell or Hold?
+HOOD: Yahoo — Investors want tokenized Apple stock on the blockchain
+CVX: Yahoo — Earnings Estimates Rising for Chevron (CVX): Will It Gain?
+FTNT: Yahoo — Fortinet Cut to Hold at DZ Bank, Price Target Set at $125: Is Cybersecurity Losing Steam?
 
 ## FETCH INFO
-Fetched: 5/18/2026, 3:03:16 PM CT
+Fetched: 5/19/2026, 3:06:45 PM CT
 Holdings: 52/52
-Canary: AAPL $297.84 (2026-05-18)
+Canary: AAPL $298.97 (2026-05-19)
