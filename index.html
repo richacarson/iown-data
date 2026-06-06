@@ -53,7 +53,7 @@
   .mast-meta { font-family:var(--mono); font-size:0.58rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--soft); padding:0.7rem 0 0; display:flex; justify-content:center; gap:0.9rem; flex-wrap:wrap; }
   .mast-meta b { color:var(--ink); font-weight:500; }
 
-  .toolbar { position:sticky; top:0; z-index:60; margin-top:2rem; background:rgba(23,20,15,0.86); backdrop-filter:blur(10px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.7rem max(1.5rem, calc((100% - 820px)/2)); }
+  .toolbar { position:sticky; top:0; z-index:60; background:rgba(23,20,15,0.86); backdrop-filter:blur(10px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.7rem max(1.5rem, calc((100% - 820px)/2)); }
   .tb-left { display:flex; align-items:center; gap:0.7rem; min-width:0; }
   .tb-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
   .tb-meta { min-width:0; }
@@ -131,7 +131,7 @@
   .pdf-fallback p { color:var(--soft); font-family:var(--display); font-style:italic; margin-bottom:1rem; }
 
   @media (max-width:768px){
-    .masthead{ padding-top:3rem; } .commentary .headline-display{ font-size:2.15rem; } .toolbar{ padding-left:1rem; padding-right:1rem; }
+    .masthead{ padding-top:2rem; } .commentary .headline-display{ font-size:2.15rem; } .toolbar{ padding-left:1rem; padding-right:1rem; }
   }
 </style>
 </head>
@@ -150,14 +150,6 @@
 </div>
 
 <div class="app" id="app">
-  <header class="masthead">
-    <div class="eyebrow">Family Capital Investments</div>
-    <img class="mast-logo" src="paradiem-logo-white.png" alt="Paradiem">
-    <hr class="mast-rule">
-    <div class="mast-meta">
-      <span id="mastDate"></span><span>&middot;</span><span><b>Market Commentary</b></span><span>&middot;</span><span>Post-Close</span>
-    </div>
-  </header>
   <div class="toolbar">
     <div class="tb-left">
       <span class="tb-dot" id="tbDot"></span>
@@ -170,6 +162,14 @@
       <a class="btn btn-primary" id="btnPdf" href="#" target="_blank">&darr;&nbsp;PDF</a>
     </div>
   </div>
+  <header class="masthead">
+    <div class="eyebrow">Family Capital Investments</div>
+    <img class="mast-logo" src="paradiem-logo-white.png" alt="Paradiem">
+    <hr class="mast-rule">
+    <div class="mast-meta">
+      <span id="mastDate"></span><span>&middot;</span><span><b>Market Commentary</b></span><span>&middot;</span><span>Post-Close</span>
+    </div>
+  </header>
   <div class="wrap"><div id="contentArea"><div class="loading">Loading commentary&hellip;</div></div></div>
 </div>
 
