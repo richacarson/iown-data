@@ -168,35 +168,34 @@
     .commentary .cmt-flow > p:first-child::first-letter{ font-size:2.8rem; }
   }
 
-  /* Laptop / standard desktop — a balanced, centered reading column */
+  /* Laptop — two-column newspaper spread that fills the screen */
   @media (min-width:1000px){
-    :root{ --maxw:860px; --measure:70ch; }
-    .commentary .headline-display{ font-size:3.5rem; max-width:20ch; }
-    .commentary p, .commentary .lead,
-    .commentary .movers-label, .commentary .mover,
-    .commentary .section-head{ max-width:var(--measure); margin-left:auto; margin-right:auto; }
-    .commentary .pullquote{ max-width:600px; }
+    :root{ --maxw:1160px; }
+    .wrap{ padding:3.6rem 2.4rem 6rem; }
+    .commentary .headline-display{ font-size:3.8rem; max-width:22ch; }
+    .commentary .subhead-display{ font-size:1.22rem; }
+    .commentary > p{ max-width:70ch; margin-left:auto; margin-right:auto; }
+
+    .commentary .cmt-flow{ -webkit-column-count:2; column-count:2; -webkit-column-gap:3rem; column-gap:3rem; -webkit-column-rule:1px solid var(--line-2); column-rule:1px solid var(--line-2); }
+    .commentary .cmt-flow > p, .commentary .cmt-flow .lead{ max-width:none; margin:0 0 0.95rem; font-size:0.99rem; line-height:1.66; }
+    .commentary .cmt-flow .pullquote{ -webkit-column-span:all; column-span:all; -webkit-column-break-inside:avoid; break-inside:avoid; max-width:780px; margin:1.9rem auto; }
+
+    .commentary .movers-grid{ -webkit-column-count:2; column-count:2; -webkit-column-gap:3rem; column-gap:3rem; -webkit-column-rule:1px solid var(--line-2); column-rule:1px solid var(--line-2); }
+    .commentary .movers-grid .mover{ -webkit-column-break-inside:avoid; break-inside:avoid; max-width:none; }
   }
 
-  /* Ultrawide — fill the monitor with a centered broadsheet */
+  /* Wide desktop — a third column for the lead story */
   @media (min-width:1500px){
     :root{ --maxw:1480px; }
     .wrap{ padding:3.8rem 3rem 6rem; }
     .commentary .headline-display{ font-size:4.2rem; max-width:24ch; }
-    .commentary .subhead-display{ font-size:1.24rem; }
-    .commentary .section-head{ max-width:none; }
-    .commentary .movers-label{ max-width:none; }
-
-    .commentary .cmt-flow{ -webkit-column-count:2; column-count:2; -webkit-column-gap:3rem; column-gap:3rem; -webkit-column-rule:1px solid var(--line-2); column-rule:1px solid var(--line-2); }
-    .commentary .cmt-flow > p, .commentary .cmt-flow .lead{ max-width:none; margin:0 0 0.95rem; font-size:0.98rem; line-height:1.64; }
-    .commentary .cmt-flow .pullquote{ -webkit-column-span:all; column-span:all; -webkit-column-break-inside:avoid; break-inside:avoid; max-width:780px; margin:1.8rem auto; }
-
-    .commentary .movers-grid{ -webkit-column-count:2; column-count:2; -webkit-column-gap:3rem; column-gap:3rem; -webkit-column-rule:1px solid var(--line-2); column-rule:1px solid var(--line-2); }
-    .commentary .movers-grid .mover{ -webkit-column-break-inside:avoid; break-inside:avoid; max-width:none; margin-left:0; margin-right:0; }
+    .commentary .subhead-display{ font-size:1.26rem; }
+    .commentary .cmt-flow{ -webkit-column-count:3; column-count:3; }
   }
+
+  /* Ultrawide */
   @media (min-width:2000px){
     :root{ --maxw:1760px; }
-    .commentary .cmt-flow{ -webkit-column-count:3; column-count:3; }
   }
 </style>
 </head>
