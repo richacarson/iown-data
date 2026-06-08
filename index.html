@@ -163,6 +163,33 @@
     .commentary .mover-catalyst { order:3; width:auto; flex:1 1 auto; margin-top:0; font-size:0.95rem; line-height:1.5; }
     .commentary .mover-strategy { order:4; margin-left:1.1rem; flex-shrink:0; padding-top:0.18rem; }
   }
+
+  /* ═══ ULTRAWIDE — fill large monitors with a two-column dashboard ═══ */
+  @media (min-width:1500px){
+    .wrap { max-width:1480px; padding:3.6rem 3rem 6rem; }
+    .masthead { max-width:1480px; }
+    .toolbar { padding:0.7rem max(3rem, calc((100% - 1480px)/2)); }
+    .commentary .headline-display { font-size:4rem; }
+
+    /* Narrative prose flows into two readable columns */
+    .commentary .cmt-flow { -webkit-column-count:2; column-count:2; -webkit-column-gap:3rem; column-gap:3rem; }
+    .commentary .cmt-flow > p { -webkit-column-break-inside:avoid; break-inside:avoid; max-width:none; }
+    .commentary .cmt-flow .lead { max-width:none; }
+    .commentary .cmt-flow .pullquote { -webkit-column-span:all; column-span:all; -webkit-column-break-inside:avoid; break-inside:avoid; max-width:none; margin:1.6rem 0; }
+
+    /* Movers split into two columns, stacked rows for readability */
+    .commentary .movers-grid { -webkit-column-count:2; column-count:2; -webkit-column-gap:3rem; column-gap:3rem; }
+    .commentary .movers-grid .mover { -webkit-column-break-inside:avoid; break-inside:avoid; flex-wrap:wrap; align-items:baseline; gap:0.7rem; padding:0.6rem 0; }
+    .commentary .movers-grid .mover-ticker { order:0; width:54px; padding-top:0; }
+    .commentary .movers-grid .mover-pct { order:0; width:64px; padding-top:0; }
+    .commentary .movers-grid .mover-strategy { order:0; margin-left:auto; padding-top:0; }
+    .commentary .movers-grid .mover-catalyst { order:0; width:100%; flex:none; margin-top:0.15rem; font-size:0.92rem; }
+  }
+  @media (min-width:2000px){
+    .wrap { max-width:1760px; }
+    .masthead { max-width:1760px; }
+    .toolbar { padding:0.7rem max(3rem, calc((100% - 1760px)/2)); }
+  }
 </style>
 </head>
 <body>
