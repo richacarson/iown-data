@@ -1,493 +1,500 @@
 [
- {
-  "date": "2026-06-11",
-  "headline": "Chips Snap Back",
-  "subhead": "S&P 500 +1.73% off a five-week low as semiconductors lead the recovery and canceled evening strikes lift the afternoon tape. The ECB hikes. Growth Portfolio +4.72% more than doubles IUSG; Dividend +1.37% beats DVY. Both sleeves extend their YTD lead.",
-  "direction": "up",
-  "content": "2026-06-11.html"
- },
- {
-  "date": "2026-06-10",
-  "headline": "Four Percent",
-  "subhead": "May CPI prints 4.2% \u2014 first reading above 4% since May 2023 \u2014 and Washington vows further strikes on Iran. S&P 500 \u20131.61%, VIX +11%. Dividend Strategy \u20130.38% held against the tape; Growth \u20131.95% beat IUSG. Both sleeves lead YTD.",
-  "direction": "down",
-  "content": "2026-06-10.html"
- },
- {
-  "date": "2026-06-09",
-  "headline": "Chips Give Back",
-  "subhead": "S&P 500 \u20130.26% as the custom-silicon unwind resumes and a midday Iran headline tests the tape. Dividend Strategy +0.19% bucks the session. May CPI lands Wednesday morning.",
-  "direction": "down",
-  "content": "2026-06-09.html"
- },
- {
-  "date": "2026-06-08",
-  "headline": "Growth Snaps Back",
-  "subhead": "S&P +0.30% to 7,405.81 as the semiconductor and crypto complex reverses Friday\u2019s de-rating. VIX -13.11% to 18.69. Iran and Israel halt strikes. Growth +2.05% led, Dividend -0.43% beat DVY; both sleeves still lead YTD. May CPI Wednesday.",
-  "direction": "up",
-  "content": "2026-06-08.html"
- },
- {
-  "date": "2026-06-05",
-  "headline": "Chips Reset, Backbone Holds",
-  "subhead": "S&P -2.63%, Nasdaq -4.18% as semiconductors post their sharpest session since 2020. A hot 172K May payrolls print lifts yields and re-prices the Fed path. The Dividend sleeve held -1.28% vs SPY -2.58%; Growth -6.01% bore the chip and crypto re-pricing. Both sleeves still lead YTD.",
-  "direction": "down",
-  "content": "2026-06-05.html"
- },
- {
-  "date": "2026-06-04",
-  "headline": "Rotation, Not Retreat",
-  "subhead": "S&P +0.41%, Dow +1.73% near a record, Russell 2000 +1.59%. Nasdaq -0.07% as Broadcom drags chips. Eight of eleven sectors green; oil -3% on de-escalation. Both IOWN sleeves beat benchmarks; Dividend +0.51%, Growth +0.77%.",
-  "direction": "up",
-  "content": "2026-06-04.html"
- },
- {
-  "date": "2026-06-03",
-  "headline": "Strong Data, Soft Tape",
-  "subhead": "S&P -0.72% off Tuesday's record as a 122K ADP beat fed rate-cut doubt into the FOMC and oil reasserted on Middle East flare. Dividend Strategy held +0.27% green, ahead of DVY and SPY; Growth -0.91%.",
-  "direction": "down",
-  "content": "2026-06-03.html"
- },
- {
-  "date": "2026-06-02",
-  "headline": "Breadth Returns",
-  "subhead": "Participation widens beneath a flat tape \u2014 Russell 2000 +0.90% leads, VIX eases to 15.7. Marvell +32.5% on its AI-switch launch and Huang's 'next trillion-dollar' nod. Both IOWN sleeves beat their benchmarks; Bitcoin -6% the lone divergence.",
-  "direction": "up",
-  "content": "2026-06-02.html"
- },
- {
-  "date": "2026-06-01",
-  "headline": "Records, Narrowly",
-  "subhead": "S&P +0.27% to a record close; Nasdaq tops 27,000. Nvidia's new PC superchip lifts the AI complex and pressures QCOM. ISM Manufacturing prints a four-year high at 54.0.",
-  "direction": "up",
-  "content": "2026-06-01.html"
- },
- {
-  "date": "2026-05-29",
-  "headline": "Rails and Records",
-  "subhead": "Growth Portfolio +0.93% outpaces IUSG as the Dow closes above 51,000 for the first time. The CFTC clears U.S. crypto perpetual futures \u2014 HOOD +11.15%, COIN +3.72%. Megacap chips cool; oil eases as Trump weighs the Iran framework.",
-  "direction": "up",
-  "content": "2026-05-29.html"
- },
- {
-  "date": "2026-05-28",
-  "headline": "Price Prevails",
-  "subhead": "S&P 500 +0.57% to a new record close as software and semiconductors lead. Growth Portfolio +1.24%, Dividend +0.37%. US and Iran agree to extend the ceasefire; PCE inflation posts its largest annual gain in three years.",
-  "direction": "up",
-  "content": "2026-05-28.html"
- },
- {
-  "date": "2026-05-27",
-  "headline": "Records, Rotated",
-  "subhead": "Dow to record close at 50,644 as the chip rally paused. QCOM \u22126.20% on profit-taking after ByteDance ASIC headline; banks led losses on Dimon's $20B M&A signal. Crude broke below $90 on Iran-Hormuz back-and-forth.",
-  "direction": "up",
-  "content": "2026-05-27.html"
- },
- {
-  "date": "2026-05-26",
-  "headline": "Memory and Hormuz",
-  "subhead": "Micron joins the $1T club on UBS upgrade. AI semis carry the tape. Brent rebounds to $99 on fresh US strikes; energy holdings fade. Both strategies +0.48% / +2.02%.",
-  "direction": "up",
-  "content": "2026-05-26.html"
- },
- {
-  "date": "2026-05-22",
-  "headline": "Across the Stack",
-  "subhead": "Dow to fresh record. QCOM +11.60%, CRDO +12.94% lead chip strength as NVDA extends post-print slide. Both strategies +1.3%, beating benchmarks broadly.",
-  "direction": "up",
-  "content": "2026-05-22.html"
- },
- {
-  "date": "2026-05-21",
-  "headline": "Chips Split",
-  "subhead": "S&P +0.18% to 7,446. Nvidia eases post-print; QCOM and LRCX lead the chip bifurcation.",
-  "direction": "up",
-  "content": "2026-05-21.html"
- },
- {
-  "date": "2026-05-20",
-  "headline": "Growth Sleeve Roars",
-  "subhead": "Crude cracks below $100. Yields cool. Growth Portfolio +2.77% vs. IUSG +1.34% as AMD, CRDO, TOL, LRCX, and VST lead into Nvidia's after-close print.",
-  "direction": "up",
-  "content": "2026-05-20.html"
- },
- {
-  "date": "2026-05-19",
-  "headline": "Pre-NVDA Pause",
-  "subhead": "S&P -0.65% as 10-year touches 16-month high. Growth Portfolio holds green via CRDO +8.14%, MRVL +4.34%. NVDA prints Wednesday.",
-  "direction": "down",
-  "content": "2026-05-19.html"
- },
- {
-  "date": "2026-05-18",
-  "headline": "Defensives Bid",
-  "subhead": "Dividend +0.98% as defensives lead the tape. NextEra and Dominion announce a $67B all-stock combination. Trump postpones Tuesday Iran attack. NVDA earnings Wednesday.",
-  "direction": "up",
-  "content": "2026-05-18.html"
- },
- {
-  "date": "2026-05-15",
-  "headline": "Defense Holds",
-  "subhead": "S&P \u20131.23% after Thursday's record. 10Y yield to 4.58%, fresh 1-year high. Empire State 19.6 vs. 7.0. Brent above $106. Dividend \u20130.64% beats both DVY and SPY.",
-  "direction": "down",
-  "content": "2026-05-15.html"
- },
- {
-  "date": "2026-05-14",
-  "headline": "Above 7,500",
-  "subhead": "S&P first close above 7,500 (+0.78%). Dow retakes 50,000. Crypto Clarity Act clears Senate hurdle. Powell's last day Friday.",
-  "direction": "up",
-  "content": "2026-05-14.html"
- },
- {
-  "date": "2026-05-13",
-  "headline": "Rotation Reverses",
-  "subhead": "S&P +0.56% to 7,444.88. Tech leads on Jensen-Trump Beijing trip; hot PPI (+6.0% YoY) absorbed. NVDA +2.29%, MRVL +8.18%. Defensive bid from Tuesday gives back.",
-  "direction": "up",
-  "content": "2026-05-13.html"
- },
- {
-  "date": "2026-05-12",
-  "headline": "Hot CPI Pauses Tech",
-  "subhead": "S&P \u20130.15% as April CPI prints 3.8% YoY, hottest since May 2023. QCOM \u201311.46% leads semi pullback. Dividend Strategy holds on SYK +4.48%, TEL +3.69%, CHD +3.19%.",
-  "direction": "down",
-  "content": "2026-05-12.html"
- },
- {
-  "date": "2026-05-11",
-  "headline": "Chips Lead Again",
-  "subhead": "QCOM +8.42% on hyperscaler data center disclosure. CRDO +11.52%. Indices grind to fresh records on narrow breadth. VIX +6.81%.",
-  "direction": "up",
-  "content": "2026-05-11.html"
- },
- {
-  "date": "2026-05-08",
-  "headline": "AI Bid Returns",
-  "subhead": "S&P 500 closes at fresh record on stronger-than-expected April payrolls. Nasdaq +1.71%. AMD +11.44% extends, QCOM +8.17% on Daiwa upgrade and data center pivot.",
-  "direction": "up",
-  "content": "2026-05-08.html"
- },
- {
-  "date": "2026-05-07",
-  "headline": "Records Pause",
-  "subhead": "S&P 500 -0.38% from Wednesday's all-time high. AI cohort takes a breather. FTNT +20.03% on Q1 blowout. NVDA bucks the give-back ahead of May 20.",
-  "direction": "down",
-  "content": "2026-05-07.html"
- },
- {
-  "date": "2026-05-06",
-  "headline": "Records, on AMD",
-  "subhead": "S&P 500 +1.48% to a fresh record on AMD's Q1 print and Iran peace progress. Nasdaq +2.05%. HUT +35% on $9.8B AI lease. Crude tumbles; gold +2.96%.",
-  "direction": "up",
-  "content": "2026-05-06.html"
- },
- {
-  "date": "2026-05-05",
-  "headline": "Chips Lead The Bounce",
-  "subhead": "Nasdaq +1.03% to fresh record on chip strength. QCOM +10.80%, LRCX +6.66% to all-time high. Brent -4% as Hormuz reopens to commercial transit. AMD reports after close.",
-  "direction": "up",
-  "content": "2026-05-05.html"
- },
- {
-  "date": "2026-05-04",
-  "headline": "Pre-Market Fades",
-  "subhead": "S&P -0.40% as morning's tech bid unwinds. AMD -5.39% into Tuesday's print. QCOM -4.88%. Bitcoin reclaims $80K, lifting the crypto sleeve.",
-  "direction": "down",
-  "content": "2026-05-04.html"
- },
- {
-  "date": "2026-05-01",
-  "headline": "Two Tapes",
-  "subhead": "S&P 500 closes at record 7,230. Nasdaq tops 25,000. Stryker -6.47% on cyber-miss fallout drags Dividend -0.83%; Growth eases -0.20% as energy and materials soften.",
-  "direction": "up",
-  "content": "2026-05-01.html"
- },
- {
-  "date": "2026-04-30",
-  "headline": "Stack Pays Out",
-  "subhead": "S&P +1.08% to fresh intraday high. QCOM +15.12% post-print, CAT +9.88% on AI power. NVDA the lone defection. VIX -10%.",
-  "direction": "up",
-  "content": "2026-04-30.html"
- },
- {
-  "date": "2026-04-29",
-  "headline": "Beats Carry the Tape",
-  "subhead": "Both IOWN sleeves close green on a flat-tape session as flagship earnings dominate. Dividend +0.17%, Growth +0.29%. FOMC holds, Powell exits with four dissents.",
-  "direction": "up",
-  "content": "2026-04-29.html"
- },
- {
-  "date": "2026-04-28",
-  "headline": "Capex Faith Tested",
-  "subhead": "S&P \u20130.51% as the OpenAI revenue miss spreads through the chip sleeve. NVDA reverses Monday's record. PCAR \u20135.97% on Q1 revenue. UAE quits OPEC.",
-  "direction": "down",
-  "content": "2026-04-28.html"
- },
- {
-  "date": "2026-04-27",
-  "headline": "Holding Pattern",
-  "subhead": "S&P 500 +0.12% to fresh high. NVDA +4.00% to a record. AMD \u20133.79% on ARK's $75M trim. VIX compressed to 18.02 ahead of FOMC, five Mag7 prints, GDP, and PCE.",
-  "direction": "up",
-  "content": "2026-04-27.html"
- },
- {
-  "date": "2026-04-24",
-  "headline": "Semis Take The Tape",
-  "subhead": "S&P +0.79% to record 7,164. Nasdaq +1.63% all-time high. Intel halo lifts AMD +13.91%, QCOM +11.12%. Iran talks resume in Islamabad.",
-  "direction": "up",
-  "content": "2026-04-24.html"
- },
- {
-  "date": "2026-04-23",
-  "headline": "Software Cracks",
-  "subhead": "S&P \u22120.42% off intraday record. SaaS rout led by IBM and ServiceNow. Texas Instruments lifts analog. NEE blows out, LMT misses.",
-  "direction": "down",
-  "content": "2026-04-23.html"
- },
- {
-  "date": "2026-04-22",
-  "headline": "Risk Returns",
-  "subhead": "S&P +1.05% to record 7,137. Nasdaq +1.64% to all-time high. Semis surge on AI capex confirmation. TEL beats and raises but falls 9.10%.",
-  "direction": "up",
-  "content": "2026-04-22.html"
- },
- {
-  "date": "2026-04-21",
-  "headline": "Both Sleeves Beat",
-  "subhead": "S&P -0.66% to 7,063 on Iran stall, Warsh hawkish tilt, and Apple CEO transition. Dividend +0.03% beats DVY and SPY. Growth Portfolio -0.08% beats IUSG. STLD +5.19% on record steel shipments.",
-  "direction": "down",
-  "content": "2026-04-21.html"
- },
- {
-  "date": "2026-04-20",
-  "headline": "The Test Holds",
-  "subhead": "S&P -0.22% to 7,109 absorbing weekend escalation. Both IOWN sleeves positive, beating every benchmark. Bitcoin +3.33% to $76,281. STLD +4.51% into post-close print.",
-  "direction": "down",
-  "content": "2026-04-20.html"
- },
- {
-  "date": "2026-04-17",
-  "headline": "The Strait, Open",
-  "subhead": "S&P +1.19% to a fresh all-time high. Iran reopens the Strait of Hormuz. WTI down roughly 11%. Third consecutive up week.",
-  "direction": "up",
-  "content": "2026-04-17.html"
- },
- {
-  "date": "2026-04-16",
-  "headline": "Quiet New Highs",
-  "subhead": "S&P +0.23% to 7,039, another record close. Nasdaq gains 12th straight day, longest streak since 2009. AMD +7.80%.",
-  "direction": "up",
-  "content": "2026-04-16.html"
- },
- {
-  "date": "2026-04-15",
-  "headline": "Seven Thousand",
-  "subhead": "S&P 500 +0.79% to 7,022 \u2014 first record close since January 28. Nasdaq +1.59%, 11th straight gain. Morgan Stanley posts record quarter.",
-  "direction": "up",
-  "content": "2026-04-15.html"
- },
- {
-  "date": "2026-04-14",
-  "headline": "Seven Thousand in Sight",
-  "subhead": "S&P +1.17% to 6,967. Nasdaq rises a tenth straight day. Core PPI cools to +0.1%. IMF cuts 2026 global growth to 3.1%.",
-  "direction": "up",
-  "content": "2026-04-14.html"
- },
- {
-  "date": "2026-04-13",
-  "headline": "Iran Calls. Market Answers.",
-  "subhead": "S&P +1.01% to 6,885. Trump says Iran wants a deal \u2014 blockade begins, market shrugs the open and closes near highs. Software led; FAST fell on in-line earnings.",
-  "direction": "up",
-  "content": "2026-04-13.html"
- },
- {
-  "date": "2026-04-10",
-  "headline": "Ceasefire Holds",
-  "subhead": "S&P 500 -0.10% to 6,818. CPI surges to 3.3% on war-driven energy shock. Core holds at 2.6%. Islamabad talks begin Saturday.",
-  "direction": "down",
-  "content": "2026-04-10.html"
- },
- {
-  "date": "2026-04-09",
-  "headline": "Seven Straight",
-  "subhead": "S&P +0.61% to 6,824. Seventh consecutive gain. Ceasefire fraying but holding. Oil back above $100. Core PCE at 3.0%.",
-  "direction": "up",
-  "content": "2026-04-09.html"
- },
- {
-  "date": "2026-04-08",
-  "headline": "Ceasefire Rally",
-  "subhead": "S&P +2.52% to 6,783. Two-week US-Iran ceasefire reopens Hormuz. WTI plunges 17%. Semis and industrials lead.",
-  "direction": "up",
-  "content": "2026-04-08.html"
- },
- {
-  "date": "2026-04-07",
-  "headline": "Deadline Drift",
-  "subhead": "S&P +0.08% as Pakistan extension request trims 1.2% intraday loss. Trump\u2019s 8 PM Iran deadline dominates. WTI near $113. Gold +1.0% to $4,732.",
-  "direction": "up",
-  "content": "2026-04-07.html"
- },
- {
-  "date": "2026-04-06",
-  "headline": "Deadline Eve",
-  "subhead": "S&P +0.43% as ceasefire hopes offset Tuesday strike threat. ISM Services cools to 54, prices surge to 70.7. Digital assets lead; IBIT +4.08%.",
-  "direction": "up",
-  "content": "2026-04-06.html"
- },
- {
-  "date": "2026-04-02",
-  "headline": "The Claw Back",
-  "subhead": "S&P erased a 1.5% gap-down to close +0.09%. WTI surged past $110. Iran\u2013Oman Hormuz protocol lifted equities off lows. 100% pharma tariffs announced at the bell.",
-  "direction": "up",
-  "content": "2026-04-02.html"
- },
- {
-  "date": "2026-04-01",
-  "headline": "Hormuz Hope",
-  "subhead": "S&P +0.71% for second straight gain. Brent briefly below $100. ISM Manufacturing 52.7. Trump says Iran asked for ceasefire \u2014 Iran denies it.",
-  "direction": "up",
-  "content": "2026-04-01.html"
- },
- {
-  "date": "2026-03-31",
-  "headline": "Hope Trade Holds",
-  "subhead": "S&P +2.92% as Trump signals willingness to end Iran war. Nasdaq +3.83%. Tech leads broad rally. WTI pulls back to $101. Q1 closes down ~7%.",
-  "direction": "up",
-  "content": "2026-03-31.html"
- },
- {
-  "date": "2026-03-30",
-  "headline": "Hope Fades",
-  "subhead": "S&P -0.39% as diplomatic rally dissolves. WTI settles above $100 for the first time since 2022. Powell says rates in a good place.",
-  "direction": "down",
-  "content": "2026-03-30.html"
- },
- {
-  "date": "2026-03-27",
-  "headline": "Correction Confirmed",
-  "subhead": "S&P \u22121.57% to seven-month low. Fifth straight weekly decline. Dow and Nasdaq 100 enter correction. Brent settles at $112.57.",
-  "direction": "down",
-  "content": "2026-03-27.html"
- },
- {
-  "date": "2026-03-26",
-  "headline": "No Deal",
-  "subhead": "S&P \u22121.76% to lowest since September. Brent $108. Nasdaq enters correction. Trump walks back ceasefire signal.",
-  "direction": "down",
-  "content": "2026-03-26.html"
- },
- {
-  "date": "2026-03-25",
-  "headline": "Relief Held",
-  "subhead": "S&P +0.54% to 6,592. Oil fell 4% on 15-point peace plan. AMD +7.26% on CPU pricing power. Gold $4,502.",
-  "direction": "up",
-  "content": "2026-03-25.html"
- },
- {
-  "date": "2026-03-24",
-  "headline": "Show Me the Deal",
-  "subhead": "S&P 500 -0.36% as Monday rally fades. Brent climbs back above $104. Iran denies talks. COIN -10% on stablecoin legislation.",
-  "direction": "down",
-  "content": "2026-03-24.html"
- },
- {
-  "date": "2026-03-20",
-  "headline": "Force Majeure",
-  "subhead": "S&P -1.51% to 6,507 as Iraq halts oil exports. Brent tops $112. Russell enters correction. Fourth straight losing week.",
-  "direction": "down",
-  "content": "2026-03-20.html"
- },
- {
-  "date": "2026-03-19",
-  "headline": "Dip Bought",
-  "subhead": "S&P 500 -0.28% after erasing a 1% drop. Brent spiked to $119, reversed to $108 on Hormuz reopening. Fed holds, signals one cut. Gold -4.9%.",
-  "direction": "down",
-  "content": "2026-03-19.html"
- },
- {
-  "date": "2026-03-18",
-  "headline": "Powell Puts Cuts on Ice",
-  "subhead": "S&P 500 -1.37% as Fed holds, flags inflation risk from Iran war. PPI surges 0.7%. Brent tops $104. Gold -3.6%.",
-  "direction": "down",
-  "content": "2026-03-18.html"
- },
- {
-  "date": "2026-03-16",
-  "headline": "Hormuz Hopes",
-  "subhead": "S&P +1.02% to 6,700. Tanker crossings ease oil fears. Nvidia GTC lifts semis. VIX drops 13.5%. Bitcoin tops $74K.",
-  "direction": "up",
-  "content": "2026-03-16.html"
- },
- {
-  "date": "2026-03-03",
-  "headline": "Markets at War",
-  "subhead": "Day 4 of US-Israel-Iran conflict. S&P whipsaws. Oil surges. VIX spikes.",
-  "direction": "down"
- },
- {
-  "date": "2026-03-04",
-  "headline": "The Market Exhaled",
-  "subhead": "S&P +0.77%. Crypto rallies. ISM services surge. Oil flattens. VIX falls 10%.",
-  "direction": "up"
- },
- {
-  "date": "2026-03-05",
-  "headline": "War Premium Returns",
-  "subhead": "S&P \u22120.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
-  "direction": "down"
- },
- {
-  "date": "2026-03-06",
-  "headline": "Payrolls Collapse",
-  "subhead": "NFP \u221292,000. Oil breaks $90. VIX +25% to 29.66. S&P \u22121.36% for its worst week since October.",
-  "direction": "down"
- },
- {
-  "date": "2026-03-09",
-  "headline": "Reversal of Fortune",
-  "subhead": "Oil touches $119 overnight, then retreats. Trump signals war nearing completion. S&P erases 1.5% loss to close +0.81%.",
-  "direction": "up"
- },
- {
-  "date": "2026-03-10",
-  "headline": "Holding Pattern",
-  "subhead": "S&P \u22120.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
-  "direction": "down"
- },
- {
-  "date": "2026-03-11",
-  "headline": "Calm Before the Storm",
-  "subhead": "CPI in line at 2.4% \u2014 but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK \u22123.0%.",
-  "direction": "down",
-  "content": "2026-03-11.html"
- },
- {
-  "date": "2026-03-12",
-  "headline": "Credit Cracks Widen",
-  "subhead": "Private credit stress spreads. Oil resumes climb. S&P \u22121.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
-  "direction": "down",
-  "content": "2026-03-12.html"
- },
- {
-  "date": "2026-03-13",
-  "headline": "Three Weeks Red",
-  "subhead": "S&P \u22120.61% to new 2026 low. Third straight losing week. Brent above $103. Q4 GDP revised down. GTC Monday. FOMC Wednesday.",
-  "direction": "down",
-  "content": "2026-03-13.html"
- },
- {
-  "date": "2026-03-17",
-  "headline": "Quiet Bounce",
-  "subhead": "S&P +0.27% as equities stabilize. Oil disruptions persist\u2014Brent above $100, diesel crosses $5. VIX eases to 22.38.",
-  "direction": "up",
-  "content": "2026-03-17.html"
- },
- {
-  "date": "2026-03-23",
-  "headline": "The Reversal",
-  "subhead": "S&P +1.16% as Trump suspends Iran strikes for five days. Brent whipsaws from $114 to $100. Gold \u22123.7% in worst week since 1983.",
-  "direction": "up",
-  "content": "2026-03-23.html"
- }
+  {
+    "date": "2026-06-12",
+    "headline": "Liftoff",
+    "subhead": "S&P 500 +0.49% caps the recovery week. SpaceX closes its debut +19% in the largest IPO on record. Crude settles below $85 as a U.S.\u2013Iran signing window opens.",
+    "direction": "up",
+    "content": "2026-06-12.html"
+  },
+  {
+    "date": "2026-06-11",
+    "headline": "Chips Snap Back",
+    "subhead": "S&P 500 +1.73% off a five-week low as semiconductors lead the recovery and canceled evening strikes lift the afternoon tape. The ECB hikes. Growth Portfolio +4.72% more than doubles IUSG; Dividend +1.37% beats DVY. Both sleeves extend their YTD lead.",
+    "direction": "up",
+    "content": "2026-06-11.html"
+  },
+  {
+    "date": "2026-06-10",
+    "headline": "Four Percent",
+    "subhead": "May CPI prints 4.2% \u2014 first reading above 4% since May 2023 \u2014 and Washington vows further strikes on Iran. S&P 500 \u20131.61%, VIX +11%. Dividend Strategy \u20130.38% held against the tape; Growth \u20131.95% beat IUSG. Both sleeves lead YTD.",
+    "direction": "down",
+    "content": "2026-06-10.html"
+  },
+  {
+    "date": "2026-06-09",
+    "headline": "Chips Give Back",
+    "subhead": "S&P 500 \u20130.26% as the custom-silicon unwind resumes and a midday Iran headline tests the tape. Dividend Strategy +0.19% bucks the session. May CPI lands Wednesday morning.",
+    "direction": "down",
+    "content": "2026-06-09.html"
+  },
+  {
+    "date": "2026-06-08",
+    "headline": "Growth Snaps Back",
+    "subhead": "S&P +0.30% to 7,405.81 as the semiconductor and crypto complex reverses Friday\u2019s de-rating. VIX -13.11% to 18.69. Iran and Israel halt strikes. Growth +2.05% led, Dividend -0.43% beat DVY; both sleeves still lead YTD. May CPI Wednesday.",
+    "direction": "up",
+    "content": "2026-06-08.html"
+  },
+  {
+    "date": "2026-06-05",
+    "headline": "Chips Reset, Backbone Holds",
+    "subhead": "S&P -2.63%, Nasdaq -4.18% as semiconductors post their sharpest session since 2020. A hot 172K May payrolls print lifts yields and re-prices the Fed path. The Dividend sleeve held -1.28% vs SPY -2.58%; Growth -6.01% bore the chip and crypto re-pricing. Both sleeves still lead YTD.",
+    "direction": "down",
+    "content": "2026-06-05.html"
+  },
+  {
+    "date": "2026-06-04",
+    "headline": "Rotation, Not Retreat",
+    "subhead": "S&P +0.41%, Dow +1.73% near a record, Russell 2000 +1.59%. Nasdaq -0.07% as Broadcom drags chips. Eight of eleven sectors green; oil -3% on de-escalation. Both IOWN sleeves beat benchmarks; Dividend +0.51%, Growth +0.77%.",
+    "direction": "up",
+    "content": "2026-06-04.html"
+  },
+  {
+    "date": "2026-06-03",
+    "headline": "Strong Data, Soft Tape",
+    "subhead": "S&P -0.72% off Tuesday's record as a 122K ADP beat fed rate-cut doubt into the FOMC and oil reasserted on Middle East flare. Dividend Strategy held +0.27% green, ahead of DVY and SPY; Growth -0.91%.",
+    "direction": "down",
+    "content": "2026-06-03.html"
+  },
+  {
+    "date": "2026-06-02",
+    "headline": "Breadth Returns",
+    "subhead": "Participation widens beneath a flat tape \u2014 Russell 2000 +0.90% leads, VIX eases to 15.7. Marvell +32.5% on its AI-switch launch and Huang's 'next trillion-dollar' nod. Both IOWN sleeves beat their benchmarks; Bitcoin -6% the lone divergence.",
+    "direction": "up",
+    "content": "2026-06-02.html"
+  },
+  {
+    "date": "2026-06-01",
+    "headline": "Records, Narrowly",
+    "subhead": "S&P +0.27% to a record close; Nasdaq tops 27,000. Nvidia's new PC superchip lifts the AI complex and pressures QCOM. ISM Manufacturing prints a four-year high at 54.0.",
+    "direction": "up",
+    "content": "2026-06-01.html"
+  },
+  {
+    "date": "2026-05-29",
+    "headline": "Rails and Records",
+    "subhead": "Growth Portfolio +0.93% outpaces IUSG as the Dow closes above 51,000 for the first time. The CFTC clears U.S. crypto perpetual futures \u2014 HOOD +11.15%, COIN +3.72%. Megacap chips cool; oil eases as Trump weighs the Iran framework.",
+    "direction": "up",
+    "content": "2026-05-29.html"
+  },
+  {
+    "date": "2026-05-28",
+    "headline": "Price Prevails",
+    "subhead": "S&P 500 +0.57% to a new record close as software and semiconductors lead. Growth Portfolio +1.24%, Dividend +0.37%. US and Iran agree to extend the ceasefire; PCE inflation posts its largest annual gain in three years.",
+    "direction": "up",
+    "content": "2026-05-28.html"
+  },
+  {
+    "date": "2026-05-27",
+    "headline": "Records, Rotated",
+    "subhead": "Dow to record close at 50,644 as the chip rally paused. QCOM \u22126.20% on profit-taking after ByteDance ASIC headline; banks led losses on Dimon's $20B M&A signal. Crude broke below $90 on Iran-Hormuz back-and-forth.",
+    "direction": "up",
+    "content": "2026-05-27.html"
+  },
+  {
+    "date": "2026-05-26",
+    "headline": "Memory and Hormuz",
+    "subhead": "Micron joins the $1T club on UBS upgrade. AI semis carry the tape. Brent rebounds to $99 on fresh US strikes; energy holdings fade. Both strategies +0.48% / +2.02%.",
+    "direction": "up",
+    "content": "2026-05-26.html"
+  },
+  {
+    "date": "2026-05-22",
+    "headline": "Across the Stack",
+    "subhead": "Dow to fresh record. QCOM +11.60%, CRDO +12.94% lead chip strength as NVDA extends post-print slide. Both strategies +1.3%, beating benchmarks broadly.",
+    "direction": "up",
+    "content": "2026-05-22.html"
+  },
+  {
+    "date": "2026-05-21",
+    "headline": "Chips Split",
+    "subhead": "S&P +0.18% to 7,446. Nvidia eases post-print; QCOM and LRCX lead the chip bifurcation.",
+    "direction": "up",
+    "content": "2026-05-21.html"
+  },
+  {
+    "date": "2026-05-20",
+    "headline": "Growth Sleeve Roars",
+    "subhead": "Crude cracks below $100. Yields cool. Growth Portfolio +2.77% vs. IUSG +1.34% as AMD, CRDO, TOL, LRCX, and VST lead into Nvidia's after-close print.",
+    "direction": "up",
+    "content": "2026-05-20.html"
+  },
+  {
+    "date": "2026-05-19",
+    "headline": "Pre-NVDA Pause",
+    "subhead": "S&P -0.65% as 10-year touches 16-month high. Growth Portfolio holds green via CRDO +8.14%, MRVL +4.34%. NVDA prints Wednesday.",
+    "direction": "down",
+    "content": "2026-05-19.html"
+  },
+  {
+    "date": "2026-05-18",
+    "headline": "Defensives Bid",
+    "subhead": "Dividend +0.98% as defensives lead the tape. NextEra and Dominion announce a $67B all-stock combination. Trump postpones Tuesday Iran attack. NVDA earnings Wednesday.",
+    "direction": "up",
+    "content": "2026-05-18.html"
+  },
+  {
+    "date": "2026-05-15",
+    "headline": "Defense Holds",
+    "subhead": "S&P \u20131.23% after Thursday's record. 10Y yield to 4.58%, fresh 1-year high. Empire State 19.6 vs. 7.0. Brent above $106. Dividend \u20130.64% beats both DVY and SPY.",
+    "direction": "down",
+    "content": "2026-05-15.html"
+  },
+  {
+    "date": "2026-05-14",
+    "headline": "Above 7,500",
+    "subhead": "S&P first close above 7,500 (+0.78%). Dow retakes 50,000. Crypto Clarity Act clears Senate hurdle. Powell's last day Friday.",
+    "direction": "up",
+    "content": "2026-05-14.html"
+  },
+  {
+    "date": "2026-05-13",
+    "headline": "Rotation Reverses",
+    "subhead": "S&P +0.56% to 7,444.88. Tech leads on Jensen-Trump Beijing trip; hot PPI (+6.0% YoY) absorbed. NVDA +2.29%, MRVL +8.18%. Defensive bid from Tuesday gives back.",
+    "direction": "up",
+    "content": "2026-05-13.html"
+  },
+  {
+    "date": "2026-05-12",
+    "headline": "Hot CPI Pauses Tech",
+    "subhead": "S&P \u20130.15% as April CPI prints 3.8% YoY, hottest since May 2023. QCOM \u201311.46% leads semi pullback. Dividend Strategy holds on SYK +4.48%, TEL +3.69%, CHD +3.19%.",
+    "direction": "down",
+    "content": "2026-05-12.html"
+  },
+  {
+    "date": "2026-05-11",
+    "headline": "Chips Lead Again",
+    "subhead": "QCOM +8.42% on hyperscaler data center disclosure. CRDO +11.52%. Indices grind to fresh records on narrow breadth. VIX +6.81%.",
+    "direction": "up",
+    "content": "2026-05-11.html"
+  },
+  {
+    "date": "2026-05-08",
+    "headline": "AI Bid Returns",
+    "subhead": "S&P 500 closes at fresh record on stronger-than-expected April payrolls. Nasdaq +1.71%. AMD +11.44% extends, QCOM +8.17% on Daiwa upgrade and data center pivot.",
+    "direction": "up",
+    "content": "2026-05-08.html"
+  },
+  {
+    "date": "2026-05-07",
+    "headline": "Records Pause",
+    "subhead": "S&P 500 -0.38% from Wednesday's all-time high. AI cohort takes a breather. FTNT +20.03% on Q1 blowout. NVDA bucks the give-back ahead of May 20.",
+    "direction": "down",
+    "content": "2026-05-07.html"
+  },
+  {
+    "date": "2026-05-06",
+    "headline": "Records, on AMD",
+    "subhead": "S&P 500 +1.48% to a fresh record on AMD's Q1 print and Iran peace progress. Nasdaq +2.05%. HUT +35% on $9.8B AI lease. Crude tumbles; gold +2.96%.",
+    "direction": "up",
+    "content": "2026-05-06.html"
+  },
+  {
+    "date": "2026-05-05",
+    "headline": "Chips Lead The Bounce",
+    "subhead": "Nasdaq +1.03% to fresh record on chip strength. QCOM +10.80%, LRCX +6.66% to all-time high. Brent -4% as Hormuz reopens to commercial transit. AMD reports after close.",
+    "direction": "up",
+    "content": "2026-05-05.html"
+  },
+  {
+    "date": "2026-05-04",
+    "headline": "Pre-Market Fades",
+    "subhead": "S&P -0.40% as morning's tech bid unwinds. AMD -5.39% into Tuesday's print. QCOM -4.88%. Bitcoin reclaims $80K, lifting the crypto sleeve.",
+    "direction": "down",
+    "content": "2026-05-04.html"
+  },
+  {
+    "date": "2026-05-01",
+    "headline": "Two Tapes",
+    "subhead": "S&P 500 closes at record 7,230. Nasdaq tops 25,000. Stryker -6.47% on cyber-miss fallout drags Dividend -0.83%; Growth eases -0.20% as energy and materials soften.",
+    "direction": "up",
+    "content": "2026-05-01.html"
+  },
+  {
+    "date": "2026-04-30",
+    "headline": "Stack Pays Out",
+    "subhead": "S&P +1.08% to fresh intraday high. QCOM +15.12% post-print, CAT +9.88% on AI power. NVDA the lone defection. VIX -10%.",
+    "direction": "up",
+    "content": "2026-04-30.html"
+  },
+  {
+    "date": "2026-04-29",
+    "headline": "Beats Carry the Tape",
+    "subhead": "Both IOWN sleeves close green on a flat-tape session as flagship earnings dominate. Dividend +0.17%, Growth +0.29%. FOMC holds, Powell exits with four dissents.",
+    "direction": "up",
+    "content": "2026-04-29.html"
+  },
+  {
+    "date": "2026-04-28",
+    "headline": "Capex Faith Tested",
+    "subhead": "S&P \u20130.51% as the OpenAI revenue miss spreads through the chip sleeve. NVDA reverses Monday's record. PCAR \u20135.97% on Q1 revenue. UAE quits OPEC.",
+    "direction": "down",
+    "content": "2026-04-28.html"
+  },
+  {
+    "date": "2026-04-27",
+    "headline": "Holding Pattern",
+    "subhead": "S&P 500 +0.12% to fresh high. NVDA +4.00% to a record. AMD \u20133.79% on ARK's $75M trim. VIX compressed to 18.02 ahead of FOMC, five Mag7 prints, GDP, and PCE.",
+    "direction": "up",
+    "content": "2026-04-27.html"
+  },
+  {
+    "date": "2026-04-24",
+    "headline": "Semis Take The Tape",
+    "subhead": "S&P +0.79% to record 7,164. Nasdaq +1.63% all-time high. Intel halo lifts AMD +13.91%, QCOM +11.12%. Iran talks resume in Islamabad.",
+    "direction": "up",
+    "content": "2026-04-24.html"
+  },
+  {
+    "date": "2026-04-23",
+    "headline": "Software Cracks",
+    "subhead": "S&P \u22120.42% off intraday record. SaaS rout led by IBM and ServiceNow. Texas Instruments lifts analog. NEE blows out, LMT misses.",
+    "direction": "down",
+    "content": "2026-04-23.html"
+  },
+  {
+    "date": "2026-04-22",
+    "headline": "Risk Returns",
+    "subhead": "S&P +1.05% to record 7,137. Nasdaq +1.64% to all-time high. Semis surge on AI capex confirmation. TEL beats and raises but falls 9.10%.",
+    "direction": "up",
+    "content": "2026-04-22.html"
+  },
+  {
+    "date": "2026-04-21",
+    "headline": "Both Sleeves Beat",
+    "subhead": "S&P -0.66% to 7,063 on Iran stall, Warsh hawkish tilt, and Apple CEO transition. Dividend +0.03% beats DVY and SPY. Growth Portfolio -0.08% beats IUSG. STLD +5.19% on record steel shipments.",
+    "direction": "down",
+    "content": "2026-04-21.html"
+  },
+  {
+    "date": "2026-04-20",
+    "headline": "The Test Holds",
+    "subhead": "S&P -0.22% to 7,109 absorbing weekend escalation. Both IOWN sleeves positive, beating every benchmark. Bitcoin +3.33% to $76,281. STLD +4.51% into post-close print.",
+    "direction": "down",
+    "content": "2026-04-20.html"
+  },
+  {
+    "date": "2026-04-17",
+    "headline": "The Strait, Open",
+    "subhead": "S&P +1.19% to a fresh all-time high. Iran reopens the Strait of Hormuz. WTI down roughly 11%. Third consecutive up week.",
+    "direction": "up",
+    "content": "2026-04-17.html"
+  },
+  {
+    "date": "2026-04-16",
+    "headline": "Quiet New Highs",
+    "subhead": "S&P +0.23% to 7,039, another record close. Nasdaq gains 12th straight day, longest streak since 2009. AMD +7.80%.",
+    "direction": "up",
+    "content": "2026-04-16.html"
+  },
+  {
+    "date": "2026-04-15",
+    "headline": "Seven Thousand",
+    "subhead": "S&P 500 +0.79% to 7,022 \u2014 first record close since January 28. Nasdaq +1.59%, 11th straight gain. Morgan Stanley posts record quarter.",
+    "direction": "up",
+    "content": "2026-04-15.html"
+  },
+  {
+    "date": "2026-04-14",
+    "headline": "Seven Thousand in Sight",
+    "subhead": "S&P +1.17% to 6,967. Nasdaq rises a tenth straight day. Core PPI cools to +0.1%. IMF cuts 2026 global growth to 3.1%.",
+    "direction": "up",
+    "content": "2026-04-14.html"
+  },
+  {
+    "date": "2026-04-13",
+    "headline": "Iran Calls. Market Answers.",
+    "subhead": "S&P +1.01% to 6,885. Trump says Iran wants a deal \u2014 blockade begins, market shrugs the open and closes near highs. Software led; FAST fell on in-line earnings.",
+    "direction": "up",
+    "content": "2026-04-13.html"
+  },
+  {
+    "date": "2026-04-10",
+    "headline": "Ceasefire Holds",
+    "subhead": "S&P 500 -0.10% to 6,818. CPI surges to 3.3% on war-driven energy shock. Core holds at 2.6%. Islamabad talks begin Saturday.",
+    "direction": "down",
+    "content": "2026-04-10.html"
+  },
+  {
+    "date": "2026-04-09",
+    "headline": "Seven Straight",
+    "subhead": "S&P +0.61% to 6,824. Seventh consecutive gain. Ceasefire fraying but holding. Oil back above $100. Core PCE at 3.0%.",
+    "direction": "up",
+    "content": "2026-04-09.html"
+  },
+  {
+    "date": "2026-04-08",
+    "headline": "Ceasefire Rally",
+    "subhead": "S&P +2.52% to 6,783. Two-week US-Iran ceasefire reopens Hormuz. WTI plunges 17%. Semis and industrials lead.",
+    "direction": "up",
+    "content": "2026-04-08.html"
+  },
+  {
+    "date": "2026-04-07",
+    "headline": "Deadline Drift",
+    "subhead": "S&P +0.08% as Pakistan extension request trims 1.2% intraday loss. Trump\u2019s 8 PM Iran deadline dominates. WTI near $113. Gold +1.0% to $4,732.",
+    "direction": "up",
+    "content": "2026-04-07.html"
+  },
+  {
+    "date": "2026-04-06",
+    "headline": "Deadline Eve",
+    "subhead": "S&P +0.43% as ceasefire hopes offset Tuesday strike threat. ISM Services cools to 54, prices surge to 70.7. Digital assets lead; IBIT +4.08%.",
+    "direction": "up",
+    "content": "2026-04-06.html"
+  },
+  {
+    "date": "2026-04-02",
+    "headline": "The Claw Back",
+    "subhead": "S&P erased a 1.5% gap-down to close +0.09%. WTI surged past $110. Iran\u2013Oman Hormuz protocol lifted equities off lows. 100% pharma tariffs announced at the bell.",
+    "direction": "up",
+    "content": "2026-04-02.html"
+  },
+  {
+    "date": "2026-04-01",
+    "headline": "Hormuz Hope",
+    "subhead": "S&P +0.71% for second straight gain. Brent briefly below $100. ISM Manufacturing 52.7. Trump says Iran asked for ceasefire \u2014 Iran denies it.",
+    "direction": "up",
+    "content": "2026-04-01.html"
+  },
+  {
+    "date": "2026-03-31",
+    "headline": "Hope Trade Holds",
+    "subhead": "S&P +2.92% as Trump signals willingness to end Iran war. Nasdaq +3.83%. Tech leads broad rally. WTI pulls back to $101. Q1 closes down ~7%.",
+    "direction": "up",
+    "content": "2026-03-31.html"
+  },
+  {
+    "date": "2026-03-30",
+    "headline": "Hope Fades",
+    "subhead": "S&P -0.39% as diplomatic rally dissolves. WTI settles above $100 for the first time since 2022. Powell says rates in a good place.",
+    "direction": "down",
+    "content": "2026-03-30.html"
+  },
+  {
+    "date": "2026-03-27",
+    "headline": "Correction Confirmed",
+    "subhead": "S&P \u22121.57% to seven-month low. Fifth straight weekly decline. Dow and Nasdaq 100 enter correction. Brent settles at $112.57.",
+    "direction": "down",
+    "content": "2026-03-27.html"
+  },
+  {
+    "date": "2026-03-26",
+    "headline": "No Deal",
+    "subhead": "S&P \u22121.76% to lowest since September. Brent $108. Nasdaq enters correction. Trump walks back ceasefire signal.",
+    "direction": "down",
+    "content": "2026-03-26.html"
+  },
+  {
+    "date": "2026-03-25",
+    "headline": "Relief Held",
+    "subhead": "S&P +0.54% to 6,592. Oil fell 4% on 15-point peace plan. AMD +7.26% on CPU pricing power. Gold $4,502.",
+    "direction": "up",
+    "content": "2026-03-25.html"
+  },
+  {
+    "date": "2026-03-24",
+    "headline": "Show Me the Deal",
+    "subhead": "S&P 500 -0.36% as Monday rally fades. Brent climbs back above $104. Iran denies talks. COIN -10% on stablecoin legislation.",
+    "direction": "down",
+    "content": "2026-03-24.html"
+  },
+  {
+    "date": "2026-03-20",
+    "headline": "Force Majeure",
+    "subhead": "S&P -1.51% to 6,507 as Iraq halts oil exports. Brent tops $112. Russell enters correction. Fourth straight losing week.",
+    "direction": "down",
+    "content": "2026-03-20.html"
+  },
+  {
+    "date": "2026-03-19",
+    "headline": "Dip Bought",
+    "subhead": "S&P 500 -0.28% after erasing a 1% drop. Brent spiked to $119, reversed to $108 on Hormuz reopening. Fed holds, signals one cut. Gold -4.9%.",
+    "direction": "down",
+    "content": "2026-03-19.html"
+  },
+  {
+    "date": "2026-03-18",
+    "headline": "Powell Puts Cuts on Ice",
+    "subhead": "S&P 500 -1.37% as Fed holds, flags inflation risk from Iran war. PPI surges 0.7%. Brent tops $104. Gold -3.6%.",
+    "direction": "down",
+    "content": "2026-03-18.html"
+  },
+  {
+    "date": "2026-03-16",
+    "headline": "Hormuz Hopes",
+    "subhead": "S&P +1.02% to 6,700. Tanker crossings ease oil fears. Nvidia GTC lifts semis. VIX drops 13.5%. Bitcoin tops $74K.",
+    "direction": "up",
+    "content": "2026-03-16.html"
+  },
+  {
+    "date": "2026-03-03",
+    "headline": "Markets at War",
+    "subhead": "Day 4 of US-Israel-Iran conflict. S&P whipsaws. Oil surges. VIX spikes.",
+    "direction": "down"
+  },
+  {
+    "date": "2026-03-04",
+    "headline": "The Market Exhaled",
+    "subhead": "S&P +0.77%. Crypto rallies. ISM services surge. Oil flattens. VIX falls 10%.",
+    "direction": "up"
+  },
+  {
+    "date": "2026-03-05",
+    "headline": "War Premium Returns",
+    "subhead": "S&P \u22120.58%. Dow plunges 1.6%. Oil surges on tanker strike. Broadcom beats big after the bell.",
+    "direction": "down"
+  },
+  {
+    "date": "2026-03-06",
+    "headline": "Payrolls Collapse",
+    "subhead": "NFP \u221292,000. Oil breaks $90. VIX +25% to 29.66. S&P \u22121.36% for its worst week since October.",
+    "direction": "down"
+  },
+  {
+    "date": "2026-03-09",
+    "headline": "Reversal of Fortune",
+    "subhead": "Oil touches $119 overnight, then retreats. Trump signals war nearing completion. S&P erases 1.5% loss to close +0.81%.",
+    "direction": "up"
+  },
+  {
+    "date": "2026-03-10",
+    "headline": "Holding Pattern",
+    "subhead": "S&P \u22120.22%. Markets tread water ahead of CPI. Gold tops $5,200. Oil continues retreat from $119 peak.",
+    "direction": "down"
+  },
+  {
+    "date": "2026-03-11",
+    "headline": "Calm Before the Storm",
+    "subhead": "CPI in line at 2.4% \u2014 but pre-war data. Market fades as traders price the oil shock ahead. VLO +5.7%. SYK \u22123.0%.",
+    "direction": "down",
+    "content": "2026-03-11.html"
+  },
+  {
+    "date": "2026-03-12",
+    "headline": "Credit Cracks Widen",
+    "subhead": "Private credit stress spreads. Oil resumes climb. S&P \u22121.53%. Morgan Stanley caps withdrawals. FOMC next Wednesday.",
+    "direction": "down",
+    "content": "2026-03-12.html"
+  },
+  {
+    "date": "2026-03-13",
+    "headline": "Three Weeks Red",
+    "subhead": "S&P \u22120.61% to new 2026 low. Third straight losing week. Brent above $103. Q4 GDP revised down. GTC Monday. FOMC Wednesday.",
+    "direction": "down",
+    "content": "2026-03-13.html"
+  },
+  {
+    "date": "2026-03-17",
+    "headline": "Quiet Bounce",
+    "subhead": "S&P +0.27% as equities stabilize. Oil disruptions persist\u2014Brent above $100, diesel crosses $5. VIX eases to 22.38.",
+    "direction": "up",
+    "content": "2026-03-17.html"
+  },
+  {
+    "date": "2026-03-23",
+    "headline": "The Reversal",
+    "subhead": "S&P +1.16% as Trump suspends Iran strikes for five days. Brent whipsaws from $114 to $100. Gold \u22123.7% in worst week since 1983.",
+    "direction": "up",
+    "content": "2026-03-23.html"
+  }
 ]
