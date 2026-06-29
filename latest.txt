@@ -1,130 +1,113 @@
-IOWN MARKET DATA — Friday, June 26, 2026
+IOWN MARKET DATA — Monday, June 29, 2026
 
 ## BROAD MARKET
-S&P 500: 7,337.81 | -0.27%
-Dow: 51,876.11 | -0.09%
-Nasdaq: 25,206.57 | -0.60%
-Russell 2000: 3,010.08 | +0.07%
-VIX: 18.34 | -2.91%
-Gold: $4,086.10 | +0.95%
-Bitcoin: $59,616 | -0.15%
+S&P 500: 7,439.26 | +1.16%
+Dow: 52,182.74 | +0.59%
+Nasdaq: 25,820.14 | +2.07%
+Russell 2000: 3,010.42 | +0.01%
+VIX: 17.64 | -4.18%
+Gold: $4,028.70 | -1.65%
+Bitcoin: $60,304 | +1.36%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-ABT | $94.12 | +0.88 | +0.94% | $95.21 | $93.21
-ADI | $386.91 | -31.02 | -7.42% | $406.08 | $382.82
-ATO | $175.17 | +1.50 | +0.86% | $175.19 | $171.70
-ADP | $223.55 | +7.24 | +3.35% | $224.22 | $217.65
-BKH | $76.04 | +1.73 | +2.33% | $76.30 | $74.74
-CAT | $997.47 | -59.54 | -5.63% | $1031.85 | $989.64
-CHD | $99.58 | +1.43 | +1.46% | $99.80 | $98.22
-CL | $92.07 | +1.01 | +1.11% | $92.32 | $90.56
-DVN | $42.21 | -0.39 | -0.92% | $42.92 | $41.84
-FAST | $47.10 | +0.18 | +0.38% | $47.56 | $46.72
-GD | $346.71 | +2.01 | +0.58% | $350.58 | $344.35
-GPC | $116.02 | +3.03 | +2.68% | $116.62 | $112.67
-LRCX | $379.09 | -22.73 | -5.66% | $389.88 | $374.31
-LMT | $507.40 | +2.38 | +0.47% | $518.24 | $503.90
-NEE | $88.56 | +0.86 | +0.98% | $88.56 | $87.65
-NTR | $60.98 | +0.02 | +0.03% | $61.86 | $60.57
-ORI | $41.23 | +1.22 | +3.05% | $41.24 | $40.33
-PCAR | $120.68 | -1.00 | -0.82% | $121.83 | $119.54
-QCOM | $189.39 | -15.51 | -7.57% | $208.86 | $186.18
-DGX | $209.88 | +3.64 | +1.76% | $209.89 | $206.55
-SSNC | $63.66 | +0.64 | +1.02% | $64.22 | $63.20
-STLD | $245.49 | -5.51 | -2.20% | $249.27 | $241.87
-SYK | $332.71 | +16.60 | +5.25% | $333.82 | $317.75
-TEL | $197.74 | -2.33 | -1.16% | $198.41 | $194.87
-VLO | $259.37 | +4.31 | +1.69% | $260.67 | $252.00
+ABT | $92.71 | -1.41 | -1.50% | $94.98 | $92.67
+ADI | $391.78 | +4.87 | +1.26% | $398.06 | $385.01
+ATO | $174.84 | -0.33 | -0.19% | $175.42 | $173.82
+ADP | $224.97 | +1.42 | +0.64% | $226.70 | $223.03
+BKH | $75.25 | -0.79 | -1.04% | $75.59 | $74.09
+CAT | $1033.19 | +35.72 | +3.58% | $1039.07 | $992.11
+CHD | $97.90 | -1.68 | -1.69% | $98.86 | $96.06
+CL | $92.40 | +0.33 | +0.36% | $92.61 | $91.17
+DVN | $41.99 | -0.22 | -0.52% | $42.88 | $41.94
+FAST | $47.40 | +0.30 | +0.64% | $47.48 | $46.82
+GD | $348.07 | +1.36 | +0.39% | $351.21 | $346.68
+GPC | $117.18 | +1.16 | +1.00% | $117.20 | $114.38
+LRCX | $410.91 | +31.82 | +8.39% | $414.98 | $379.10
+LMT | $502.07 | -5.33 | -1.05% | $510.13 | $501.75
+NEE | $88.66 | +0.10 | +0.11% | $89.19 | $86.95
+NTR | $61.18 | +0.20 | +0.33% | $61.31 | $59.72
+ORI | $41.49 | +0.26 | +0.63% | $41.52 | $40.92
+PCAR | $119.60 | -1.08 | -0.89% | $120.24 | $118.38
+QCOM | $188.72 | -0.67 | -0.35% | $194.59 | $183.58
+DGX | $212.64 | +2.76 | +1.31% | $212.76 | $206.97
+SSNC | $62.94 | -0.72 | -1.13% | $64.58 | $62.26
+STLD | $234.22 | -11.27 | -4.59% | $246.91 | $231.49
+SYK | $330.52 | -2.19 | -0.66% | $334.75 | $329.25
+TEL | $198.30 | +0.56 | +0.28% | $199.52 | $194.28
+VLO | $266.32 | +6.95 | +2.68% | $272.17 | $261.03
 
 ## GROWTH PORTFOLIO
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-AMD | $521.58 | -10.99 | -2.06% | $525.11 | $502.61
-AEM | $157.23 | +1.05 | +0.67% | $160.53 | $156.45
-ATAT | $32.13 | +0.61 | +1.94% | $32.42 | $31.50
-CVX | $171.06 | -1.18 | -0.69% | $172.25 | $169.93
+AMD | $539.49 | +17.91 | +3.43% | $542.19 | $495.35
+AEM | $153.76 | -3.47 | -2.21% | $155.75 | $151.91
+ATAT | $32.32 | +0.19 | +0.59% | $33.00 | $32.00
+CVX | $168.47 | -2.59 | -1.51% | $171.60 | $168.37
 CWAN | $24.56 | +0.01 | +0.04% | $24.56 | $24.54
-CNX | $33.73 | +0.12 | +0.36% | $34.83 | $33.55
-COIN | $149.06 | +6.54 | +4.59% | $149.85 | $139.18
-CRDO | $238.00 | -30.03 | -11.20% | $262.56 | $231.08
-EIX | $75.67 | +0.92 | +1.23% | $75.74 | $74.68
-FCX | $62.45 | -0.35 | -0.56% | $63.00 | $61.63
-FTNT | $151.35 | +1.42 | +0.95% | $152.77 | $147.55
-SUPV | $9.57 | +0.13 | +1.38% | $9.71 | $9.27
-HRMY | $35.47 | +1.34 | +3.93% | $35.93 | $34.13
-HUT | $123.02 | +5.34 | +4.54% | $123.88 | $109.51
-KEYS | $328.66 | -31.40 | -8.72% | $354.44 | $328.66
-MARA | $14.54 | +0.66 | +4.75% | $14.99 | $13.34
-MRVL | $266.77 | -14.49 | -5.15% | $274.20 | $262.00
-NVDA | $192.53 | -3.21 | -1.64% | $195.55 | $191.22
-NXPI | $277.02 | -21.62 | -7.24% | $291.34 | $275.18
-OKE | $89.22 | -0.30 | -0.34% | $90.49 | $89.01
-HOOD | $98.69 | +5.22 | +5.58% | $99.44 | $93.08
-SYF | $78.66 | +0.14 | +0.18% | $79.39 | $77.66
-TSM | $432.35 | -2.64 | -0.61% | $436.13 | $419.19
-TOL | $164.14 | +2.06 | +1.27% | $166.23 | $161.78
-VST | $163.49 | -4.28 | -2.55% | $167.93 | $163.19
+CNX | $33.29 | -0.44 | -1.30% | $33.73 | $32.96
+COIN | $151.65 | +2.59 | +1.74% | $152.44 | $145.29
+CRDO | $245.68 | +7.68 | +3.23% | $247.40 | $225.66
+EIX | $75.46 | -0.21 | -0.28% | $75.90 | $75.17
+FCX | $61.62 | -0.83 | -1.33% | $62.35 | $60.51
+FTNT | $155.42 | +4.07 | +2.69% | $159.07 | $152.13
+SUPV | $9.70 | +0.13 | +1.36% | $9.97 | $9.49
+HRMY | $35.34 | -0.13 | -0.37% | $35.77 | $34.80
+HUT | $118.27 | -4.75 | -3.86% | $126.46 | $111.25
+KEYS | $340.13 | +11.47 | +3.49% | $342.76 | $327.04
+MARA | $14.03 | -0.51 | -3.51% | $14.89 | $13.28
+MRVL | $277.75 | +10.98 | +4.12% | $278.28 | $250.52
+NVDA | $194.97 | +2.44 | +1.27% | $196.18 | $189.80
+NXPI | $278.37 | +1.35 | +0.49% | $280.03 | $268.85
+OKE | $88.73 | -0.49 | -0.55% | $90.04 | $88.32
+HOOD | $101.83 | +3.14 | +3.18% | $102.85 | $98.05
+SYF | $78.37 | -0.29 | -0.37% | $79.01 | $77.71
+TSM | $455.10 | +22.75 | +5.26% | $456.10 | $431.09
+TOL | $164.88 | +0.74 | +0.45% | $165.00 | $160.87
+VST | $162.38 | -1.11 | -0.68% | $165.60 | $161.02
 
 ## DIGITAL ASSET ETFs
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-IBIT | $33.85 | +0.33 | +0.98% | $34.26 | $33.25
-ETHA | $11.89 | +0.15 | +1.28% | $12.01 | $11.53
-
-## ECONOMIC CALENDAR (TODAY)
-CFTC S&P 500 speculative net positions | Actual: -35.4 | Est: — | Prev: -194 | Medium
-CFTC Nasdaq 100 speculative net positions | Actual: -9.1 | Est: — | Prev: -8.9 | Medium
-CFTC Aluminium Speculative net positions | Actual: 0.8 | Est: — | Prev: 0.1 | Low
-CFTC Copper Speculative net positions | Actual: 71.6 | Est: — | Prev: 75.4 | Low
-CFTC Gold Speculative net positions | Actual: 181.3 | Est: — | Prev: 180.2 | Medium
-CFTC Silver Speculative net positions | Actual: 23.8 | Est: — | Prev: 24.5 | Low
-CFTC Crude Oil speculative net positions | Actual: 114.6 | Est: — | Prev: 124.5 | Medium
-CFTC Natural Gas speculative net positions | Actual: -176.7 | Est: — | Prev: -173.5 | Low
-CFTC Wheat speculative net positions | Actual: -48.4 | Est: — | Prev: -50.8 | Low
-CFTC Corn speculative net positions | Actual: 58.3 | Est: — | Prev: 77.8 | Low
-CFTC Soybeans speculative net positions | Actual: 100.8 | Est: — | Prev: 117.6 | Low
-Baker Hughes Oil Rig Count (Jun/26) | Actual: 440 | Est: 436 | Prev: 433 | Low
-Fed Kashkari Speech | Actual: — | Est: — | Prev: — | Medium
-Fed Williams Speech | Actual: — | Est: — | Prev: — | Medium
-Michigan Inflation Expectations (Jun) | Actual: 4.6 | Est: 4.6 | Prev: 4.8 | Low
+IBIT | $34.18 | +0.33 | +0.97% | $34.33 | $33.33
+ETHA | $12.24 | +0.35 | +2.94% | $12.34 | $11.73
 
 ## MARKET NEWS
-[02:19 PM] CNBC: Walmart heir Lukas Walton buys minority stake in the Chicago Bulls and United Center
-[01:14 PM] CNBC: Healthcare stocks have caught fire, sending all 3 of our names to record highs
-[12:57 PM] Reuters: Trump chides Iran for ship attack after Tehran insists on control of the strait - Reuters
-[11:32 AM] CNBC: Honeywell Aerospace lands an analyst endorsement ahead of its debut. This is our plan for the stock
-[10:51 AM] CNBC: We're adding to our position in a newly public stock that's still finding its footing
-[09:52 AM] Reuters: UAE says false public warning caused by technical malfunction - Reuters
-[09:08 AM] CNBC: Why breakthrough GLP-1 weight loss pills may be a bad thing for employer insurance coverage
-[08:51 AM] Reuters: Middlemen offer Iranian oil to Indian refiners after US waiver, sources say - Reuters
-[08:10 AM] CNBC: The Club's top 10 things to watch in the stock market Friday
-[07:10 AM] CNBC: OpenAI and Anthropic face new AI reality as companies shift from tokenmaxxing to efficiency
+[03:13 PM] CNBC: Our rating, price target and outlook for newly spun off Honeywell Aerospace
+[01:59 PM] CNBC: Comcast's NBCUniversal spinoff raises hope for more deals. There may not be good options
+[01:59 PM] Reuters: Wall Street indexes rise as US, Iran attacks ease; major tech-related shares jump - Reuters
+[01:53 PM] CNBC: Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufacturing facilities
+[01:36 PM] CNBC: Chip stocks rebound, and Goldman racks up a series of M&A wins
+[12:20 PM] CNBC: Here's how Trump Accounts could affect women's retirement savings gap
+[11:28 AM] CNBC: Why our cybersecurity stocks are soaring, plus Big Tech tries to rebound
+[10:27 AM] CNBC: Kalshi traders expect this week's jobs report will disappoint Wall Street outlook
+[09:45 AM] Reuters: Mediators set up de-escalation channels ahead of US-Iran talks, source says - Reuters
+[09:18 AM] Reuters: Senior Lebanese official slams US-brokered deal with Israel, warns of divisions - Reuters
 
 ## HOLDINGS NEWS
-AMD: Yahoo — OpenAI Just Signaled It Might Delay Its IPO. AI Stocks Are Tumbling. Is the Bubble Bursting?
-CAT: ChartMill — Uncover the latest developments among dow jones stocks in today's session.
-ADI: ChartMill — Discover which S&P500 stocks are making waves on Friday.
-CAT: Yahoo — Dow, Nasdaq Turn Lower to Wrap Wild Week
-AMD: Yahoo — Is The Growth Baked Into Advanced Micro Devices Stock Believable?
-NVDA: ChartMill — Which S&P500 stocks are the most active on Friday?
-COIN: Yahoo — Another crypto firm cuts staff in major AI push
-QCOM: Yahoo — Qualcomm Just Promised $15 Billion in AI Chip Sales, but There’s a Catch: The Chips Don’t Exist Yet
-CL: Yahoo — Iraq seeks reassessment of OPEC production quotas
-HOOD: Yahoo — Kalshi Scores FIFA World Cup Spotlight as Prediction Market Trading Surges to Record
-LMT: Yahoo — GE Stock At 52-Week Highs: Is the Best Still Ahead?
-LMT: Yahoo — GE Aerospace Stock Looks Strong. One Number Says Be Careful.
-COIN: Yahoo — Saylor's Strategy shuts down rumors of being under investigation
-MRVL: Yahoo — The Quiet Gross Margin Reality Check That Points to a Dangerous Valuation Gap Between Marvell and Broadcom
-CVX: ChartMill — Explore the top gainers and losers within the dow jones index in today's session.
-ADI: ChartMill — Friday's session: top gainers and losers in the S&P500 index
-HOOD: Yahoo — Clarity Act Timeline Comes Under Threat. Cathie Wood Makes Crypto Buys.
-QCOM: Yahoo — Micron Just Delivered Great News for Intel, AMD, Arm, and Qualcomm Stock Investors
-MRVL: Yahoo — Can Marvell Technology's Record Cash Flow Fuel Future Growth?
-FAST: Yahoo — EQPT vs. FAST: Which Stock Is the Better Value Option?
+NVDA: Yahoo — Why Verizon Fell Today
+NVDA: Yahoo — Why Cerebras Stock Is Skyrocketing Today
+LMT: Yahoo — Is Lockheed Martin Corporation (LMT) A Good Stock To Buy Now?
+SYK: Yahoo — Is Stryker Corporation (SYK) A Good Stock To Buy Now?
+AMD: Yahoo — Micron and Intel Lead Chip Selloff
+CAT: Yahoo — Stock Market Today: Dow Rises; Trump Fed Firing Blocked; Nvidia Tests Key Level Amid Slide (Live Coverage)
+QCOM: Yahoo — What Was AMD Stock Really Saying Before Its AI Breakout?
+CAT: ChartMill — Top dow jones movers in Monday's session
+LRCX: ChartMill — Top S&P500 movers in Monday's session
+QCOM: Yahoo — The Real Price Of Intel Stock Is Three Years Away
+COIN: Yahoo — Tesla’s 10% Weight in ARKK Sets Up a Make-or-Break Year for the Innovation ETF
+VST: Yahoo — Vistra (VST) Buys Cogentrix For $4 Billion And Locks In Meta And AWS Deals
+COIN: Yahoo — Kalshi And Polymarket Could Become Takeover Targets, Says Bernstein
+VLO: Yahoo — Energy ETFs to Buy as Oil Price Slides to Pre-Iran War Level
+NEE: Yahoo — Can Duke Energy's Investment Plan Deliver Years of Earnings Growth?
+ABT: Yahoo — Global Hematologic Malignancies Testing Market Size/Share Worth USD 12.47 Billion by 2035 at a 14.4% CAGR: Healthcare Fo
+VLO: Yahoo — Why HF Sinclair Is a Cash Flow Story, Not Merely a Valuation Play
+NEE: Yahoo — Why Big Tech’s Demand for Uninterrupted AI Power Is a Major Reality Check for NextEra Energy Investors
+LRCX: ChartMill — Discover which S&P500 stocks are making waves on Monday.
+ABT: Yahoo — Edwards Lifesciences Can Sustain Strong Revenue Growth on Technological Leadership, RBC Says
 
 ## FETCH INFO
-Fetched: 6/26/2026, 3:12:24 PM CT
+Fetched: 6/29/2026, 3:22:28 PM CT
 Holdings: 52/52
-Canary: AAPL $283.78 (2026-06-26)
+Canary: AAPL $281.74 (2026-06-29)
