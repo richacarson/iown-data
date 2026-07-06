@@ -10,35 +10,34 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Spectral+SC:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#171738; --bg-2:#101026; --surface:#1F1F45; --card:#252552; --card-2:#2B2B5E;
-    --ink:#F4EFE4; --soft:#B8B4AC; --faint:#6E6A88; --line:#2C2C52; --line-2:#383866;
-    --accent:#C9A84C; --accent-2:#D9BE73;
-    --up:#94B971; --dn:#D58E66; --div:#BE9F62; --grw:#94B971; --dig:#D2A24E;
-    --gate-bg-1:#1F1F45; --gate-bg-2:#101026;
-    --display:'Spectral', Georgia, 'Times New Roman', serif;
-    --sc:'Spectral SC','Spectral', Georgia, serif;
-    --mono:'IBM Plex Mono', ui-monospace, monospace;
+    --bg:#F4EFE4; --bg-2:#ECE5D6; --surface:#FAF7F2; --card:#FAF7F2; --card-2:#F1EADC;
+    --ink:#1C1713; --soft:#8B7355; --faint:#B0A894; --line:#DED6C6; --line-2:#CBBFA8;
+    --accent:#B0892E; --accent-2:#C9A84C;
+    --up:#4A7C59; --dn:#A8332F; --div:#8C6239; --grw:#5A7A3A; --dig:#C47A2A;
+    --gate-bg-1:#F4EFE4; --gate-bg-2:#E7DECB;
+    --display:Georgia, 'Gelasio', 'Times New Roman', serif;
+    --sc:Calibri, 'Carlito', 'Helvetica Neue', Arial, sans-serif;
+    --mono:Calibri, 'Carlito', 'Helvetica Neue', Arial, sans-serif;
     --maxw:760px; --measure:70ch;
   }
   *{ margin:0; padding:0; box-sizing:border-box; }
   html{ scroll-behavior:smooth; }
   body{
     background:var(--bg);
-    background-image:radial-gradient(135% 80% at 50% -12%, #262656 0%, rgba(23,23,56,0) 58%);
-    background-attachment:fixed;
+    background-image:none;
     color:var(--ink); font-family:var(--display);
     -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
   }
   body::after{ content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
-    background-image:radial-gradient(rgba(255,255,255,0.018) 0.5px, transparent 0.5px); background-size:3px 3px; }
+    background-image:radial-gradient(rgba(28,23,19,0.020) 0.5px, transparent 0.5px); background-size:3px 3px; }
   ::selection{ background:rgba(201,168,76,0.26); color:var(--ink); }
 
   /* ═══ GATE ═══ */
   .gate{ position:fixed; inset:0; z-index:9000; background:radial-gradient(130% 90% at 50% -15%, var(--gate-bg-1) 0%, var(--gate-bg-2) 75%); display:flex; align-items:center; justify-content:center; transition:opacity .5s; }
-  .gate::after{ content:""; position:absolute; inset:0; pointer-events:none; background-image:radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); background-size:4px 4px; }
+  .gate::after{ content:""; position:absolute; inset:0; pointer-events:none; background-image:radial-gradient(rgba(28,23,19,0.03) 1px, transparent 1px); background-size:4px 4px; }
   .gate.hidden{ opacity:0; pointer-events:none; }
   .gate-box{ position:relative; z-index:1; text-align:center; width:380px; max-width:90vw; padding:0 1.6rem; }
   .gate-logo{ width:188px; height:auto; margin:0 auto 2.4rem; display:block; }
@@ -46,9 +45,9 @@
   .gate h1{ font-family:var(--display); font-weight:500; font-size:2.2rem; color:var(--ink); letter-spacing:0.01em; margin-bottom:0.5rem; }
   .gate .sub{ font-family:var(--mono); font-size:0.56rem; letter-spacing:0.24em; text-transform:uppercase; color:var(--soft); margin-bottom:2rem; }
   .gate-rule{ width:34px; height:2px; background:linear-gradient(90deg,var(--accent),var(--accent-2)); margin:0 auto 2.2rem; }
-  .gate-input{ width:100%; background:rgba(255,255,255,0.04); border:1px solid rgba(227,199,127,0.30); color:var(--ink); font-family:var(--mono); font-size:0.8rem; padding:0.9rem 1rem; border-radius:6px; text-align:center; letter-spacing:0.18em; outline:none; transition:.2s; }
+  .gate-input{ width:100%; background:#FFFFFF; border:1px solid var(--line-2); color:var(--ink); font-family:var(--mono); font-size:0.8rem; padding:0.9rem 1rem; border-radius:6px; text-align:center; letter-spacing:0.18em; outline:none; transition:.2s; }
   .gate-input::placeholder{ color:var(--faint); }
-  .gate-input:focus{ border-color:var(--accent); background:rgba(255,255,255,0.07); box-shadow:0 0 0 3px rgba(200,164,91,0.12); }
+  .gate-input:focus{ border-color:var(--accent); background:#FFFFFF; box-shadow:0 0 0 3px rgba(176,137,46,0.15); }
   .gate-input.error{ border-color:#D9776A; animation:shake .4s; }
   .gate-hint{ font-family:var(--mono); font-size:0.62rem; color:var(--soft); margin-top:0.9rem; min-height:1rem; letter-spacing:0.05em; }
   .gate-hint.error{ color:#E08A7C; }
@@ -72,7 +71,7 @@
   .folio span{ white-space:nowrap; }
   @media (max-width:600px){ .folio{ font-size:0.48rem; letter-spacing:0.1em; gap:0.5rem; } .nameplate .np-rule{ max-width:14%; } }
 
-  .toolbar{ position:sticky; top:0; z-index:60; background:rgba(23,23,56,0.84); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.7rem max(1.5rem, calc((100% - var(--maxw))/2)); }
+  .toolbar{ position:sticky; top:0; z-index:60; background:rgba(244,239,228,0.88); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.7rem max(1.5rem, calc((100% - var(--maxw))/2)); }
   .tb-left{ display:flex; align-items:center; gap:0.7rem; min-width:0; }
   .tb-dot{ width:8px; height:8px; border-radius:50%; flex-shrink:0; box-shadow:0 0 8px currentColor; }
   .tb-meta{ min-width:0; }
@@ -80,13 +79,13 @@
   .tb-headline{ font-family:var(--display); font-size:1rem; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .tb-actions{ display:flex; gap:0.4rem; flex-shrink:0; }
   .btn{ font-family:var(--mono); font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; border:1px solid var(--line-2); background:transparent; color:var(--soft); padding:0.5rem 0.85rem; border-radius:5px; cursor:pointer; transition:all .16s; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem; }
-  .btn:hover{ border-color:var(--accent); color:var(--accent); background:rgba(200,164,91,0.06); }
-  .btn-primary{ background:linear-gradient(180deg,var(--accent-2),var(--accent)); color:#171738; border-color:var(--accent); font-weight:600; }
-  .btn-primary:hover{ filter:brightness(1.07); color:#171738; }
+  .btn:hover{ border-color:var(--accent); color:var(--accent); background:rgba(176,137,46,0.08); }
+  .btn-primary{ background:var(--accent-2); color:#1C1713; border-color:var(--accent); font-weight:600; }
+  .btn-primary:hover{ filter:brightness(1.04); color:#1C1713; }
   .btn-nav{ padding:0.5rem 0.62rem; }
   .btn:disabled{ opacity:0.3; cursor:default; }
 
-  .scrim{ position:fixed; inset:0; background:rgba(0,0,0,0.62); z-index:190; opacity:0; pointer-events:none; transition:opacity .25s; }
+  .scrim{ position:fixed; inset:0; background:rgba(28,23,19,0.40); z-index:190; opacity:0; pointer-events:none; transition:opacity .25s; }
   .scrim.show{ opacity:1; pointer-events:auto; }
   .drawer{ position:fixed; top:0; left:0; bottom:0; width:340px; max-width:84vw; z-index:200; background:var(--surface); border-right:1px solid var(--line-2); transform:translateX(-101%); transition:transform .3s cubic-bezier(.4,0,.2,1); display:flex; flex-direction:column; }
   .drawer.open{ transform:translateX(0); box-shadow:0 0 60px rgba(0,0,0,0.6); }
@@ -95,7 +94,7 @@
   .drawer-close{ background:none; border:none; font-size:1.4rem; color:var(--soft); cursor:pointer; line-height:1; transition:color .15s; }
   .drawer-close:hover{ color:var(--ink); }
   .drawer-list{ flex:1; overflow-y:auto; padding:0.5rem 0; }
-  .drawer-list::-webkit-scrollbar{ width:5px; } .drawer-list::-webkit-scrollbar-thumb{ background:#383866; border-radius:3px; }
+  .drawer-list::-webkit-scrollbar{ width:5px; } .drawer-list::-webkit-scrollbar-thumb{ background:var(--line-2); border-radius:3px; }
   .dr-entry{ display:flex; align-items:baseline; gap:0.7rem; padding:0.85rem 1.5rem; cursor:pointer; border-left:2px solid transparent; transition:background .14s; }
   .dr-entry:hover{ background:rgba(200,164,91,0.07); }
   .dr-entry.active{ background:rgba(200,164,91,0.12); border-left-color:var(--accent); }
@@ -109,13 +108,13 @@
 
   /* ── Cover (centered, bracketed front-page deck) ── */
   .commentary .kicker{ font-family:var(--mono); font-size:0.6rem; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent); text-align:center; margin-bottom:1rem; }
-  .commentary .headline-display{ font-family:var(--display); font-weight:800; font-size:3.2rem; line-height:1.03; letter-spacing:-0.02em; text-align:center; max-width:20ch; margin:0 auto 0.9rem; padding-top:1.5rem; position:relative; animation:rise .6s ease both; }
+  .commentary .headline-display{ font-family:var(--display); font-weight:800; font-size:3.2rem; line-height:1.03; letter-spacing:-0.02em; color:#9A7C1E; text-align:center; max-width:20ch; margin:0 auto 0.9rem; padding-top:1.5rem; position:relative; animation:rise .6s ease both; }
   .commentary .headline-display::before{ content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); width:96px; height:1px; background:var(--line-2); }
-  .commentary .headline-display.up{ color:var(--up); } .commentary .headline-display.dn{ color:var(--dn); }
+  .commentary .headline-display.up, .commentary .headline-display.dn{ color:#9A7C1E; }
   .commentary .subhead-display{ font-family:var(--display); font-style:italic; font-weight:400; font-size:1.2rem; color:var(--soft); line-height:1.55; text-align:center; max-width:62ch; margin:0 auto; padding-bottom:1.6rem; border-bottom:1px solid var(--line-2); animation:rise .6s .08s ease both; }
 
   /* ── Performance summary ── */
-  .perf-summary{ display:flex; gap:0; margin:2.6rem auto 2.8rem; border:1px solid var(--line-2); border-radius:10px; overflow:hidden; background:linear-gradient(180deg,var(--card-2),var(--surface)); animation:rise .6s .16s ease both; }
+  .perf-summary{ display:flex; gap:0; margin:2.6rem auto 2.8rem; border:1px solid var(--line-2); border-radius:3px; overflow:hidden; background:var(--surface); animation:rise .6s .16s ease both; }
   .perf-summary-card{ flex:1; padding:1.3rem 1.5rem; position:relative; }
   .perf-summary-card + .perf-summary-card{ border-left:1px solid var(--line); }
   .strat-bar{ position:absolute; top:0; left:0; width:100%; height:3px; }
@@ -154,7 +153,7 @@
   .commentary .mover-catalyst{ font-family:var(--display); font-size:0.97rem; color:var(--soft); width:100%; margin-top:0.18rem; line-height:1.55; }
 
   .loading, .empty{ text-align:center; padding:4rem 0; color:var(--soft); font-family:var(--display); font-style:italic; }
-  .pdf-fallback{ text-align:center; padding:2.5rem; background:var(--surface); border:1px solid var(--line-2); border-radius:10px; margin:2rem 0; }
+  .pdf-fallback{ text-align:center; padding:2.5rem; background:var(--surface); border:1px solid var(--line-2); border-radius:3px; margin:2rem 0; }
   .pdf-fallback p{ color:var(--soft); font-family:var(--display); font-style:italic; margin-bottom:1rem; }
 
   /* ═══ RESPONSIVE ═══ */
@@ -203,7 +202,7 @@
 
 <div class="gate" id="gate">
   <div class="gate-box">
-    <img class="gate-logo" src="paradiem-logo-white.png" alt="Paradiem">
+    <img class="gate-logo" src="paradiem-logo-ink.png" alt="Paradiem">
     <div class="eyebrow">Family Capital Investments</div>
     <h1>Market Commentary</h1>
     <div class="sub">Investment Committee</div>
@@ -228,7 +227,7 @@
   </div>
   <header class="masthead">
     <div class="eyebrow">Family Capital Investments</div>
-    <div class="nameplate"><span class="np-rule"></span><img class="mast-logo" src="paradiem-logo-white.png" alt="Paradiem"><span class="np-rule"></span></div>
+    <div class="nameplate"><span class="np-rule"></span><img class="mast-logo" src="paradiem-logo-ink.png" alt="Paradiem"><span class="np-rule"></span></div>
     <div class="folio">
       <span class="folio-l" id="mastDate"></span>
       <span class="folio-c">Market Commentary</span>
