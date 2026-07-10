@@ -6,8 +6,8 @@ Dow: 52,637.01 | +0.29%
 Nasdaq: 26,281.61 | +0.29%
 Russell 2000: 2,977.81 | -0.49%
 VIX: 15.03 | -5.11%
-Gold: $4,120.60 | -0.49%
-Bitcoin: $63,762 | +0.91%
+Gold: $4,120.10 | -0.50%
+Bitcoin: $63,824 | +1.01%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -16,11 +16,11 @@ ABT | $93.93 | -0.47 | -0.50% | $94.97 | $93.47
 ADI | $395.65 | +2.01 | +0.51% | $398.33 | $385.93
 ATO | $176.20 | +1.48 | +0.85% | $176.60 | $174.56
 ADP | $241.92 | +0.64 | +0.27% | $244.29 | $240.21
-BKH | $75.21 | +1.93 | +2.63% | $75.77 | $73.37
 CAT | $952.41 | +14.02 | +1.49% | $957.99 | $928.50
+CEG | $251.38 | +0.64 | +0.26% | $252.72 | $249.05
 CHD | $96.36 | +0.69 | +0.72% | $97.04 | $95.72
 CL | $92.24 | +1.23 | +1.35% | $92.72 | $91.32
-DVN | $42.23 | +0.21 | +0.50% | $42.51 | $41.80
+DGX | $207.44 | -0.61 | -0.29% | $209.86 | $207.03
 FAST | $46.49 | +0.14 | +0.30% | $47.26 | $46.16
 GD | $375.06 | +0.46 | +0.12% | $375.98 | $370.86
 GPC | $125.62 | +1.35 | +1.09% | $127.76 | $124.61
@@ -28,15 +28,15 @@ LRCX | $350.33 | -2.84 | -0.80% | $354.73 | $338.13
 LMT | $523.22 | +4.96 | +0.96% | $524.00 | $513.81
 NEE | $87.96 | +0.86 | +0.99% | $87.97 | $87.07
 NTR | $65.43 | +0.86 | +1.33% | $65.49 | $64.31
+NWG | $17.76 | +0.00 | +0.00% | $17.89 | $17.74
 ORI | $41.43 | +0.11 | +0.27% | $41.62 | $41.26
 PCAR | $124.57 | +1.29 | +1.05% | $125.59 | $122.92
 QCOM | $189.16 | -1.95 | -1.02% | $190.19 | $185.72
-DGX | $207.44 | -0.61 | -0.29% | $209.86 | $207.03
+SPGI | $430.50 | -2.46 | -0.57% | $440.61 | $427.06
 SSNC | $66.62 | -0.11 | -0.16% | $67.51 | $66.23
 STLD | $228.42 | +6.36 | +2.86% | $229.24 | $222.06
 SYK | $329.78 | +2.67 | +0.82% | $331.57 | $327.00
 TEL | $200.36 | +1.45 | +0.73% | $204.25 | $199.15
-VLO | $280.69 | -0.56 | -0.20% | $287.05 | $274.81
 
 ## GROWTH PORTFOLIO
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -45,27 +45,27 @@ AMD | $557.89 | +11.17 | +2.04% | $560.25 | $540.05
 AEM | $146.87 | -2.16 | -1.45% | $149.22 | $145.44
 ATAT | $32.21 | +0.55 | +1.74% | $32.30 | $31.49
 CVX | $176.40 | +2.35 | +1.35% | $176.42 | $173.51
-CWAN | $24.56 | +0.01 | +0.04% | $24.56 | $24.54
 CNX | $31.99 | -0.65 | -1.99% | $32.48 | $31.52
-COIN | $159.07 | +0.63 | +0.40% | $167.98 | $158.67
 CRDO | $257.79 | -7.86 | -2.96% | $268.60 | $253.43
 EIX | $75.20 | +0.56 | +0.75% | $75.42 | $74.51
 FCX | $61.52 | +0.99 | +1.64% | $62.05 | $60.13
 FTNT | $157.51 | -6.22 | -3.80% | $165.28 | $156.62
-SUPV | $9.87 | +0.59 | +6.36% | $10.04 | $9.24
 HRMY | $36.84 | -1.37 | -3.59% | $38.50 | $36.17
+HOOD | $111.97 | -3.14 | -2.73% | $119.43 | $108.81
 HUT | $102.22 | -4.00 | -3.77% | $107.02 | $99.91
 KEYS | $322.05 | -0.12 | -0.04% | $324.05 | $318.10
 MARA | $12.60 | -0.62 | -4.69% | $13.68 | $12.33
 MRVL | $235.81 | -7.46 | -3.07% | $240.94 | $232.02
+NOW | $107.71 | -1.13 | -1.04% | $111.50 | $105.71
 NVDA | $210.96 | +8.18 | +4.03% | $211.00 | $201.92
 NXPI | $292.26 | +1.72 | +0.59% | $293.90 | $284.46
 OKE | $89.92 | +0.42 | +0.47% | $90.50 | $88.33
-HOOD | $111.97 | -3.14 | -2.73% | $119.43 | $108.81
+SOFI | $18.78 | +0.16 | +0.86% | $19.74 | $18.62
 SYF | $72.44 | +0.87 | +1.22% | $72.78 | $70.99
-TSM | $434.11 | -2.85 | -0.65% | $439.65 | $428.10
 TOL | $149.49 | +1.23 | +0.83% | $152.98 | $149.27
+TSM | $434.11 | -2.85 | -0.65% | $439.65 | $428.10
 VST | $158.86 | +0.88 | +0.56% | $160.02 | $157.05
+YMM | $8.57 | -0.01 | -0.12% | $8.74 | $8.52
 
 ## DIGITAL ASSET ETFs
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -74,40 +74,40 @@ IBIT | $36.23 | +0.42 | +1.17% | $36.66 | $36.08
 ETHA | $13.53 | +0.34 | +2.58% | $13.67 | $13.39
 
 ## MARKET NEWS
+[02:39 PM] Reuters: US makes it easier to export Nvidia AI chips and military equipment to the UAE - Reuters
 [02:31 PM] Reuters: Trump says US agreed to Iran's request to continue talks, but ceasefire is over - Reuters
 [02:04 PM] CNBC: Stocks rise as investors await the start of earnings season — here's what to expect
-[12:51 PM] Reuters: US makes it easier to export certain military items, AI chips and commercial satellites to the UAE - Reuters
+[11:30 AM] Reuters: Fed report cites 'stepped-up' inflation due to tariffs, Iran war, AI buildout - Reuters
 [11:27 AM] CNBC: We're looking to buy more of this chip stock as the once-hot group cools
 [11:19 AM] Reuters: How the absence of Iran's Mojtaba Khamenei is becoming a liability for the Islamic Republic - Reuters
 [10:19 AM] Reuters: Turkey says it hopes to achieve result on lifting U.S. sanctions soon - Reuters
 [09:46 AM] Reuters: Iran has asked to continue talks and the US agreed, Trump says - Reuters
 [08:42 AM] CNBC: 48-year-old worked at a garden center for $17/hour to make ends meet: 'It's one of the best jobs I've ever had'
 [06:05 AM] Reuters: China temporarily bans helium exports as US-Iran tensions flare again - Reuters
-[05:24 AM] Reuters: Wall St Week Ahead Investors to grapple with packed week of earnings, CPI, Iran headlines - Reuters
 
 ## HOLDINGS NEWS
 AMD: Yahoo — Nvidia Vera CPU Expands Market Reach
+CEG: Yahoo — Fermi America Sinks 11.5% with $375 Million Offering
 NVDA: Yahoo — AI cash flow is booming for chipmakers & plummeting for Big Tech: Charts of the Day
 AMD: Yahoo — Rackspace Technology (RXT) Rebounds 22% After Brutal Week
 CAT: ChartMill — Top dow jones movers in Friday's session
 FTNT: ChartMill — What's going on in today's session: S&P500 movers
 MRVL: Yahoo — Altera returns to growth as AI, robotics fuel demand, CEO says
 CVX: Yahoo — Oil Is Spiking and the Iran Ceasefire Is Cracking: What It Means for Your Stocks
-COIN: Yahoo — New version of crypto's CLARITY Act could be coming next week. Here's what you need to know.
-VLO: Yahoo — Strong Fuel Demand & Elevated Crack Spreads Support Valero's Outlook
 CVX: Yahoo — ExxonMobil Expands Nigeria Presence With $1B Usan Infill Project
 ABT: Yahoo — Abbott Labs Vs. Danaher: Abbott’s Everyday Products Beat Danaher’s Slumping Biotech Equipment
 LMT: Yahoo — Defense ETFs to Buy Now as NATO Allies Pledge to Invest Over $50B
 SYK: Yahoo — ISRG to Report Q2 Results Next Week: Should You Buy the Stock Now?
-COIN: Yahoo — Kraken Reportedly Targets Retail Traders With Agentic Trading Ahead Of Highly Anticipated IPO
 HOOD: ChartMill — Stay informed about the most active stocks in the S&P500 index on Friday's session.
 EIX: Yahoo — Edison International Announces $25,000 Lineworker Scholarship Recipients
+SOFI: ChartMill — Check out the stocks that are attracting the most attention and driving market activity.
 ADP: Yahoo — INTU Stock: Where Compounding Could Take The Price
 LRCX: Yahoo — Does AI Rebound and China Chip Access Shift Change The Bull Case For Lam Research (LRCX)?
 TOL: Yahoo — Toll Brothers Announces New Luxury Home Community Coming Soon to Thousand Oaks, California
 HOOD: Yahoo — Kraken Rebuilds App Around Embedded AI Intelligence
+TEL: Yahoo — 3 Reasons Why Growth Investors Shouldn't Overlook TE Connectivity (TEL)
 
 ## FETCH INFO
-Fetched: 7/10/2026, 3:33:25 PM CT
+Fetched: 7/10/2026, 3:36:21 PM CT
 Holdings: 52/52
 Canary: AAPL $315.32 (2026-07-10)
