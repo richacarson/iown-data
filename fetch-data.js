@@ -21,8 +21,8 @@ if (!FH_KEY || !FMP_KEY) {
 const now = new Date();
 console.log(`Fetching at UTC ${now.getUTCHours()}:${String(now.getUTCMinutes()).padStart(2,'0')}`);
 
-const DIV = ['ABT','ADI','ATO','ADP','BKH','CAT','CHD','CL','DVN','FAST','GD','GPC','LRCX','LMT','NEE','NTR','ORI','PCAR','QCOM','DGX','SSNC','STLD','SYK','TEL','VLO'];
-const GRW = ['AMD','AEM','ATAT','CVX','CWAN','CNX','COIN','CRDO','EIX','FCX','FTNT','SUPV','HRMY','HUT','KEYS','MARA','MRVL','NVDA','NXPI','OKE','HOOD','SYF','TSM','TOL','VST'];
+const DIV = ['ABT','ADI','ATO','ADP','CAT','CEG','CHD','CL','DGX','FAST','GD','GPC','LRCX','LMT','NEE','NTR','NWG','ORI','PCAR','QCOM','SPGI','SSNC','STLD','SYK','TEL'];
+const GRW = ['AMD','AEM','ATAT','CVX','CNX','CRDO','EIX','FCX','FTNT','HRMY','HOOD','HUT','KEYS','MARA','MRVL','NOW','NVDA','NXPI','OKE','SOFI','SYF','TOL','TSM','VST','YMM'];
 const DIG = ['IBIT','ETHA'];
 const ALL = [...DIV, ...GRW, ...DIG];
 
