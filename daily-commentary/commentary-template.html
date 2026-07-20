@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ═══════════════════════════════════════════════════════════════════════
+     PARADIEM · FCI MARKET COMMENTARY — DAILY TEMPLATE
+     One self-contained file = the web page AND the print-to-PDF source.
+     Fill the fields marked ⟪LIKE_THIS⟫ and repeat the marked row blocks.
+     See COMMENTARY-INSTRUCTIONS.md for the full field guide + bar math.
+     ═══════════════════════════════════════════════════════════════════ -->
+<title>Paradiem · FCI Market Commentary — ⟪DATE_LONG⟫</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1C1713; --navy:#171738; --parch:#F0EADC; --cream:#FAF7F2;
+    --gold:#B8912F; --gold-line:#C9A84C; --taupe:#8B7355; --taupe-soft:#5C513F;
+    --mist:#B8B4AC; --line:#D8CFBD; --line-2:#C3B79C; --track:#EAE1CF;
+    --up:#4A7C59; --dn:#A8332F; --div:#8C6239; --grw:#5A7A3A;
+    --serif:Georgia,'Gelasio','Times New Roman',serif;
+    --sans:Calibri,'Carlito','Helvetica Neue',Arial,sans-serif;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{ background:var(--parch); color:var(--ink); font-family:var(--serif);
+        -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+  ::selection{ background:rgba(201,168,76,0.30); color:var(--ink); }
+  a{ color:#8A6D2B; text-decoration:none; } a:hover{ color:var(--navy); }
+  p{ orphans:3; widows:3; }
+
+  .doc{ max-width:760px; margin:0 auto; padding:34px 30px 64px; }
+
+  /* running head / foot — appear once on screen; repeat per page in print */
+  .runhead{ display:flex; align-items:center; justify-content:space-between; gap:12px;
+            padding:0 0 7px; border-bottom:1px solid var(--navy); font-family:var(--sans); }
+  .runhead img{ height:16px; width:auto; display:block; }
+  .runhead .rh-c{ font-size:7.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--navy); font-weight:700; }
+  .runhead .rh-r{ font-size:7.5px; letter-spacing:0.18em; text-transform:uppercase; color:var(--taupe); }
+
+  /* cover */
+  .cover{ text-align:center; padding:26px 0 0; }
+  .kicker{ font-family:var(--sans); font-size:9px; font-weight:700; letter-spacing:0.28em;
+           text-transform:uppercase; color:var(--taupe); margin-bottom:14px; }
+  .headline{ font-family:var(--serif); font-weight:700; font-size:clamp(2.6rem,7vw,3.4rem);
+             line-height:1.0; letter-spacing:-0.015em; color:var(--navy); max-width:15ch; margin:0 auto; }
+  .headline i{ font-style:italic; font-weight:500; color:var(--gold); }
+  .subhead{ font-family:var(--serif); font-style:italic; font-size:15px; line-height:1.5;
+            color:var(--taupe-soft); max-width:64ch; margin:14px auto 0; text-wrap:pretty; }
+
+  /* market ticker */
+  .ticker{ display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+           gap:6px 26px; margin:26px 0 0; padding:10px 0;
+           border-top:1px solid var(--line-2); border-bottom:1px solid var(--line-2); break-inside:avoid; }
+  .tk{ display:inline-flex; align-items:baseline; gap:6px; font-family:var(--sans); }
+  .tk .tk-l{ font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:var(--taupe); }
+  .tk .tk-v{ font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .up{ color:var(--up); } .dn{ color:var(--dn); } .flat{ color:var(--ink); }
+
+  /* two sleeves */
+  .sleeves{ display:grid; grid-template-columns:1fr 1fr; gap:0 38px; margin-top:20px; break-inside:avoid; }
+  @media (max-width:640px){ .sleeves{ grid-template-columns:1fr; gap:26px; } .sleeve+.sleeve{ border-left:none !important; padding-left:0 !important; } }
+  .sleeve+.sleeve{ padding-left:38px; border-left:1px solid var(--line-2); }
+  .sl-head{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
+  .sl-name{ display:flex; align-items:center; gap:7px; font-family:var(--sans);
+            font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--navy); }
+  .sl-tick{ width:9px; height:9px; display:inline-block; }
+  .sl-tag{ font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; }
+  .sl-big{ display:flex; align-items:baseline; gap:8px; margin-top:5px; }
+  .sl-big .num{ font-family:var(--serif); font-size:clamp(2.6rem,7vw,3.2rem); font-weight:700;
+                line-height:0.9; font-variant-numeric:tabular-nums; letter-spacing:-0.01em; }
+  .sl-big .cap{ font-family:var(--sans); font-size:8px; letter-spacing:0.14em; text-transform:uppercase; color:var(--mist); }
+
+  .bars{ margin-top:12px; }
+  .bar{ display:grid; grid-template-columns:44px 1fr 58px; align-items:center; gap:8px; padding:2.5px 0; }
+  .bar .b-l{ font-family:var(--sans); font-size:8.5px; font-weight:700; text-transform:uppercase; color:var(--taupe); }
+  .bar .b-l.me{ color:var(--navy); }
+  .bar .b-track{ position:relative; display:block; height:9px; background:var(--track); }
+  .bar .b-fill{ position:absolute; left:0; top:0; bottom:0; background:var(--line-2); }
+  .bar .b-fill.me{ background:var(--navy); }
+  .bar .b-v{ font-family:var(--sans); font-size:10px; font-variant-numeric:tabular-nums; text-align:right; }
+  .bar .b-v.me{ font-weight:700; }
+
+  .ytd{ font-family:var(--sans); font-size:10px; margin-top:11px; padding-top:8px; border-top:1px solid #E4DBCB; }
+  .ytd .ytd-k{ font-size:7.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--mist); margin-right:6px; }
+  .ytd .ytd-v{ font-weight:700; color:var(--up); font-variant-numeric:tabular-nums; }
+  .ytd .ytd-b{ color:var(--taupe); }
+
+  /* section heads */
+  .sec{ font-family:var(--sans); font-size:9.5px; font-weight:700; letter-spacing:0.22em;
+        text-transform:uppercase; color:var(--taupe); margin:26px 0 14px; padding-bottom:7px;
+        border-bottom:1px solid var(--line); position:relative; break-after:avoid; }
+  .sec::before{ content:""; position:absolute; left:0; bottom:-1px; width:38px; height:2px; background:var(--gold-line); }
+
+  /* prose */
+  .flow{ column-count:2; column-gap:26px; column-rule:1px solid #DDD4C2; }
+  .flow p{ font-family:var(--serif); font-size:11px; line-height:1.62; margin:0 0 10px; text-align:justify; hyphens:auto; }
+  .flow p b{ color:var(--navy); }
+  .flow .dropcap::first-letter{ float:left; font-family:var(--serif); font-weight:700; font-size:3.1rem; line-height:0.66; padding:2px 7px 0 0; color:var(--gold); }
+  .pull{ break-inside:avoid; column-span:all; font-family:var(--serif); font-style:italic; font-size:16px;
+         line-height:1.5; color:var(--navy); text-align:center; max-width:620px; margin:16px auto;
+         padding:13px 12px; border-top:1px solid var(--gold-line); border-bottom:1px solid var(--gold-line); }
+
+  /* movers */
+  .movers-label{ font-family:var(--sans); font-size:9px; font-weight:700; letter-spacing:0.16em;
+                 text-transform:uppercase; margin-bottom:5px; break-after:avoid; }
+  .movers-label.win{ color:var(--up); } .movers-label.lose{ color:var(--dn); }
+  .movers{ column-count:2; column-gap:26px; column-rule:1px solid #DDD4C2; margin-bottom:13px; }
+  .mover{ break-inside:avoid; padding:6px 0; border-bottom:1px solid #E4DBCB; }
+  .mover-top{ display:flex; align-items:baseline; gap:7px; white-space:nowrap; }
+  .mover-tkr{ font-family:var(--sans); font-weight:700; font-size:10.5px; color:var(--navy); flex-shrink:0; }
+  .mover-pct{ font-family:var(--sans); font-weight:700; font-size:10.5px; font-variant-numeric:tabular-nums; }
+  .mover-strat{ font-family:var(--sans); font-size:7px; letter-spacing:0.08em; text-transform:uppercase; margin-left:auto; }
+  .mover-strat.div{ color:var(--div); } .mover-strat.grw{ color:var(--grw); }
+  .mover-cat{ font-family:var(--serif); font-size:10.5px; color:var(--taupe-soft); line-height:1.45; margin-top:2px; }
+
+  /* ytd band */
+  .band{ background:var(--navy); padding:20px 22px; display:grid; grid-template-columns:1fr 1fr; gap:26px; break-inside:avoid; }
+  @media (max-width:640px){ .band{ grid-template-columns:1fr; gap:16px; } }
+  .band .bl{ font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-line); }
+  .band .bn{ font-family:var(--serif); font-size:28px; font-weight:700; color:var(--parch); line-height:1; margin-top:5px; font-variant-numeric:tabular-nums; }
+  .band .bb{ font-family:var(--sans); font-size:10px; color:var(--mist); margin-top:5px; }
+
+  .runfoot{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:26px;
+            padding-top:8px; border-top:1px solid var(--gold-line); font-family:var(--sans);
+            font-size:7px; letter-spacing:0.14em; text-transform:uppercase; color:var(--taupe); }
+
+  /* ── PRINT (Letter, print-to-PDF) ── */
+  @page{ size:letter; margin:0.55in; }
+  @media print{
+    body{ background:#fff; }
+    .doc{ max-width:none; margin:0; padding:0; }
+    .runhead{ position:fixed; top:0; left:0; right:0; }
+    .runfoot{ position:fixed; bottom:0; left:0; right:0; margin-top:0; background:#fff; }
+    .cover{ padding-top:34px; }
+    .doc{ padding-bottom:26px; }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <!-- ══ RUNNING HEADER ══ -->
+  <div class="runhead">
+    <img src="paradiem-logo.png" alt="Paradiem">
+    <span class="rh-c">Market Commentary &middot; Post-Close Edition</span>
+    <span class="rh-r">⟪DATE_LONG⟫</span>
+  </div>
+
+  <!-- ══ COVER ══ -->
+  <div class="cover">
+    <div class="kicker">The Session &middot; Post-Close Read</div>
+    <!-- headline: wrap the emphasis phrase in <i>…</i> (renders gold italic) -->
+    <h1 class="headline">⟪HEADLINE_A⟫ <i>⟪HEADLINE_EMPHASIS⟫</i></h1>
+    <p class="subhead">⟪SUBHEAD⟫</p>
+  </div>
+
+  <!-- ══ MARKET TICKER ══ (class: up / dn / flat; use &#9650; up, &#9660; down) -->
+  <div class="ticker">
+    <span class="tk"><span class="tk-l">S&amp;P 500</span><span class="tk-v dn">&#9660;&thinsp;⟪SP_PCT⟫</span></span>
+    <span class="tk"><span class="tk-l">Nasdaq</span><span class="tk-v dn">&#9660;&thinsp;⟪NAS_PCT⟫</span></span>
+    <span class="tk"><span class="tk-l">Dow</span><span class="tk-v up">&#9650;&thinsp;⟪DOW_PCT⟫</span></span>
+    <span class="tk"><span class="tk-l">VIX</span><span class="tk-v flat">⟪VIX⟫</span></span>
+    <span class="tk"><span class="tk-l">Brent</span><span class="tk-v up">&#9650;&thinsp;⟪BRENT⟫</span></span>
+  </div>
+
+  <!-- ══ TWO SLEEVES ══
+       Bar width % = round( |return| / MAXABS * 100 ), where MAXABS =
+       the largest absolute day-return among ALL rows in BOTH sleeves.
+       "me" class = the FCI row (navy bar, bold value). Value class up/dn by sign. -->
+  <div class="sleeves">
+
+    <!-- Dividend -->
+    <div class="sleeve">
+      <div class="sl-head">
+        <span class="sl-name"><span class="sl-tick" style="background:var(--div)"></span>Dividend Strategy</span>
+        <span class="sl-tag up">&#9650;&thinsp; ⟪DIV_TAG⟫</span> <!-- e.g. Beat SPY / Trailed DVY; class up|dn -->
+      </div>
+      <div class="sl-big"><span class="num up">⟪DIV_PCT⟫</span><span class="cap">1-Day</span></div>
+      <div class="bars">
+        <div class="bar"><span class="b-l me">FCI</span><span class="b-track"><span class="b-fill me" style="width:⟪DIV_W⟫%"></span></span><span class="b-v me up">⟪DIV_PCT⟫</span></div>
+        <div class="bar"><span class="b-l">DVY</span><span class="b-track"><span class="b-fill" style="width:⟪DVY_W⟫%"></span></span><span class="b-v up">⟪DVY_PCT⟫</span></div>
+        <div class="bar"><span class="b-l">SPY</span><span class="b-track"><span class="b-fill" style="width:⟪SPY_W⟫%"></span></span><span class="b-v dn">⟪SPY_PCT⟫</span></div>
+      </div>
+      <div class="ytd"><span class="ytd-k">YTD</span><span class="ytd-v">⟪DIV_YTD⟫</span><span class="ytd-b"> &nbsp;vs DVY ⟪DVY_YTD⟫ &middot; SPY ⟪SPY_YTD⟫</span></div>
+    </div>
+
+    <!-- Growth -->
+    <div class="sleeve">
+      <div class="sl-head">
+        <span class="sl-name"><span class="sl-tick" style="background:var(--grw)"></span>Growth Portfolio</span>
+        <span class="sl-tag dn">&#9660;&thinsp; ⟪GRW_TAG⟫</span>
+      </div>
+      <div class="sl-big"><span class="num dn">⟪GRW_PCT⟫</span><span class="cap">1-Day</span></div>
+      <div class="bars">
+        <div class="bar"><span class="b-l me">FCI</span><span class="b-track"><span class="b-fill me" style="width:⟪GRW_W⟫%"></span></span><span class="b-v me dn">⟪GRW_PCT⟫</span></div>
+        <div class="bar"><span class="b-l">IUSG</span><span class="b-track"><span class="b-fill" style="width:⟪IUSG_W⟫%"></span></span><span class="b-v dn">⟪IUSG_PCT⟫</span></div>
+      </div>
+      <div class="ytd"><span class="ytd-k">YTD</span><span class="ytd-v">⟪GRW_YTD⟫</span><span class="ytd-b"> &nbsp;vs IUSG ⟪IUSG_YTD⟫</span></div>
+    </div>
+  </div>
+
+  <!-- ══ THE SESSION ══ -->
+  <div class="sec">The Session</div>
+  <div class="flow">
+    <p class="dropcap"><b>⟪LEAD_BOLD_SENTENCE⟫</b> ⟪LEAD_REST⟫</p>
+    <p>⟪SESSION_PARA_2⟫</p>
+    <div class="pull">⟪PULL_QUOTE⟫</div>
+    <p>⟪SESSION_PARA_3⟫</p>
+  </div>
+
+  <!-- ══ NOTABLE MOVERS ══ -->
+  <div class="sec">FCI Holdings &middot; Notable Movers</div>
+  <div class="movers-label win">Winners</div>
+  <div class="movers">
+    <!-- REPEAT one .mover per winner. pct class = up. strat class = div|grw -->
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct up">⟪PCT⟫</span><span class="mover-strat div">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct up">⟪PCT⟫</span><span class="mover-strat div">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct up">⟪PCT⟫</span><span class="mover-strat div">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct up">⟪PCT⟫</span><span class="mover-strat div">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+  </div>
+  <div class="movers-label lose">Decliners</div>
+  <div class="movers">
+    <!-- REPEAT one .mover per decliner. pct class = dn. -->
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct dn">⟪PCT⟫</span><span class="mover-strat grw">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct dn">⟪PCT⟫</span><span class="mover-strat grw">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct dn">⟪PCT⟫</span><span class="mover-strat grw">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">⟪TKR⟫</span><span class="mover-pct dn">⟪PCT⟫</span><span class="mover-strat grw">⟪STRATEGY⟫</span></div><div class="mover-cat">⟪CATALYST⟫</div></div>
+  </div>
+
+  <!-- ══ HOLDINGS NEWS ══ (omit this whole block on days with no holdings news) -->
+  <div class="sec">Holdings News</div>
+  <div class="flow">
+    <p><b>⟪NEWS_HEAD_1⟫</b> ⟪NEWS_BODY_1⟫</p>
+    <p><b>⟪NEWS_HEAD_2⟫</b> ⟪NEWS_BODY_2⟫</p>
+  </div>
+
+  <!-- ══ YEAR-TO-DATE ══ -->
+  <div class="sec">Year-to-Date Standing</div>
+  <div class="band">
+    <div><div class="bl">Dividend Strategy</div><div class="bn">⟪DIV_YTD⟫</div><div class="bb">vs DVY ⟪DVY_YTD⟫ &nbsp;/&nbsp; SPY ⟪SPY_YTD⟫</div></div>
+    <div><div class="bl">Growth Portfolio</div><div class="bn">⟪GRW_YTD⟫</div><div class="bb">vs IUSG ⟪IUSG_YTD⟫</div></div>
+  </div>
+
+  <!-- ══ RUNNING FOOTER ══ -->
+  <div class="runfoot">
+    <span>Confidential &middot; Not for distribution</span>
+    <span>Family Capital Investments &middot; RIA &middot; Paradiem</span>
+  </div>
+
+</div>
+</body>
+</html>

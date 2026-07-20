@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ═══════════════════════════════════════════════════════════════════════
+     PARADIEM · FCI MARKET COMMENTARY — FILLED EXAMPLE — 2026-07-16
+     One self-contained file = the web page AND the print-to-PDF source.
+     Fill the fields marked ⟪LIKE_THIS⟫ and repeat the marked row blocks.
+     See COMMENTARY-INSTRUCTIONS.md for the full field guide + bar math.
+     ═══════════════════════════════════════════════════════════════════ -->
+<title>Paradiem · FCI Market Commentary — Thursday, July 16 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1C1713; --navy:#171738; --parch:#F0EADC; --cream:#FAF7F2;
+    --gold:#B8912F; --gold-line:#C9A84C; --taupe:#8B7355; --taupe-soft:#5C513F;
+    --mist:#B8B4AC; --line:#D8CFBD; --line-2:#C3B79C; --track:#EAE1CF;
+    --up:#4A7C59; --dn:#A8332F; --div:#8C6239; --grw:#5A7A3A;
+    --serif:Georgia,'Gelasio','Times New Roman',serif;
+    --sans:Calibri,'Carlito','Helvetica Neue',Arial,sans-serif;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{ background:var(--parch); color:var(--ink); font-family:var(--serif);
+        -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+  ::selection{ background:rgba(201,168,76,0.30); color:var(--ink); }
+  a{ color:#8A6D2B; text-decoration:none; } a:hover{ color:var(--navy); }
+  p{ orphans:3; widows:3; }
+
+  .doc{ max-width:760px; margin:0 auto; padding:34px 30px 64px; }
+
+  /* running head / foot — appear once on screen; repeat per page in print */
+  .runhead{ display:flex; align-items:center; justify-content:space-between; gap:12px;
+            padding:0 0 7px; border-bottom:1px solid var(--navy); font-family:var(--sans); }
+  .runhead img{ height:16px; width:auto; display:block; }
+  .runhead .rh-c{ font-size:7.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--navy); font-weight:700; }
+  .runhead .rh-r{ font-size:7.5px; letter-spacing:0.18em; text-transform:uppercase; color:var(--taupe); }
+
+  /* cover */
+  .cover{ text-align:center; padding:26px 0 0; }
+  .kicker{ font-family:var(--sans); font-size:9px; font-weight:700; letter-spacing:0.28em;
+           text-transform:uppercase; color:var(--taupe); margin-bottom:14px; }
+  .headline{ font-family:var(--serif); font-weight:700; font-size:clamp(2.6rem,7vw,3.4rem);
+             line-height:1.0; letter-spacing:-0.015em; color:var(--navy); max-width:15ch; margin:0 auto; }
+  .headline i{ font-style:italic; font-weight:500; color:var(--gold); }
+  .subhead{ font-family:var(--serif); font-style:italic; font-size:15px; line-height:1.5;
+            color:var(--taupe-soft); max-width:64ch; margin:14px auto 0; text-wrap:pretty; }
+
+  /* market ticker */
+  .ticker{ display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+           gap:6px 26px; margin:26px 0 0; padding:10px 0;
+           border-top:1px solid var(--line-2); border-bottom:1px solid var(--line-2); break-inside:avoid; }
+  .tk{ display:inline-flex; align-items:baseline; gap:6px; font-family:var(--sans); }
+  .tk .tk-l{ font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:var(--taupe); }
+  .tk .tk-v{ font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .up{ color:var(--up); } .dn{ color:var(--dn); } .flat{ color:var(--ink); }
+
+  /* two sleeves */
+  .sleeves{ display:grid; grid-template-columns:1fr 1fr; gap:0 38px; margin-top:20px; break-inside:avoid; }
+  @media (max-width:640px){ .sleeves{ grid-template-columns:1fr; gap:26px; } .sleeve+.sleeve{ border-left:none !important; padding-left:0 !important; } }
+  .sleeve+.sleeve{ padding-left:38px; border-left:1px solid var(--line-2); }
+  .sl-head{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
+  .sl-name{ display:flex; align-items:center; gap:7px; font-family:var(--sans);
+            font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--navy); }
+  .sl-tick{ width:9px; height:9px; display:inline-block; }
+  .sl-tag{ font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; }
+  .sl-big{ display:flex; align-items:baseline; gap:8px; margin-top:5px; }
+  .sl-big .num{ font-family:var(--serif); font-size:clamp(2.6rem,7vw,3.2rem); font-weight:700;
+                line-height:0.9; font-variant-numeric:tabular-nums; letter-spacing:-0.01em; }
+  .sl-big .cap{ font-family:var(--sans); font-size:8px; letter-spacing:0.14em; text-transform:uppercase; color:var(--mist); }
+
+  .bars{ margin-top:12px; }
+  .bar{ display:grid; grid-template-columns:44px 1fr 58px; align-items:center; gap:8px; padding:2.5px 0; }
+  .bar .b-l{ font-family:var(--sans); font-size:8.5px; font-weight:700; text-transform:uppercase; color:var(--taupe); }
+  .bar .b-l.me{ color:var(--navy); }
+  .bar .b-track{ position:relative; display:block; height:9px; background:var(--track); }
+  .bar .b-fill{ position:absolute; left:0; top:0; bottom:0; background:var(--line-2); }
+  .bar .b-fill.me{ background:var(--navy); }
+  .bar .b-v{ font-family:var(--sans); font-size:10px; font-variant-numeric:tabular-nums; text-align:right; }
+  .bar .b-v.me{ font-weight:700; }
+
+  .ytd{ font-family:var(--sans); font-size:10px; margin-top:11px; padding-top:8px; border-top:1px solid #E4DBCB; }
+  .ytd .ytd-k{ font-size:7.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--mist); margin-right:6px; }
+  .ytd .ytd-v{ font-weight:700; color:var(--up); font-variant-numeric:tabular-nums; }
+  .ytd .ytd-b{ color:var(--taupe); }
+
+  /* section heads */
+  .sec{ font-family:var(--sans); font-size:9.5px; font-weight:700; letter-spacing:0.22em;
+        text-transform:uppercase; color:var(--taupe); margin:26px 0 14px; padding-bottom:7px;
+        border-bottom:1px solid var(--line); position:relative; break-after:avoid; }
+  .sec::before{ content:""; position:absolute; left:0; bottom:-1px; width:38px; height:2px; background:var(--gold-line); }
+
+  /* prose */
+  .flow{ column-count:2; column-gap:26px; column-rule:1px solid #DDD4C2; }
+  .flow p{ font-family:var(--serif); font-size:11px; line-height:1.62; margin:0 0 10px; text-align:justify; hyphens:auto; }
+  .flow p b{ color:var(--navy); }
+  .flow .dropcap::first-letter{ float:left; font-family:var(--serif); font-weight:700; font-size:3.1rem; line-height:0.66; padding:2px 7px 0 0; color:var(--gold); }
+  .pull{ break-inside:avoid; column-span:all; font-family:var(--serif); font-style:italic; font-size:16px;
+         line-height:1.5; color:var(--navy); text-align:center; max-width:620px; margin:16px auto;
+         padding:13px 12px; border-top:1px solid var(--gold-line); border-bottom:1px solid var(--gold-line); }
+
+  /* movers */
+  .movers-label{ font-family:var(--sans); font-size:9px; font-weight:700; letter-spacing:0.16em;
+                 text-transform:uppercase; margin-bottom:5px; break-after:avoid; }
+  .movers-label.win{ color:var(--up); } .movers-label.lose{ color:var(--dn); }
+  .movers{ column-count:2; column-gap:26px; column-rule:1px solid #DDD4C2; margin-bottom:13px; }
+  .mover{ break-inside:avoid; padding:6px 0; border-bottom:1px solid #E4DBCB; }
+  .mover-top{ display:flex; align-items:baseline; gap:7px; white-space:nowrap; }
+  .mover-tkr{ font-family:var(--sans); font-weight:700; font-size:10.5px; color:var(--navy); flex-shrink:0; }
+  .mover-pct{ font-family:var(--sans); font-weight:700; font-size:10.5px; font-variant-numeric:tabular-nums; }
+  .mover-strat{ font-family:var(--sans); font-size:7px; letter-spacing:0.08em; text-transform:uppercase; margin-left:auto; }
+  .mover-strat.div{ color:var(--div); } .mover-strat.grw{ color:var(--grw); }
+  .mover-cat{ font-family:var(--serif); font-size:10.5px; color:var(--taupe-soft); line-height:1.45; margin-top:2px; }
+
+  /* ytd band */
+  .band{ background:var(--navy); padding:20px 22px; display:grid; grid-template-columns:1fr 1fr; gap:26px; break-inside:avoid; }
+  @media (max-width:640px){ .band{ grid-template-columns:1fr; gap:16px; } }
+  .band .bl{ font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-line); }
+  .band .bn{ font-family:var(--serif); font-size:28px; font-weight:700; color:var(--parch); line-height:1; margin-top:5px; font-variant-numeric:tabular-nums; }
+  .band .bb{ font-family:var(--sans); font-size:10px; color:var(--mist); margin-top:5px; }
+
+  .runfoot{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:26px;
+            padding-top:8px; border-top:1px solid var(--gold-line); font-family:var(--sans);
+            font-size:7px; letter-spacing:0.14em; text-transform:uppercase; color:var(--taupe); }
+
+  /* ── PRINT (Letter, print-to-PDF) ── */
+  @page{ size:letter; margin:0.55in; }
+  @media print{
+    body{ background:#fff; }
+    .doc{ max-width:none; margin:0; padding:0; }
+    .runhead{ position:fixed; top:0; left:0; right:0; }
+    .runfoot{ position:fixed; bottom:0; left:0; right:0; margin-top:0; background:#fff; }
+    .cover{ padding-top:34px; }
+    .doc{ padding-bottom:26px; }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <!-- ══ RUNNING HEADER ══ -->
+  <div class="runhead">
+    <img src="paradiem-logo.png" alt="Paradiem">
+    <span class="rh-c">Market Commentary &middot; Post-Close Edition</span>
+    <span class="rh-r">Thursday, July 16 2026</span>
+  </div>
+
+  <!-- ══ COVER ══ -->
+  <div class="cover">
+    <div class="kicker">The Session &middot; Post-Close Read</div>
+    <!-- headline: wrap the emphasis phrase in <i>…</i> (renders gold italic) -->
+    <h1 class="headline">Health Over <i>Hardware</i></h1>
+    <p class="subhead">A second-session semiconductor de-rating overwhelmed an Abbott-led healthcare surge; TSMC’s record quarter couldn’t hold the chips. The two sleeves split almost to the decimal they were built to.</p>
+  </div>
+
+  <!-- ══ MARKET TICKER ══ (class: up / dn / flat; use &#9650; up, &#9660; down) -->
+  <div class="ticker">
+    <span class="tk"><span class="tk-l">S&amp;P 500</span><span class="tk-v dn">&#9660;&thinsp;0.50%</span></span>
+    <span class="tk"><span class="tk-l">Nasdaq</span><span class="tk-v dn">&#9660;&thinsp;1.45%</span></span>
+    <span class="tk"><span class="tk-l">Dow</span><span class="tk-v up">&#9650;&thinsp;0.31%</span></span>
+    <span class="tk"><span class="tk-l">VIX</span><span class="tk-v flat">18.9</span></span>
+    <span class="tk"><span class="tk-l">Brent</span><span class="tk-v up">&#9650;&thinsp;$104</span></span>
+  </div>
+
+  <!-- ══ TWO SLEEVES ══
+       Bar width % = round( |return| / MAXABS * 100 ), where MAXABS =
+       the largest absolute day-return among ALL rows in BOTH sleeves.
+       "me" class = the FCI row (navy bar, bold value). Value class up/dn by sign. -->
+  <div class="sleeves">
+
+    <!-- Dividend -->
+    <div class="sleeve">
+      <div class="sl-head">
+        <span class="sl-name"><span class="sl-tick" style="background:var(--div)"></span>Dividend Strategy</span>
+        <span class="sl-tag up">&#9650;&thinsp; Beat SPY</span> <!-- e.g. Beat SPY / Trailed DVY; class up|dn -->
+      </div>
+      <div class="sl-big"><span class="num up">+1.19%</span><span class="cap">1-Day</span></div>
+      <div class="bars">
+        <div class="bar"><span class="b-l me">FCI</span><span class="b-track"><span class="b-fill me" style="width:39%"></span></span><span class="b-v me up">+1.19%</span></div>
+        <div class="bar"><span class="b-l">DVY</span><span class="b-track"><span class="b-fill" style="width:56%"></span></span><span class="b-v up">+1.70%</span></div>
+        <div class="bar"><span class="b-l">SPY</span><span class="b-track"><span class="b-fill" style="width:17%"></span></span><span class="b-v dn">−0.52%</span></div>
+      </div>
+      <div class="ytd"><span class="ytd-k">YTD</span><span class="ytd-v">+17.88%</span><span class="ytd-b"> &nbsp;vs DVY +16.82% &middot; SPY +10.70%</span></div>
+    </div>
+
+    <!-- Growth -->
+    <div class="sleeve">
+      <div class="sl-head">
+        <span class="sl-name"><span class="sl-tick" style="background:var(--grw)"></span>Growth Portfolio</span>
+        <span class="sl-tag dn">&#9660;&thinsp; Trailed IUSG</span>
+      </div>
+      <div class="sl-big"><span class="num dn">−3.04%</span><span class="cap">1-Day</span></div>
+      <div class="bars">
+        <div class="bar"><span class="b-l me">FCI</span><span class="b-track"><span class="b-fill me" style="width:100%"></span></span><span class="b-v me dn">−3.04%</span></div>
+        <div class="bar"><span class="b-l">IUSG</span><span class="b-track"><span class="b-fill" style="width:56%"></span></span><span class="b-v dn">−1.69%</span></div>
+      </div>
+      <div class="ytd"><span class="ytd-k">YTD</span><span class="ytd-v">+14.28%</span><span class="ytd-b"> &nbsp;vs IUSG +11.13%</span></div>
+    </div>
+  </div>
+
+  <!-- ══ THE SESSION ══ -->
+  <div class="sec">The Session</div>
+  <div class="flow">
+    <p class="dropcap"><b>The tape divided cleanly along the fault line we have been watching all week.</b> The S&amp;P 500 closed −0.50% and the Nasdaq −1.45% as a second consecutive de-rating of the AI-hardware complex overwhelmed the broader market, while the Dow held modestly green. Beneath the index, the day was less a decline than a rotation — capital leaving semiconductors and moving into healthcare, staples and defensives.</p>
+    <p>The chip story set the tone before the open. Taiwan Semiconductor reported roughly 77% earnings growth and raised its 2026 capital-spending plan to $60–$64 billion — and still the shares gave back more than 4%. A dominant print that clears every estimate and is met with selling is the market telling you that expectations, not results, are the problem. SK Hynix fell about 11%, Korea’s KOSPI slid more than 6%, and memory names led U.S. declines.</p>
+    <div class="pull">A day like this is the barbell working exactly as intended — one sleeve leaning into growth, the other into durable cash flows, with rotation moving the weight between them without breaking the frame.</div>
+    <p>The other side of the trade belonged to us. A wave of healthcare earnings redirected the flows: Abbott jumped to the top of the S&amp;P leaderboard on a Q2 beat, and UnitedHealth’s decisive beat carried the Dow. The Dividend Strategy gained +1.19%, edging past a flat-to-lower SPY while trailing a strong DVY. The Growth Portfolio closed −3.04% against IUSG’s −1.69%.</p>
+  </div>
+
+  <!-- ══ NOTABLE MOVERS ══ -->
+  <div class="sec">FCI Holdings &middot; Notable Movers</div>
+  <div class="movers-label win">Winners</div>
+  <div class="movers">
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">ABT</span><span class="mover-pct up">+10.71%</span><span class="mover-strat div">Dividend</span></div><div class="mover-cat">Abbott topped the S&amp;P on a Q2 beat — adjusted EPS $1.31 vs $1.28 — with guidance raised and diagnostics up 42%.</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">SYK</span><span class="mover-pct up">+4.66%</span><span class="mover-strat div">Dividend</span></div><div class="mover-cat">Stryker rode the broad medical-technology bid as healthcare led the rotation, the sector gaining roughly 2%.</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">GPC</span><span class="mover-pct up">+3.85%</span><span class="mover-strat div">Dividend</span></div><div class="mover-cat">Genuine Parts advanced as defensive, cash-generative industrials drew flows out of high-beta technology.</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">DGX</span><span class="mover-pct up">+3.79%</span><span class="mover-strat div">Dividend</span></div><div class="mover-cat">Quest Diagnostics extended with the diagnostics complex on Abbott’s read-through and continued healthcare strength.</div></div>
+  </div>
+  <div class="movers-label lose">Decliners</div>
+  <div class="movers">
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">HUT</span><span class="mover-pct dn">−10.79%</span><span class="mover-strat grw">Growth</span></div><div class="mover-cat">Hut 8 led the bitcoin miners lower as digital assets sold off with risk, bitcoin easing toward $64,000.</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">MRVL</span><span class="mover-pct dn">−8.71%</span><span class="mover-strat grw">Growth</span></div><div class="mover-cat">Marvell extended Wednesday’s slide as custom-silicon and AI-optical names bore the brunt of the chip de-rating.</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">HOOD</span><span class="mover-pct dn">−8.24%</span><span class="mover-strat grw">Growth</span></div><div class="mover-cat">Robinhood fell as the risk-off tone and a softer crypto tape pressured the digital broker.</div></div>
+    <div class="mover"><div class="mover-top"><span class="mover-tkr">AMD</span><span class="mover-pct dn">−5.33%</span><span class="mover-strat grw">Growth</span></div><div class="mover-cat">AMD was swept into the broad AI-chip selling despite no company-specific news.</div></div>
+  </div>
+
+  <!-- ══ HOLDINGS NEWS ══ (omit this whole block on days with no holdings news) -->
+  <div class="sec">Holdings News</div>
+  <div class="flow">
+    <p><b>Abbott (ABT) — Q2 beat and raised guidance.</b> Adjusted EPS of $1.31 topped the $1.28 consensus on revenue of $12.59 billion, up 13% reported. Management raised full-year adjusted EPS guidance to $5.45–$5.60. Diagnostics rose 42.3%, lifted by the Exact Sciences acquisition and mid-teens Cologuard growth.</p>
+    <p><b>Taiwan Semiconductor (TSM) — strong quarter, weak reaction.</b> TSMC posted its fifth straight record quarter with roughly 77% earnings growth and lifted its 2026 capital-spending outlook, yet the shares closed −2.32% and set the tone for the sector — a dominant print sold rather than bought.</p>
+  </div>
+
+  <!-- ══ YEAR-TO-DATE ══ -->
+  <div class="sec">Year-to-Date Standing</div>
+  <div class="band">
+    <div><div class="bl">Dividend Strategy</div><div class="bn">+17.88%</div><div class="bb">vs DVY +16.82% &nbsp;/&nbsp; SPY +10.70%</div></div>
+    <div><div class="bl">Growth Portfolio</div><div class="bn">+14.28%</div><div class="bb">vs IUSG +11.13%</div></div>
+  </div>
+
+  <!-- ══ RUNNING FOOTER ══ -->
+  <div class="runfoot">
+    <span>Confidential &middot; Not for distribution</span>
+    <span>Family Capital Investments &middot; RIA &middot; Paradiem</span>
+  </div>
+
+</div>
+</body>
+</html>
