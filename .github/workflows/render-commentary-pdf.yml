@@ -1,0 +1,63 @@
+name: Render commentary PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'commentaries/*.html'
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Specific commentaries/*.html to render (optional)'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-pdf-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Determine target HTML
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.file }}" ]; then
+            echo "files=${{ github.event.inputs.file }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            base="${{ github.event.before }}"
+            if ! git cat-file -e "${base}^{commit}" 2>/dev/null; then base="HEAD~1"; fi
+            files=$(git diff --name-only "$base" "${{ github.sha }}" -- 'commentaries/*.html' | tr '\n' ' ')
+            echo "files=$files" >> "$GITHUB_OUTPUT"
+          else
+            echo "files=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install Puppeteer (downloads Chromium)
+        run: npm i --no-save puppeteer@^23
+
+      - name: Render PDF(s)
+        run: node daily-commentary/render.mjs ${{ steps.changed.outputs.files }}
+
+      - name: Commit rendered PDFs
+        run: |
+          git config user.name "IOWN Data Bot"
+          git config user.email "bot@iown.dev"
+          if [ -n "$(git status --porcelain -- 'commentaries/*.pdf')" ]; then
+            git add commentaries/*.pdf
+            git commit -m "Render commentary PDF [skip ci]"
+            git push
+          else
+            echo "No PDF changes to commit."
+          fi
