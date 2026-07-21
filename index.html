@@ -153,6 +153,7 @@
   .commentary .mover-catalyst{ font-family:var(--display); font-size:0.97rem; color:var(--soft); width:100%; margin-top:0.18rem; line-height:1.55; }
 
   .loading, .empty{ text-align:center; padding:4rem 0; color:var(--soft); font-family:var(--display); font-style:italic; }
+  .cmt-frame{ width:100%; border:0; display:block; background:transparent; overflow:hidden; min-height:60vh; }
   .pdf-fallback{ text-align:center; padding:2.5rem; background:var(--surface); border:1px solid var(--line-2); border-radius:3px; margin:2rem 0; }
   .pdf-fallback p{ color:var(--soft); font-family:var(--display); font-style:italic; margin-bottom:1rem; }
 
@@ -288,13 +289,23 @@ async function load(i){
   document.getElementById('tbDate').textContent=DAYS[d.getDay()]+', '+MONTHS[d.getMonth()]+' '+d.getDate();
   document.getElementById('tbHeadline').textContent=e.headline;
   document.getElementById('tbDot').style.background='var(--'+(e.direction==='up'?'up':'dn')+')';
-  const pdf=DIR+'/IOWN_Market_Commentary_'+e.date+'.pdf';
+  const pdf=DIR+'/'+(e.pdf||('IOWN_Market_Commentary_'+e.date+'.pdf'));
   document.getElementById('btnPdf').href=pdf;
   document.getElementById('btnPrev').disabled=i>=entries.length-1;
   document.getElementById('btnNext').disabled=i<=0;
   const area=document.getElementById('contentArea'); area.innerHTML='<div class="loading">Loading&hellip;</div>';
   if(e.content){
-    try { const r=await fetch(DIR+'/'+e.content+'?v='+Date.now()); if(r.ok){ area.innerHTML='<div class="commentary">'+await r.text()+'</div>'; closeDrawer(); window.scrollTo(0,0); return; } } catch(err){}
+    try { const r=await fetch(DIR+'/'+e.content+'?v='+Date.now()); if(r.ok){ const txt=await r.text();
+      if(/^\s*(<!doctype|<html)/i.test(txt)){
+        const f=document.createElement('iframe'); f.className='cmt-frame'; f.setAttribute('title',e.headline||'Commentary'); f.setAttribute('scrolling','no');
+        const fit=function(){ try{ f.style.height=f.contentDocument.documentElement.scrollHeight+'px'; }catch(_){} };
+        f.onload=function(){ fit(); setTimeout(fit,300); setTimeout(fit,1200); };
+        area.innerHTML=''; area.appendChild(f); f.srcdoc=txt;
+        if(!window.__cmtFit){ window.__cmtFit=true; window.addEventListener('resize',function(){ const fr=document.querySelector('.cmt-frame'); if(fr){ try{ fr.style.height=fr.contentDocument.documentElement.scrollHeight+'px'; }catch(_){} } }); }
+      } else {
+        area.innerHTML='<div class="commentary">'+txt+'</div>';
+      }
+      closeDrawer(); window.scrollTo(0,0); return; } } catch(err){}
   }
   area.innerHTML='<div class="commentary"><div class="headline-display '+(e.direction==='up'?'up':'dn')+'">'+e.headline+'</div>'+
     '<div class="subhead-display">'+(e.subhead||'')+'</div>'+
