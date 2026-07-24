@@ -13,11 +13,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F4EFE4; --bg-2:#ECE5D6; --surface:#FAF7F2; --card:#FAF7F2; --card-2:#F1EADC;
-    --ink:#1C1713; --soft:#8B7355; --faint:#B0A894; --line:#DED6C6; --line-2:#CBBFA8;
+    /* White reader (2026-07-24) — matches the white daily document. Surfaces stay
+       faintly warm so cards/drawer still separate from the page; gold, forest,
+       oxblood and the sleeve hues are unchanged. */
+    --bg:#FFFFFF; --bg-2:#F7F3EB; --surface:#FBF8F3; --card:#FBF8F3; --card-2:#F4EFE4;
+    --ink:#1C1713; --soft:#8B7355; --faint:#A8A08C; --line:#E4DDCE; --line-2:#D2C7B2;
     --accent:#B0892E; --accent-2:#C9A84C;
     --up:#4A7C59; --dn:#A8332F; --div:#8C6239; --grw:#5A7A3A; --dig:#C47A2A;
-    --gate-bg-1:#F4EFE4; --gate-bg-2:#E7DECB;
+    --gate-bg-1:#FFFFFF; --gate-bg-2:#F1EADC;
     --display:Georgia, 'Gelasio', 'Times New Roman', serif;
     --sc:Calibri, 'Carlito', 'Helvetica Neue', Arial, sans-serif;
     --mono:Calibri, 'Carlito', 'Helvetica Neue', Arial, sans-serif;
@@ -71,7 +74,7 @@
   .folio span{ white-space:nowrap; }
   @media (max-width:600px){ .folio{ font-size:0.48rem; letter-spacing:0.1em; gap:0.5rem; } .nameplate .np-rule{ max-width:14%; } }
 
-  .toolbar{ position:sticky; top:0; z-index:60; background:rgba(244,239,228,0.88); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.7rem max(1.5rem, calc((100% - var(--maxw))/2)); }
+  .toolbar{ position:sticky; top:0; z-index:60; background:rgba(255,255,255,0.88); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.7rem max(1.5rem, calc((100% - var(--maxw))/2)); }
   .tb-left{ display:flex; align-items:center; gap:0.7rem; min-width:0; }
   .tb-dot{ width:8px; height:8px; border-radius:50%; flex-shrink:0; box-shadow:0 0 8px currentColor; }
   .tb-meta{ min-width:0; }
