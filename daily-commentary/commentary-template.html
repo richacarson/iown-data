@@ -17,13 +17,13 @@
   :root{
     --ink:#1C1713; --navy:#171738; --parch:#F0EADC; --cream:#FAF7F2;
     --gold:#B8912F; --gold-line:#C9A84C; --taupe:#8B7355; --taupe-soft:#5C513F;
-    --mist:#B8B4AC; --line:#D8CFBD; --line-2:#C3B79C; --track:#EAE1CF;
+    --mist:#A8A49C; --line:#DCD5C6; --line-2:#C6BAA0; --track:#EFEAE0;
     --up:#4A7C59; --dn:#A8332F; --div:#8C6239; --grw:#5A7A3A;
     --serif:Georgia,'Gelasio','Times New Roman',serif;
     --sans:Calibri,'Carlito','Helvetica Neue',Arial,sans-serif;
   }
   *{ margin:0; padding:0; box-sizing:border-box; }
-  body{ background:var(--parch); color:var(--ink); font-family:var(--serif);
+  body{ background:#FFFFFF; color:var(--ink); font-family:var(--serif);
         -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
   ::selection{ background:rgba(201,168,76,0.30); color:var(--ink); }
   a{ color:#8A6D2B; text-decoration:none; } a:hover{ color:var(--navy); }
@@ -81,7 +81,7 @@
   .bar .b-v{ font-family:var(--sans); font-size:10px; font-variant-numeric:tabular-nums; text-align:right; }
   .bar .b-v.me{ font-weight:700; }
 
-  .ytd{ font-family:var(--sans); font-size:10px; margin-top:11px; padding-top:8px; border-top:1px solid #E4DBCB; }
+  .ytd{ font-family:var(--sans); font-size:10px; margin-top:11px; padding-top:8px; border-top:1px solid #E6E0D4; }
   .ytd .ytd-k{ font-size:7.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--mist); margin-right:6px; }
   .ytd .ytd-v{ font-weight:700; color:var(--up); font-variant-numeric:tabular-nums; }
   .ytd .ytd-b{ color:var(--taupe); }
@@ -93,7 +93,7 @@
   .sec::before{ content:""; position:absolute; left:0; bottom:-1px; width:38px; height:2px; background:var(--gold-line); }
 
   /* prose */
-  .flow{ column-count:2; column-gap:26px; column-rule:1px solid #DDD4C2; }
+  .flow{ column-count:2; column-gap:26px; column-rule:1px solid #E2DBCC; }
   .flow p{ font-family:var(--serif); font-size:11px; line-height:1.62; margin:0 0 10px; text-align:justify; hyphens:auto; }
   .flow p b{ color:var(--navy); }
   .flow .dropcap::first-letter{ float:left; font-family:var(--serif); font-weight:700; font-size:3.1rem; line-height:0.66; padding:2px 7px 0 0; color:var(--gold); }
@@ -105,8 +105,8 @@
   .movers-label{ font-family:var(--sans); font-size:9px; font-weight:700; letter-spacing:0.16em;
                  text-transform:uppercase; margin-bottom:5px; break-after:avoid; }
   .movers-label.win{ color:var(--up); } .movers-label.lose{ color:var(--dn); }
-  .movers{ column-count:2; column-gap:26px; column-rule:1px solid #DDD4C2; margin-bottom:13px; }
-  .mover{ break-inside:avoid; padding:6px 0; border-bottom:1px solid #E4DBCB; }
+  .movers{ column-count:2; column-gap:26px; column-rule:1px solid #E2DBCC; margin-bottom:13px; }
+  .mover{ break-inside:avoid; padding:6px 0; border-bottom:1px solid #E6E0D4; }
   .mover-top{ display:flex; align-items:baseline; gap:7px; white-space:nowrap; }
   .mover-tkr{ font-family:var(--sans); font-weight:700; font-size:10.5px; color:var(--navy); flex-shrink:0; }
   .mover-pct{ font-family:var(--sans); font-weight:700; font-size:10.5px; font-variant-numeric:tabular-nums; }
@@ -118,34 +118,48 @@
   .band{ background:var(--navy); padding:20px 22px; display:grid; grid-template-columns:1fr 1fr; gap:26px; break-inside:avoid; }
   @media (max-width:640px){ .band{ grid-template-columns:1fr; gap:16px; } }
   .band .bl{ font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-line); }
-  .band .bn{ font-family:var(--serif); font-size:28px; font-weight:700; color:var(--parch); line-height:1; margin-top:5px; font-variant-numeric:tabular-nums; }
+  .band .bn{ font-family:var(--serif); font-size:28px; font-weight:700; color:#F4EFE4; line-height:1; margin-top:5px; font-variant-numeric:tabular-nums; }
   .band .bb{ font-family:var(--sans); font-size:10px; color:var(--mist); margin-top:5px; }
 
   .runfoot{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:26px;
             padding-top:8px; border-top:1px solid var(--gold-line); font-family:var(--sans);
             font-size:7px; letter-spacing:0.14em; text-transform:uppercase; color:var(--taupe); }
 
-  /* ── PRINT (Letter, print-to-PDF) ── */
-  @page{ size:letter; margin:0.55in; }
+  /* ── PRINT (Letter, print-to-PDF) ──
+     The running head/foot sit in <thead>/<tfoot> of the .sheet table. Browsers
+     repeat those on every printed page AND reserve space for them in the flow.
+     (They used to be position:fixed, which repeated them but reserved no space,
+     so body copy ran underneath the header on pages 2+ and under the footer at
+     the foot of every page. Padding on .doc cannot fix that — it applies once,
+     not per page.) ── */
+  @page{ size:letter; margin:0.5in; }
+  .sheet{ width:100%; border-collapse:collapse; }
+  .sheet > thead{ display:table-header-group; }
+  .sheet > tfoot{ display:table-footer-group; }
+  .sheet th, .sheet td{ padding:0; text-align:left; font-weight:inherit; }
+  .sheet thead th{ padding-bottom:14px; }
+  .sheet tfoot td{ padding-top:14px; }
   @media print{
     body{ background:#fff; }
     .doc{ max-width:none; margin:0; padding:0; }
-    .runhead{ position:fixed; top:0; left:0; right:0; }
-    .runfoot{ position:fixed; bottom:0; left:0; right:0; margin-top:0; background:#fff; }
-    .cover{ padding-top:34px; }
-    .doc{ padding-bottom:26px; }
+    .cover{ padding-top:8px; }
   }
 </style>
 </head>
 <body>
 <div class="doc">
+<table class="sheet">
 
-  <!-- ══ RUNNING HEADER ══ -->
+  <!-- ══ RUNNING HEADER (repeats on every printed page) ══ -->
+<thead><tr><th>
   <div class="runhead">
     <img src="paradiem-logo.png" alt="Paradiem">
     <span class="rh-c">Market Commentary &middot; Post-Close Edition</span>
     <span class="rh-r">⟪DATE_LONG⟫</span>
   </div>
+</th></tr></thead>
+
+<tbody><tr><td>
 
   <!-- ══ COVER ══ -->
   <div class="cover">
@@ -242,12 +256,16 @@
     <div><div class="bl">Growth Portfolio</div><div class="bn">⟪GRW_YTD⟫</div><div class="bb">vs IUSG ⟪IUSG_YTD⟫</div></div>
   </div>
 
-  <!-- ══ RUNNING FOOTER ══ -->
+</td></tr></tbody>
+
+  <!-- ══ RUNNING FOOTER (repeats on every printed page) ══ -->
+<tfoot><tr><td>
   <div class="runfoot">
     <span>Confidential &middot; Not for distribution</span>
     <span>Family Capital Investments &middot; RIA &middot; Paradiem</span>
   </div>
-
+</td></tr></tfoot>
+</table>
 </div>
 </body>
 </html>

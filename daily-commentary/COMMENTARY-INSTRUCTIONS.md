@@ -11,6 +11,16 @@ template and commits it.
 - **`paradiem-logo.png`** — the masthead logo (already in the repo). Keep the
   template in the same folder so `src="paradiem-logo.png"` resolves.
 
+## Page colour & print structure (do not "simplify" these)
+- The page is **white** (`body{background:#FFFFFF}`). Hairlines, the bar track and the
+  navy band's numerals are tuned for white — don't revert them to the parchment values.
+- The running head/foot live in the `.sheet` table's `<thead>`/`<tfoot>`. Browsers repeat
+  those on every printed page **and reserve flow space** for them. They were previously
+  `position:fixed`, which repeated them but reserved no space, so body copy ran under the
+  header on pages 2+ and under the footer on every page, and the "Year-to-Date Standing"
+  heading printed on top of the logo. Padding on `.doc` cannot fix this — it applies once,
+  not per page. Keep the table wrapper intact when editing the body.
+
 ## Daily workflow
 1. Copy `commentary-template.html` → `commentaries/IOWN_Market_Commentary_YYYY-MM-DD.html`.
 2. Replace every `⟪TOKEN⟫`. Repeat the `.mover` rows for as many holdings as you list.
