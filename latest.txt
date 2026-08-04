@@ -3,11 +3,11 @@ IOWN MARKET DATA — Tuesday, August 4, 2026
 ## BROAD MARKET
 S&P 500: 7,735.60 | +1.78%
 Dow: 54,085.88 | +1.71%
-Nasdaq: 26,581.99 | +2.58%
+Nasdaq: 26,584.99 | +2.59%
 Russell 2000: 3,036.98 | +1.85%
-VIX: 16.42 | +3.53%
-Gold: $4,135.70 | +1.10%
-Bitcoin: $64,125 | +1.04%
+VIX: 16.40 | +3.40%
+Gold: $4,135.60 | +1.10%
+Bitcoin: $64,090 | +0.99%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -54,24 +54,24 @@ HRMY | $38.78 | +3.18 | +8.93% | $39.96 | $36.80
 HOOD | $93.51 | +3.17 | +3.51% | $95.60 | $90.07
 HUT | $101.16 | -10.92 | -9.74% | $110.93 | $100.85
 KEYS | $341.24 | +19.35 | +6.01% | $343.87 | $331.76
-MARA | N/A | N/A | N/A | N/A | N/A
-MRVL | N/A | N/A | N/A | N/A | N/A
-NOW | N/A | N/A | N/A | N/A | N/A
-NVDA | N/A | N/A | N/A | N/A | N/A
-NXPI | N/A | N/A | N/A | N/A | N/A
-OKE | N/A | N/A | N/A | N/A | N/A
-SOFI | N/A | N/A | N/A | N/A | N/A
-SYF | N/A | N/A | N/A | N/A | N/A
-TOL | N/A | N/A | N/A | N/A | N/A
-TSM | N/A | N/A | N/A | N/A | N/A
-VST | N/A | N/A | N/A | N/A | N/A
-YMM | N/A | N/A | N/A | N/A | N/A
+MARA | $11.75 | +0.00 | +0.00% | $11.91 | $11.29
+MRVL | $218.59 | +24.82 | +12.81% | $222.67 | $208.00
+NOW | $118.14 | +3.95 | +3.46% | $118.33 | $112.00
+NVDA | $211.94 | +5.30 | +2.56% | $213.06 | $209.05
+NXPI | $237.60 | +13.43 | +5.99% | $238.86 | $229.16
+OKE | $87.65 | -0.59 | -0.67% | $87.73 | $83.48
+SOFI | $18.70 | +0.67 | +3.72% | $18.71 | $18.12
+SYF | $79.08 | +1.24 | +1.59% | $79.64 | $77.55
+TOL | $153.24 | +2.78 | +1.85% | $154.35 | $150.56
+TSM | $417.17 | +11.06 | +2.72% | $420.25 | $412.11
+VST | $143.23 | -12.71 | -8.15% | $156.99 | $143.03
+YMM | $9.65 | -0.07 | -0.72% | $9.76 | $9.50
 
 ## DIGITAL ASSET ETFs
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
 -------|-------|-----|-------|------|----
-IBIT | N/A | N/A | N/A | N/A | N/A
-ETHA | N/A | N/A | N/A | N/A | N/A
+IBIT | $36.39 | +0.23 | +0.64% | $36.47 | $35.99
+ETHA | $14.15 | +0.04 | +0.28% | $14.21 | $14.00
 
 ## MARKET NEWS
 [02:02 PM] Reuters: Projectile sinks Indian ship near Yemeni waters but all seafarers safe, Indian minister says - Reuters
@@ -86,28 +86,18 @@ ETHA | N/A | N/A | N/A | N/A | N/A
 [09:13 AM] Reuters: PODCAST: Manufacturing rebounds - Reuters
 
 ## HOLDINGS NEWS
-AMD: Yahoo — Cathie Wood Invests $32.2 Million in Surging Tech Stocks
-AMD: Yahoo — 5-Star Analyst Makes Bold AMD Call Before Earnings
-LMT: Yahoo — FCX Flashes Buy Signal; This Is Fueling Copper, Rare Earth Stocks
 CAT: Yahoo — Caterpillar's Record Quarter Has an AI Engine
 CAT: ChartMill — Which dow jones stocks are moving on Tuesday?
-MRVL: ChartMill — These S&P500 stocks are moving in today's session
-MRVL: Yahoo — SpaceX, Palantir, AMD, Marvell,  Caterpillar, Pfizer, and More Stocks That Explain Today’s Market
 CEG: Yahoo — Constellation Energy Corporation Declares Dividend
-LMT: Yahoo — LMT Reportedly In Talks For Crucial Minerals Supply From US Mines Amid Trump’s Stance Of Reducing Dependence On China
 ADI: Yahoo — Buy Microchip Stock Before Q1 Earnings? Here's What to Know
-HOOD: Yahoo — Why Are Robinhood (HOOD) Shares Soaring Today
-SPGI: Yahoo — S&P Dow Jones Indices Introduces the S&P U.S. CLO Investment Grade Indices
-QCOM: Yahoo — Marvell, Sandisk, SK Hynix lead semiconductor stock rally as S&P 500 trades at record highs
-VST: ChartMill — Which S&P500 stocks have an unusual volume on Tuesday?
-CVX: Yahoo — Exxon Posts Its Best Profit in Four Years, Here’s Where It’ll End The Year
 ABT: Yahoo — Abbott vs Danaher: Which Healthcare Stock Looks Better Positioned Following Earnings?
-FTNT: Yahoo — Here is Why Growth Investors Should Buy Fortinet (FTNT) Now
-HOOD: Yahoo — Fidelity Assets Jump to Nearly $20 Trillion on Market Boom and Trading Surge
-SPGI: Yahoo — Axon Stock Diversifies Your Portfolio Less Than Its Business Does
-GD: Yahoo — Lockheed Martin is Down 8% in 6 Months: Wall Street Pro Expects 30% Growth Within a Year
+ADP: Yahoo — Avis Budget Stock Plunges 17% Since Reporting Q2 Earnings Miss
+ADI: Yahoo — MassRobotics Welcomes Analog Devices as Returning Strategic Sponsor to Power Next-Generation Robotics Startups
+CEG: Benzinga — S&P 500 Hits Record Highs, Palantir Jumps 27%: Stock Market Today
+ADP: SeekingAlpha — SCHD-Inspired 4-Factor Dividend Growth Strategy Selections For August 2026
+ABT: Yahoo — SCHD’s 0.06% Fee Hides the Real Cost: How March Reconstitution Triggered $0.8241 Per Share in Surprise Distributions
 
 ## FETCH INFO
-Fetched: 8/4/2026, 3:15:00 PM CT
-Holdings: 38/52
+Fetched: 8/4/2026, 3:15:50 PM CT
+Holdings: 52/52
 Canary: AAPL $309.38 (2026-08-04)
