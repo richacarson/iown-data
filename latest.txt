@@ -6,8 +6,8 @@ Dow: 54,085.88 | +1.71%
 Nasdaq: 26,581.99 | +2.58%
 Russell 2000: 3,036.98 | +1.85%
 VIX: 16.42 | +3.53%
-Gold: $4,133.30 | +1.05%
-Bitcoin: $64,136 | +1.06%
+Gold: $4,136.00 | +1.11%
+Bitcoin: $64,138 | +1.06%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -25,7 +25,7 @@ FAST | $49.71 | +1.60 | +3.33% | $49.77 | $46.98
 GD | $385.76 | +3.33 | +0.87% | $388.36 | $378.87
 GPC | $132.55 | +4.03 | +3.14% | $132.86 | $127.34
 LRCX | $317.74 | +23.13 | +7.85% | $320.25 | $306.16
-LMT | $588.92 | +2.63 | +0.45% | $592.50 | $578.30
+LMT | $589.33 | +3.04 | +0.52% | $592.50 | $578.30
 NEE | $87.20 | +0.65 | +0.75% | $87.31 | $85.48
 NTR | $66.92 | +0.96 | +1.46% | $67.28 | $65.11
 NWG | $19.12 | -0.30 | -1.54% | $19.33 | $19.09
@@ -46,7 +46,7 @@ AEM | $150.61 | +3.19 | +2.16% | $153.81 | $149.65
 ATAT | $34.61 | -0.55 | -1.56% | $35.05 | $33.93
 CVX | $190.40 | -2.78 | -1.44% | $191.47 | $186.34
 CNX | $35.65 | -0.39 | -1.08% | $35.85 | $34.83
-CRDO | N/A | N/A | N/A | N/A | N/A
+CRDO | $237.92 | +19.57 | +8.96% | $242.50 | $224.54
 EIX | N/A | N/A | N/A | N/A | N/A
 FCX | N/A | N/A | N/A | N/A | N/A
 FTNT | N/A | N/A | N/A | N/A | N/A
@@ -86,12 +86,16 @@ ETHA | N/A | N/A | N/A | N/A | N/A
 [09:13 AM] Reuters: PODCAST: Manufacturing rebounds - Reuters
 
 ## HOLDINGS NEWS
+AMD: Yahoo — Cathie Wood Invests $32.2 Million in Surging Tech Stocks
+AMD: Yahoo — 5-Star Analyst Makes Bold AMD Call Before Earnings
+FCX: Yahoo — FCX Flashes Buy Signal; This Is Fueling Copper, Rare Earth Stocks
+CAT: Yahoo — Caterpillar's Record Quarter Has an AI Engine
 CAT: ChartMill — Which dow jones stocks are moving on Tuesday?
 MRVL: ChartMill — These S&P500 stocks are moving in today's session
+CEG: Yahoo — Constellation Energy Corporation Declares Dividend
+ADI: Yahoo — Buy Microchip Stock Before Q1 Earnings? Here's What to Know
 NVDA: ChartMill — Looking for the most active stocks in the S&P500 index on Tuesday?
-CAT: Yahoo — Stock Market Today: Dow Pops 1,000 Points On Hormuz Talks; Palantir Soars, Dell Breaks Out (Live Coverage)
 QCOM: Yahoo — Marvell, Sandisk, SK Hynix lead semiconductor stock rally as S&P 500 trades at record highs
-AMD: Yahoo — Nvidia Tops Key Level As AMD Heads Into Earnings; Is Nvidia A Buy Now
 VST: ChartMill — Which S&P500 stocks have an unusual volume on Tuesday?
 CVX: Yahoo — Exxon Posts Its Best Profit in Four Years, Here’s Where It’ll End The Year
 ABT: Yahoo — Abbott vs Danaher: Which Healthcare Stock Looks Better Positioned Following Earnings?
@@ -102,12 +106,8 @@ HOOD: Yahoo — Angel investor says Bitcoin has bottomed, sell it and buy Solana
 GD: Yahoo — Boeing's Finished Flight Test Counts Most For A Different Jet
 LRCX: Yahoo — Lam Research Plunges 16% in a Month: Should You Still Buy the Stock?
 CNX: Yahoo — Energy Transfer Q2 Earnings Beat Estimates on NGL Growth, View Up
-SPGI: Yahoo — Update: S&P Global Says Canada's July Manufacturing PMI Rises to Highest Level in More Than Four Years
-DGX: Yahoo — IDXX Q2 Earnings & Revenues Beat, '26 EPS View Up, Stock Up in Pre-Market
-OKE: Yahoo — ONEOK Q2 Earnings & Sales Surpass Estimates on Record NGL Volumes
-NOW: Yahoo — Goldman Sachs Just Added Microsoft to Its Closely Watched ‘Conviction List.’ Broadcom and ServiceNow Were Removed.
 
 ## FETCH INFO
-Fetched: 8/4/2026, 3:08:31 PM CT
-Holdings: 30/52
+Fetched: 8/4/2026, 3:12:15 PM CT
+Holdings: 31/52
 Canary: AAPL $309.38 (2026-08-04)
