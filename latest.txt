@@ -6,8 +6,8 @@ Dow: 54,085.88 | +1.71%
 Nasdaq: 26,581.99 | +2.58%
 Russell 2000: 3,036.98 | +1.85%
 VIX: 16.42 | +3.53%
-Gold: $4,136.00 | +1.11%
-Bitcoin: $64,138 | +1.06%
+Gold: $4,135.70 | +1.10%
+Bitcoin: $64,125 | +1.04%
 
 ## DIVIDEND STRATEGY
 TICKER | CLOSE | CHG | % CHG | HIGH | LOW
@@ -47,13 +47,13 @@ ATAT | $34.61 | -0.55 | -1.56% | $35.05 | $33.93
 CVX | $190.40 | -2.78 | -1.44% | $191.47 | $186.34
 CNX | $35.65 | -0.39 | -1.08% | $35.85 | $34.83
 CRDO | $237.92 | +19.57 | +8.96% | $242.50 | $224.54
-EIX | N/A | N/A | N/A | N/A | N/A
-FCX | N/A | N/A | N/A | N/A | N/A
-FTNT | N/A | N/A | N/A | N/A | N/A
-HRMY | N/A | N/A | N/A | N/A | N/A
-HOOD | N/A | N/A | N/A | N/A | N/A
-HUT | N/A | N/A | N/A | N/A | N/A
-KEYS | N/A | N/A | N/A | N/A | N/A
+EIX | $70.69 | -0.77 | -1.08% | $72.50 | $70.59
+FCX | $67.30 | +3.66 | +5.75% | $67.84 | $65.75
+FTNT | $168.29 | +5.08 | +3.11% | $169.10 | $162.77
+HRMY | $38.78 | +3.18 | +8.93% | $39.96 | $36.80
+HOOD | $93.51 | +3.17 | +3.51% | $95.60 | $90.07
+HUT | $101.16 | -10.92 | -9.74% | $110.93 | $100.85
+KEYS | $341.24 | +19.35 | +6.01% | $343.87 | $331.76
 MARA | N/A | N/A | N/A | N/A | N/A
 MRVL | N/A | N/A | N/A | N/A | N/A
 NOW | N/A | N/A | N/A | N/A | N/A
@@ -88,26 +88,26 @@ ETHA | N/A | N/A | N/A | N/A | N/A
 ## HOLDINGS NEWS
 AMD: Yahoo — Cathie Wood Invests $32.2 Million in Surging Tech Stocks
 AMD: Yahoo — 5-Star Analyst Makes Bold AMD Call Before Earnings
-FCX: Yahoo — FCX Flashes Buy Signal; This Is Fueling Copper, Rare Earth Stocks
+LMT: Yahoo — FCX Flashes Buy Signal; This Is Fueling Copper, Rare Earth Stocks
 CAT: Yahoo — Caterpillar's Record Quarter Has an AI Engine
 CAT: ChartMill — Which dow jones stocks are moving on Tuesday?
 MRVL: ChartMill — These S&P500 stocks are moving in today's session
+MRVL: Yahoo — SpaceX, Palantir, AMD, Marvell,  Caterpillar, Pfizer, and More Stocks That Explain Today’s Market
 CEG: Yahoo — Constellation Energy Corporation Declares Dividend
+LMT: Yahoo — LMT Reportedly In Talks For Crucial Minerals Supply From US Mines Amid Trump’s Stance Of Reducing Dependence On China
 ADI: Yahoo — Buy Microchip Stock Before Q1 Earnings? Here's What to Know
-NVDA: ChartMill — Looking for the most active stocks in the S&P500 index on Tuesday?
+HOOD: Yahoo — Why Are Robinhood (HOOD) Shares Soaring Today
+SPGI: Yahoo — S&P Dow Jones Indices Introduces the S&P U.S. CLO Investment Grade Indices
 QCOM: Yahoo — Marvell, Sandisk, SK Hynix lead semiconductor stock rally as S&P 500 trades at record highs
 VST: ChartMill — Which S&P500 stocks have an unusual volume on Tuesday?
 CVX: Yahoo — Exxon Posts Its Best Profit in Four Years, Here’s Where It’ll End The Year
 ABT: Yahoo — Abbott vs Danaher: Which Healthcare Stock Looks Better Positioned Following Earnings?
 FTNT: Yahoo — Here is Why Growth Investors Should Buy Fortinet (FTNT) Now
+HOOD: Yahoo — Fidelity Assets Jump to Nearly $20 Trillion on Market Boom and Trading Surge
 SPGI: Yahoo — Axon Stock Diversifies Your Portfolio Less Than Its Business Does
 GD: Yahoo — Lockheed Martin is Down 8% in 6 Months: Wall Street Pro Expects 30% Growth Within a Year
-HOOD: Yahoo — Angel investor says Bitcoin has bottomed, sell it and buy Solana
-GD: Yahoo — Boeing's Finished Flight Test Counts Most For A Different Jet
-LRCX: Yahoo — Lam Research Plunges 16% in a Month: Should You Still Buy the Stock?
-CNX: Yahoo — Energy Transfer Q2 Earnings Beat Estimates on NGL Growth, View Up
 
 ## FETCH INFO
-Fetched: 8/4/2026, 3:12:15 PM CT
-Holdings: 31/52
+Fetched: 8/4/2026, 3:15:00 PM CT
+Holdings: 38/52
 Canary: AAPL $309.38 (2026-08-04)
