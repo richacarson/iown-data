@@ -120,6 +120,9 @@
   .band .bl{ font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-line); }
   .band .bn{ font-family:var(--serif); font-size:28px; font-weight:700; color:#F4EFE4; line-height:1; margin-top:5px; font-variant-numeric:tabular-nums; }
   .band .bb{ font-family:var(--sans); font-size:10px; color:var(--mist); margin-top:5px; }
+  .band .bs{ font-family:var(--sans); font-size:9.5px; letter-spacing:0.05em; color:var(--gold-line);
+             margin-top:8px; padding-top:7px; border-top:1px solid rgba(201,168,76,0.38); }
+  .band .bs b{ color:#F4EFE4; font-variant-numeric:tabular-nums; font-weight:700; }
 
   .runfoot{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:26px;
             padding-top:8px; border-top:1px solid var(--gold-line); font-family:var(--sans);
@@ -251,9 +254,13 @@
 
   <!-- ══ YEAR-TO-DATE ══ -->
   <div class="sec">Year-to-Date Standing</div>
+  <!-- .bs = YTD spread vs the HIGHEST-RETURNING benchmark shown for that sleeve.
+       Dividend: compare DVY and SPY, take the larger YTD. Growth: compare IUSG and SPY,
+       take the larger YTD. Label the benchmark actually used. Value in points to 2dp,
+       signed; a negative spread uses a real minus sign −. -->
   <div class="band">
-    <div><div class="bl">Dividend Strategy</div><div class="bn">⟪DIV_YTD⟫</div><div class="bb">vs DVY ⟪DVY_YTD⟫ &nbsp;/&nbsp; SPY ⟪SPY_YTD⟫</div></div>
-    <div><div class="bl">Growth Portfolio</div><div class="bn">⟪GRW_YTD⟫</div><div class="bb">vs IUSG ⟪IUSG_YTD⟫</div></div>
+    <div><div class="bl">Dividend Strategy</div><div class="bn">⟪DIV_YTD⟫</div><div class="bb">vs DVY ⟪DVY_YTD⟫ &nbsp;/&nbsp; SPY ⟪SPY_YTD⟫</div><div class="bs">Spread vs ⟪DIV_SPREAD_BM⟫ <b>⟪DIV_SPREAD⟫</b></div></div>
+    <div><div class="bl">Growth Portfolio</div><div class="bn">⟪GRW_YTD⟫</div><div class="bb">vs IUSG ⟪IUSG_YTD⟫</div><div class="bs">Spread vs ⟪GRW_SPREAD_BM⟫ <b>⟪GRW_SPREAD⟫</b></div></div>
   </div>
 
 </td></tr></tbody>

@@ -75,3 +75,15 @@ FCI 39, DVY 56, SPY 17, Growth-FCI 100, IUSG 56.
 If you keep `index.html` (gate + archive), point each entry's link at the new file and
 open it in a new tab, or drop the `.doc` inner markup in as the fragment. Either way the
 standalone file is the source of truth and the PDF.
+
+## YTD spread line (standing, from 2026-08-27)
+
+The navy Year-to-Date band carries a `.bs` spread line under each sleeve, every day.
+
+- Compute the spread against the **highest-returning benchmark** shown for that sleeve —
+  Dividend Strategy: the larger of DVY and SPY YTD; Growth Portfolio: the larger of IUSG
+  and SPY YTD. Label the benchmark actually used, e.g. `Spread vs DVY (lead benchmark)`.
+- Value in **points to two decimals**, signed (`+4.80 pts`). A negative spread uses a real
+  minus sign − (U+2212).
+- Tokens: `⟪DIV_SPREAD_BM⟫` `⟪DIV_SPREAD⟫` `⟪GRW_SPREAD_BM⟫` `⟪GRW_SPREAD⟫`.
+- Echo the same two figures once in the closing prose paragraph.
