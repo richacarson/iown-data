@@ -22,7 +22,7 @@ const now = new Date();
 console.log(`Fetching at UTC ${now.getUTCHours()}:${String(now.getUTCMinutes()).padStart(2,'0')}`);
 
 const DIV = ['ABT','ADI','ATO','ADP','CAT','CEG','CHD','CL','DGX','FAST','GD','GPC','LRCX','LMT','NEE','NTR','NWG','ORI','PCAR','QCOM','SPGI','SSNC','STLD','SYK','TEL'];
-const GRW = ['AMD','AEM','ATAT','CVX','CNX','CRDO','EIX','FCX','FTNT','HRMY','HOOD','HUT','KEYS','MARA','MRVL','NOW','NVDA','NXPI','OKE','SOFI','SYF','TOL','TSM','VST','YMM'];
+const GRW = ['AMD','AEM','ATAT','CVX','CNX','CRDO','FCX','FTNT','HRMY','HOOD','HUT','KEYS','MARA','MRVL','NOW','NVDA','NXPI','OKE','PGY','SOFI','SYF','TOL','TSM','VST','YMM'];
 const DIG = ['IBIT','ETHA'];
 const ALL = [...DIV, ...GRW, ...DIG];
 
