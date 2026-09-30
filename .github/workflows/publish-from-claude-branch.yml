@@ -1,0 +1,90 @@
+name: Publish commentary from claude branch
+
+# The Daily Market Commentary routine can only push to claude/* branches.
+# This job takes the commentary HTML + manifest entry from such a push,
+# publishes them to main, renders the PDF, and deletes the branch.
+# (Pushes made with GITHUB_TOKEN don't trigger other workflows, so the PDF
+# is rendered here rather than by render-commentary-pdf.yml.)
+
+on:
+  push:
+    branches: ['claude/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-commentary
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Bring commentary from the pushed branch into main
+        id: bring
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git fetch origin "+refs/heads/${BRANCH}:refs/remotes/origin/${BRANCH}"
+          SRC="origin/${BRANCH}"
+          echo "src=${SRC}" >> "$GITHUB_OUTPUT"
+          files=$(git diff --name-only --diff-filter=AM main "$SRC" -- 'commentaries/*.html' | tr '\n' ' ' | sed 's/ *$//')
+          echo "files=${files}" >> "$GITHUB_OUTPUT"
+          if [ -z "$files" ]; then
+            echo "No new or changed commentary HTML on ${BRANCH}; nothing to publish."
+            exit 0
+          fi
+          for f in $files; do git show "${SRC}:${f}" > "$f"; done
+          git show "${SRC}:commentary-manifest.json" > /tmp/branch-manifest.json
+          FILES="$files" python3 - <<'PY'
+          import json, os, re
+          main = json.load(open("commentary-manifest.json", encoding="utf-8"))
+          branch = json.load(open("/tmp/branch-manifest.json", encoding="utf-8"))
+          dates = set(re.findall(r"(\d{4}-\d{2}-\d{2})\.html", os.environ["FILES"]))
+          incoming = {e["date"]: e for e in branch if e.get("date") in dates}
+          missing = dates - set(incoming)
+          if missing:
+              raise SystemExit(f"Branch manifest has no entry for {sorted(missing)}")
+          kept = [e for e in main if e.get("date") not in incoming]
+          merged = sorted(kept + list(incoming.values()), key=lambda e: e["date"], reverse=True)
+          with open("commentary-manifest.json", "w", encoding="utf-8") as fh:
+              json.dump(merged, fh, ensure_ascii=False, indent=2)
+          print("Manifest updated for", sorted(dates))
+          PY
+
+      - uses: actions/setup-node@v4
+        if: steps.bring.outputs.files != ''
+        with:
+          node-version: '20'
+
+      - name: Render PDF(s)
+        if: steps.bring.outputs.files != ''
+        run: |
+          npm i --no-save puppeteer@^23
+          node daily-commentary/render.mjs ${{ steps.bring.outputs.files }}
+
+      - name: Commit to main and clean up the branch
+        if: steps.bring.outputs.files != ''
+        env:
+          BRANCH: ${{ github.ref_name }}
+          SRC: ${{ steps.bring.outputs.src }}
+        run: |
+          set -euo pipefail
+          git config user.name "IOWN Data Bot"
+          git config user.email "bot@iown.dev"
+          msg=$(git log -1 --format=%s "$SRC")
+          git add commentaries/ commentary-manifest.json
+          if git diff --cached --quiet; then
+            echo "Already published; nothing to commit."
+          else
+            git commit -m "$msg" -m "Published from ${BRANCH}"
+            git push origin HEAD:main || { git pull --rebase origin main && git push origin HEAD:main; }
+          fi
+          git push origin --delete "$BRANCH" || true
