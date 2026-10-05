@@ -1,8 +1,11 @@
 name: Publish commentary from claude branch
 
 # The Daily Market Commentary routine can only push to claude/* branches.
-# This job takes the commentary HTML + manifest entry from such a push,
-# publishes them to main, renders the PDF, and deletes the branch.
+# It publishes to claude/live (served by Cloudflare Pages) with
+# daily-commentary/publish-live.py. This job copies the commentary HTML +
+# manifest entry from any claude/* push to main, renders the PDF, and deletes
+# the branch (except claude/live). If Actions is down, the site is unaffected;
+# main catches up on the next successful run.
 # (Pushes made with GITHUB_TOKEN don't trigger other workflows, so the PDF
 # is rendered here rather than by render-commentary-pdf.yml.)
 
@@ -87,4 +90,7 @@ jobs:
             git commit -m "$msg" -m "Published from ${BRANCH}"
             git push origin HEAD:main || { git pull --rebase origin main && git push origin HEAD:main; }
           fi
-          git push origin --delete "$BRANCH" || true
+          # claude/live is the Cloudflare Pages production branch; keep it.
+          if [ "$BRANCH" != "claude/live" ]; then
+            git push origin --delete "$BRANCH" || true
+          fi
