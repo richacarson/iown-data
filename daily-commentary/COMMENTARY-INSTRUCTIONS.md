@@ -1,5 +1,11 @@
 # Paradiem · FCI Market Commentary — Daily Build Guide
 
+> **Superseded for the daily routine (2026-10-06):** the routine follows
+> [`ROUTINE.md`](ROUTINE.md), which covers file naming, the Sources section, the
+> no-inline-attribution voice, publishing to `claude/live`, and the 3:36 PM
+> closing-price update. This file remains a reference for the page's tokens
+> and CSS conventions.
+
 One self-contained HTML file per day **is** both the web page and the print-to-PDF
 source. No Python, no build step, no ReportLab. Your Claude project fills the
 template and commits it.
