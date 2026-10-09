@@ -11,6 +11,30 @@ message on his phone. Work autonomously and don't stop to ask questions. It
 publishes under the Paradiem name, so accuracy and compliance come before
 speed. All times below are America/Chicago.
 
+## Timing: publish first, then update
+
+A normal day has two publishes:
+
+1. **First publish, as soon as the edition is ready.** Once the page passes QA,
+   the independent fact-check and the two-page check (usually 3:10–3:25 PM),
+   publish it right away with the prices you have. Never hold the first publish
+   to wait for official closes. Carson and the Tuesday Update are waiting on it.
+2. **Closing-price update at 3:36 PM (Step 6).** Re-pull the official closes and
+   republish only if a displayed figure changed.
+
+Skip the first publish only when the edition isn't ready until 3:36 PM or
+later. In that case, re-pull the official closes and publish once (Step 5.4).
+
+**How to wait.** Whenever a step says to wait (until 3:03 in Step 0, until
+3:36 in Step 6, or for Cloudflare), wait inside the session with foreground
+`sleep` commands of at most 9 minutes each (`sleep 540`), checking the clock
+between them.
+- Don't end your turn while waiting, and don't run the wait as a background
+  task.
+- Having the edition unpublished on your working branch while you wait is
+  expected. If a stop hook asks you to commit or push, don't. Carry on with
+  the steps; `publish-live.py` does the pushing.
+
 ## How publishing works
 
 The reader site is https://iown-data.pages.dev, served by Cloudflare Pages from
@@ -239,9 +263,10 @@ Fix everything it finds.
    to three pages, shorten the Growth paragraph and the mover notes (one or two
    lines each) and render again. Don't shrink the Sources type below 8px or
    change the page's other CSS.
-4. If it's 3:36 PM or later, re-pull all quotes and indexes first and rebuild
-   the figures from fresh `perf.py` output (official closes are in by then), so
-   Step 6 isn't needed.
+4. Only if it is already 3:36 PM or later: re-pull all quotes and indexes first
+   and rebuild the figures from fresh `perf.py` output (official closes are in
+   by then), so Step 6 isn't needed. Before 3:36 PM, don't wait: publish now
+   and do Step 6 afterward.
 5. `python3 daily-commentary/publish-live.py publish YYYY-MM-DD`. It must print
    "pushed: claude/live @ <sha>" (or "unchanged (already live)"). Don't push any
    other branch.
@@ -261,7 +286,7 @@ Fix everything it finds.
 At 3:03 FMP still shows the last trade before the closing auction; official
 closing prints are in by about 3:36 PM. If you published before 3:36 PM:
 
-1. Wait until 3:36 PM.
+1. Wait until 3:36 PM, using foreground sleeps (see "Timing").
 2. Re-pull every quote with `batch-quote` (all holdings, DVY, SPY, IUSG, IBIT,
    ETHA), the four index quotes, BZUSD, and FMP `treasury-rates` (today's
    official row, if posted). Write a new quotes file and re-run perf.py.
