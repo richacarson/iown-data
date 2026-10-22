@@ -146,7 +146,11 @@ the running head, and save as
 Structure, as in recent issues:
 - Cover: kicker, headline with the emphasis phrase in `<i>`, subhead ending with
   each sleeve's day return vs its benchmarks.
-- Market ticker: S&P 500, Nasdaq, Dow, VIX, Brent.
+- Market ticker: S&P 500, Nasdaq, Dow, VIX, Brent. The three indexes show the
+  day's % change with an arrow. VIX and Brent show the value, not the change:
+  VIX as its closing level with class `flat` and no arrow (`19.03`); Brent as
+  its price with the up/dn class and arrow for the day's direction
+  (`&#9650;&thinsp;$113.03`).
 - Two sleeve cards with bars and the YTD line.
 - The Session, inside `<div class="flow cmt-flow">`: three paragraphs (market;
   Dividend Strategy; Growth Portfolio) plus a centered pull quote ending
