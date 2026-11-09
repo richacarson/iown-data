@@ -44,7 +44,18 @@ publishes: it rebuilds `claude/live` from main plus today's edition (and any
 earlier edition that hasn't reached main yet) and pushes it fast-forward;
 Cloudflare deploys it in about a minute. A GitHub Action then copies the
 edition to main; the live site doesn't depend on it. Never push to main, never
-force-push, and never use a personal token.
+force-push, and never paste a personal token in chat.
+
+The shell has no git push credentials (`fatal: could not read Username for
+'https://github.com'`), so the script's push fails — on Nov 9, 2026 the edition
+reached `main` only and the reader stayed on Nov 6. The working push path is
+the `custom.github-iown-data` connector helper
+(`~/workspace/custom-connectors/custom.github-iown-data/bin/push_live.py`),
+which pushes through the GitHub Contents API with a vault-stored fine-grained
+token (Contents read+write on richacarson/iown-data; 90-day token from Nov 9,
+2026, reuse until expiry, flag when expiry nears). Always push the HTML, the
+PDF and the manifest together — never HTML+manifest without the PDF, or the
+reader's PDF link breaks.
 
 ## Authoritative context
 
@@ -273,17 +284,25 @@ Fix everything it finds.
    and do Step 6 afterward.
 5. `python3 daily-commentary/publish-live.py publish YYYY-MM-DD`. It must print
    "pushed: claude/live @ <sha>" (or "unchanged (already live)"). Don't push any
-   other branch.
+   other branch. The script's push fails in this shell (no git credentials) —
+   publish with the helper instead, from the repo checkout:
+
+   `python3 ~/workspace/custom-connectors/custom.github-iown-data/bin/push_live.py --owner richacarson --repo iown-data --branch claude/live --message "Commentary YYYY-MM-DD: <headline>" --file commentaries/Paradiem_FCI_Market_Commentary_YYYY-MM-DD.html=commentaries/Paradiem_FCI_Market_Commentary_YYYY-MM-DD.html --file commentaries/Paradiem_FCI_Market_Commentary_YYYY-MM-DD.pdf=commentaries/Paradiem_FCI_Market_Commentary_YYYY-MM-DD.pdf --file commentary-manifest.json=commentary-manifest.json`
+
+   It prints one commit SHA per file, then the branch head SHA, and asserts
+   the head matches the last commit. If a push fails with a 409 ruleset
+   timeout, check whether the file landed, then retry — the Nov 9 PDF 409'd
+   once and succeeded on retry.
 6. Verify live: wait about 90 seconds, then WebFetch
    `https://iown-data.pages.dev/commentary-manifest.json?v=<unix time>` and
    confirm today's entry is first, and WebFetch
    `https://iown-data.pages.dev/commentaries/Paradiem_FCI_Market_Commentary_YYYY-MM-DD.html?v=<unix time>`
    and confirm the headline. Retry every 60 seconds for up to 6 minutes.
-7. If the script's push fails, fall back:
-   - `git checkout -B claude/commentary-YYYY-MM-DD origin/main`;
-   - add the HTML, PDF and manifest and commit ("Commentary YYYY-MM-DD: <headline>");
-   - `git push -u origin claude/commentary-YYYY-MM-DD`, and say so in the final
-     message. The GitHub Action publishes it to main when Actions is running.
+7. If the helper push fails too, commit the HTML, PDF and manifest on the
+   working branch (`claude/commentary-YYYY-MM-DD`, message "Commentary
+   YYYY-MM-DD: <headline>") and say plainly in the final message that the
+   edition is built but unpushed and what is needed. Do not push HTML+manifest
+   without the PDF — the reader's PDF link would break.
 
 ## Step 6 — Closing-price update at 3:36 PM
 
